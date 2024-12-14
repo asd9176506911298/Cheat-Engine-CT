@@ -2,5 +2,5 @@
 
 # The Detective Servant
 - https://youtu.be/idCbGPJ3SdQ
-# Summer Clover on Steam
+# Summer Clover
 - https://github.com/asd9176506911298/SummerCloverPlugin
