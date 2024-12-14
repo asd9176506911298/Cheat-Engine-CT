@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"SummerClover 2024-12-13 Yuki.kaco"</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"--- Unity Engine Cheat Initialize --- [HK: Insert]"</Description>
+      <Options moHideChildren="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript Async="1">{$lua}
+if syntaxcheck then return end
+if not monopipe then if LaunchMonoDataCollector() == 0 then end end
+{$asm}
+[ENABLE]
+[DISABLE]
+</AssemblerScript>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation</Action>
+          <Keys>
+            <Key>45</Key>
+          </Keys>
+          <ID>0</ID>
+        </Hotkey>
+      </Hotkeys>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1</ID>
+          <Description>"ToggleCustomVariableGUI --- [HK: F1]"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript Async="1">{$lua}
+if syntaxcheck then return end
+if not monopipe and LaunchMonoDataCollector() == 0 then return end
+
+-- Cache the Screen methods and CustomVariableGUI data
+local getWidthMethod = mono_findMethod('Screen', 'get_width')
+local getHeightMethod = mono_findMethod('Screen', 'get_height')
+local customVariableClass = mono_findClass('', 'CustomVariableGUI')
+
+if not getWidthMethod or not getHeightMethod or not customVariableClass then
+    return -- Exit if required data cannot be retrieved
+end
+
+local fields = mono_class_enumFields(customVariableClass)
+local windowRectOffset
+
+-- Find the offset for windowRect
+for i = 1, #fields do
+    if fields[i].name == 'windowRect' then
+        windowRectOffset = fields[i].offset
+        break
+    end
+end
+
+if not windowRectOffset then
+    return -- Exit if windowRectOffset is not found
+end
+
+-- Calculate addresses
+local windowRectAddress = mono_class_getStaticFieldAddress('', customVariableClass) + windowRectOffset
+local windowWidthAddress = windowRectAddress + 0x8
+local windowHeightAddress = windowRectAddress + 0xC
+
+-- Retrieve screen dimensions only once
+local screenWidth = mono_invoke_method('', getWidthMethod, 0, {})
+local screenHeight = mono_invoke_method('', getHeightMethod, 0, {})
+
+if not screenWidth or not screenHeight then
+    return -- Exit if screen dimensions could not be retrieved
+end
+
+-- Update window dimensions
+writeFloat(windowWidthAddress, 400 + screenWidth * 0.15)
+writeFloat(windowHeightAddress, screenHeight * 0.85)
+
+-- Toggle the GUI visibility
+local toggleMethod = mono_findMethod('', 'ConsoleCommands', 'ToggleCustomVariableGUI')
+if toggleMethod then
+    mono_invoke_method('', toggleMethod, 0, {})
+end
+{$asm}
+[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+          <Hotkeys>
+            <Hotkey>
+              <Action>Toggle Activation</Action>
+              <Keys>
+                <Key>112</Key>
+              </Keys>
+              <ID>0</ID>
+            </Hotkey>
+          </Hotkeys>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>0</ID>
+          <Description>"ToggleScriptNavigator --- [HK: F2]"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript Async="1">{$lua}
+
+if syntaxcheck then return end
+if not monopipe then if LaunchMonoDataCollector() == 0 then end end
+
+local method = mono_findMethod('', 'ConsoleCommands', 'ToggleScriptNavigator')
+mono_invoke_method('', method, 0, {})
+{$asm}
+
+[DISABLE]
+[ENABLE]
+</AssemblerScript>
+          <Hotkeys>
+            <Hotkey>
+              <Action>Toggle Activation</Action>
+              <Keys>
+                <Key>113</Key>
+              </Keys>
+              <ID>0</ID>
+            </Hotkey>
+          </Hotkeys>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>2</ID>
+          <Description>"ToggleDebugInfoGUI --- [HK: F3]"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript Async="1">{$lua}
+if syntaxcheck then return end
+if not monopipe then if LaunchMonoDataCollector() == 0 then end end
+
+local method = mono_findMethod('', 'ConsoleCommands', 'ToggleDebugInfoGUI')
+mono_invoke_method('', method, 0, {})
+{$asm}
+[ENABLE]
+[DISABLE]
+</AssemblerScript>
+          <Hotkeys>
+            <Hotkey>
+              <Action>Toggle Activation</Action>
+              <Keys>
+                <Key>114</Key>
+              </Keys>
+              <ID>0</ID>
+            </Hotkey>
+          </Hotkeys>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <LuaScript>attachlist=getAutoAttachList()
+stringlist_add(attachlist,"SummerClover.exe");
+
+function cycleFullCompact(sender,force) local state = not(compactmenuitem.Caption == 'Compact View Mode'); if force~=nil then state = not force end; compactmenuitem.Caption = state and 'Compact View Mode' or 'Full View Mode'; getMainForm().Splitter1.Visible = state; getMainForm().Panel5.Visible    = state; end; function addCompactMenu() if compactmenualreadyexists then return end; local parent = getMainForm().Menu.Items; compactmenuitem = createMenuItem(parent); parent.add(compactmenuitem); compactmenuitem.Caption = 'Compact View Mode'; compactmenuitem.OnClick = cycleFullCompact; compactmenualreadyexists = 'yes'; end; addCompactMenu(); cycleFullCompact(nil,true)
+</LuaScript>
+</CheatTable>
