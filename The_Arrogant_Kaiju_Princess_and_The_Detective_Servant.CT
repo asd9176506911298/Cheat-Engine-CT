@@ -293,6 +293,126 @@ db 55 8B EC 83 EC 18
                 <Offset>[isHModeConstraint]</Offset>
               </Offsets>
             </CheatEntry>
+            <CheatEntry>
+              <ID>31</ID>
+              <Description>"HModeCumValue"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>data</Address>
+              <Offsets>
+                <Offset>9c</Offset>
+                <Offset>c</Offset>
+                <Offset>8</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>34</ID>
+              <Description>"H Mode Feature"</Description>
+              <Options moHideChildren="1"/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+aobscanregion(Eject_AOB,HModeClickGOP:Execute,HModeClickGOP:Execute+1e1e,89 04 24 8B C0 E8 * * * * 85 C0 0F 85 * * * * C7 85 EC FE FF FF) // should be unique
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+alloc(Orgasm_Flag,8)
+registersymbol(Orgasm_Flag)
+alloc(Stamina_Flag,8)
+registersymbol(Stamina_Flag)
+
+newmem:
+  push ebx
+  mov ebx,[edi+08]
+  mov ebx,[ebx+0C]
+  cmp [Orgasm_Flag],1
+  jne @f
+  mov [ebx+7C],#0
+@@:
+  cmp [Stamina_Flag],1
+  jne @f
+  mov [ebx+9C],#88888
+
+code:
+  pop ebx
+  mov [esp],eax
+  mov eax,eax
+  jmp return
+
+Eject_AOB:
+  jmp newmem
+return:
+registersymbol(Eject_AOB)
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+Eject_AOB:
+  db 89 04 24 8B C0
+
+unregistersymbol(Eject_AOB)
+unregistersymbol(Orgasm_Flag)
+unregistersymbol(Stamina_Flag)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: HModeClickGOP:Execute+e1e
+
+HModeClickGOP:Execute+dfa: 89 04 24                       - mov [esp],eax
+HModeClickGOP:Execute+dfd: 8B C0                          - mov eax,eax
+HModeClickGOP:Execute+dff: E8 5C 90 00 00                 - call DeleteItemsGOP:.ctor
+HModeClickGOP:Execute+e04: 8B 85 CC FE FF FF              - mov eax,[ebp-00000134]
+HModeClickGOP:Execute+e0a: 89 7C 24 04                    - mov [esp+04],edi
+HModeClickGOP:Execute+e0e: 89 04 24                       - mov [esp],eax
+HModeClickGOP:Execute+e11: 8B 00                          - mov eax,[eax]
+HModeClickGOP:Execute+e13: FF 50 40                       - call dword ptr [eax+40]
+HModeClickGOP:Execute+e16: 8D 45 B0                       - lea eax,[ebp-50]
+HModeClickGOP:Execute+e19: BA 58 AE 04 25                 - mov edx,2504AE58
+// ---------- INJECTING HERE ----------
+HModeClickGOP:Execute+e1e: 89 04 24                       - mov [esp],eax
+// ---------- DONE INJECTING  ----------
+HModeClickGOP:Execute+e21: 8B C0                          - mov eax,eax
+HModeClickGOP:Execute+e23: E8 48 08 94 EF                 - call System.Collections.Generic.List`1+Enumerator[T_REF]:MoveNext
+HModeClickGOP:Execute+e28: 85 C0                          - test eax,eax
+HModeClickGOP:Execute+e2a: 0F 85 40 FE FF FF              - jne HModeClickGOP:Execute+c70
+HModeClickGOP:Execute+e30: C7 85 EC FE FF FF 00 00 00 00  - mov [ebp-00000114],00000000
+HModeClickGOP:Execute+e3a: 83 EC 0C                       - sub esp,0C
+HModeClickGOP:Execute+e3d: E8 14 00 00 00                 - call HModeClickGOP:Execute+e56
+HModeClickGOP:Execute+e42: 83 C4 0C                       - add esp,0C
+HModeClickGOP:Execute+e45: 83 BD EC FE FF FF 00           - cmp dword ptr [ebp-00000114],00
+HModeClickGOP:Execute+e4c: 74 06                          - je HModeClickGOP:Execute+e54
+}
+</AssemblerScript>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>38</ID>
+                  <Description>"No Ejaculation"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+Orgasm_Flag:
+  db 1
+ 
+ 
+[DISABLE]
+Orgasm_Flag:
+  db 0
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>37</ID>
+                  <Description>"Unlimited Stamina"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+Stamina_Flag:
+  db 1
+ 
+ 
+[DISABLE]
+Stamina_Flag:
+  db 0
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
           </CheatEntries>
         </CheatEntry>
       </CheatEntries>
@@ -301,159 +421,155 @@ db 55 8B EC 83 EC 18
   <UserdefinedSymbols>
     <SymbolEntry>
       <Name>nowDeadLineStage</Name>
-      <Address>1480000</Address>
+      <Address>1810000</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowDayRound</Name>
-      <Address>1480004</Address>
+      <Address>1810004</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowActionValue</Name>
-      <Address>1480008</Address>
+      <Address>1810008</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowMoodValue</Name>
-      <Address>148000C</Address>
+      <Address>181000C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowTotalMoney</Name>
-      <Address>1480010</Address>
+      <Address>1810010</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowMonsterHp</Name>
-      <Address>1480014</Address>
+      <Address>1810014</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>maxMonsterHp</Name>
-      <Address>1480018</Address>
+      <Address>1810018</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowBaseAttack</Name>
-      <Address>148001C</Address>
+      <Address>181001C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowBaseDef</Name>
-      <Address>1480020</Address>
+      <Address>1810020</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowSelectSoldier</Name>
-      <Address>1480024</Address>
+      <Address>1810024</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowEndurance</Name>
-      <Address>1480028</Address>
+      <Address>1810028</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowFriendlyValue</Name>
-      <Address>148002C</Address>
+      <Address>181002C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowPleasingValue</Name>
-      <Address>1480030</Address>
+      <Address>1810030</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowPleasingValue_DailyMax</Name>
-      <Address>1480034</Address>
+      <Address>1810034</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowExerciseValue</Name>
-      <Address>1480038</Address>
+      <Address>1810038</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowItemBag</Name>
-      <Address>148003C</Address>
+      <Address>181003C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowWearClothes</Name>
-      <Address>1480040</Address>
+      <Address>1810040</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>snowItemBag</Name>
-      <Address>1480044</Address>
+      <Address>1810044</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowMapData</Name>
-      <Address>1480048</Address>
+      <Address>1810048</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>flagData</Name>
-      <Address>148004C</Address>
+      <Address>181004C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>hasBadEnd</Name>
-      <Address>1480050</Address>
+      <Address>1810050</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>AvgPlayAt_Rest</Name>
-      <Address>1480054</Address>
+      <Address>1810054</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>AvgPlayAt_Start</Name>
-      <Address>1480058</Address>
+      <Address>1810058</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>Display_MapFlag_For_AvgID</Name>
-      <Address>148005C</Address>
+      <Address>181005C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_Achievement</Name>
-      <Address>1480060</Address>
+      <Address>1810060</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_Item</Name>
-      <Address>1480064</Address>
+      <Address>1810064</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_CG</Name>
-      <Address>1480068</Address>
+      <Address>1810068</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_Memory</Name>
-      <Address>148006C</Address>
+      <Address>181006C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_ShopItem</Name>
-      <Address>1480070</Address>
+      <Address>1810070</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_Dress</Name>
-      <Address>1480074</Address>
+      <Address>1810074</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewOpen_MapPoint</Name>
-      <Address>1480078</Address>
+      <Address>1810078</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_Serve</Name>
-      <Address>148007C</Address>
-    </SymbolEntry>
-    <SymbolEntry>
-      <Name>NewTag_HModePosture</Name>
-      <Address>1480080</Address>
+      <Address>181007C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>MapPointOpenDone</Name>
-      <Address>1480084</Address>
+      <Address>1810080</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>isHModeTutorialMode</Name>
-      <Address>1480088</Address>
+      <Address>1810084</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>BuffContainer</Name>
-      <Address>148008C</Address>
+      <Address>1810088</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>isHModeEndure</Name>
-      <Address>1480090</Address>
+      <Address>181008C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>isHModeConstraint</Name>
-      <Address>1480094</Address>
+      <Address>1810090</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>data</Name>
-      <Address>5CD4EBC</Address>
+      <Address>5CB4D5C</Address>
     </SymbolEntry>
   </UserdefinedSymbols>
   <LuaScript>attachlist=getAutoAttachList()
