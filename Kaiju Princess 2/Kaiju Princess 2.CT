@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>56</ID>
+      <Description>"Kaiju Princess 2 2024-12-17 Yuki.kaco"</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>21</ID>
+      <Description>"Init"</Description>
+      <Options moHideChildren="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript Async="1">{$lua}
+if syntaxcheck then return end
+if (LaunchMonoDataCollector()==0) then end
+
+local data = mono_findClass('', 'PlayerData')
+local instance = mono_class_getStaticFieldAddress('', data)
+registerSymbol('data',instance,false);
+
+-- Function to retrieve the MonoType and RuntimeType of a class
+local function getRuntimeType(classNamespace, className)
+    local class = mono_findClass(classNamespace, className)
+    if not class then
+        print("Error: Class '" .. className .. "' not found.")
+        return nil
+    end
+    local MonoType = executeCodeEx(1, 1000, getAddressSafe("mono_class_get_type"), {type = 0, value = class})
+    local RuntimeType = executeCodeEx(1, 1000, getAddressSafe("mono_type_get_object"), {type = 0, value = mono_enumDomains()[1]}, {type = 0, value = MonoType})
+    return RuntimeType
+end
+
+-- Function to invoke FindObjectsOfTypeAll for a given RuntimeType
+local function findObjectsOfTypeAll(runtimeType)
+    local findMethod = mono_findMethod('UnityEngine', 'Resources', 'FindObjectsOfTypeAll')
+    if not findMethod then
+        print("Error: FindObjectsOfTypeAll method not found.")
+        return nil
+    end
+    return mono_invoke_method('', findMethod, 0, {{type = vtPointer, value = runtimeType}})
+end
+
+-- Function to safely find and invoke a method on an object
+local function invokeMethod(namespace, className, methodName, object, params)
+    local method = mono_findMethod(namespace, className, methodName)
+    if not method then
+        print("Error: Method '" .. methodName .. "' in class '" .. className .. "' not found.")
+        return nil
+    end
+    return mono_invoke_method('', method, object, params)
+end
+
+-- Main Logic
+local runtimeType = getRuntimeType("", "StatusTestTool")
+if runtimeType then
+    local objectArray = findObjectsOfTypeAll(runtimeType)
+    if objectArray then
+        local firstObject = readPointer(objectArray + 0x28)  -- Adjust the offset as needed
+        if firstObject then
+            -- Get Transform component
+            local transform = invokeMethod('UnityEngine', 'Component', 'get_transform', firstObject, {})
+
+            -- Get Parent Transform
+            local parentTransform = invokeMethod('UnityEngine', 'Transform', 'get_parent', transform, {})
+
+            -- Get GameObject from Parent
+            local parentGameObject = invokeMethod('UnityEngine', 'Component', 'get_gameObject', parentTransform, {})
+            registerSymbol('testTool',parentGameObject,false)
+            -- Print Results
+--            print("Transform:", transform)
+--            print("Parent Transform:", parentTransform)
+--            print("Parent GameObject:", parentGameObject)
+        else
+            print("Error: No objects of the specified type found.")
+        end
+    end
+end
+
+function setActive(objectName, state)
+    local am = mono_findMethod('UnityEngine', 'GameObject', 'SetActive')
+    if am then
+        local objectAddress = getAddress(objectName)
+        if objectAddress then
+            mono_invoke_method('', am, objectAddress, {{type = vtByte, value = state}})
+        else
+            print("Error: Object '" .. objectName .. "' not found.")
+        end
+    else
+        print("Error: SetActive method not found.")
+    end
+end
+
+function findGameObject(path)
+    local findMethod = mono_findMethod('', 'GameObject', 'Find')
+    if not findMethod then
+        print("Error: Could not locate GameObject.Find method.")
+        return nil
+    end
+    return mono_invoke_method('', findMethod, 0, {{type = vtString, value = path}})
+end
+
+local cheatPath = "MainUI/Popups/UI_SettingPopup(Clone)/Container/Buttons/ChatGameButton"
+local cheat = findGameObject(cheatPath)
+registerSymbol('cheat',cheat,false)
+
+local addr = allocateMemory(4);
+registerSymbol('speed',addr,false)
+writeFloat(getAddress('speed'),5.0)
+{$asm}
+[ENABLE]
+[DISABLE]
+
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>54</ID>
+          <Description>"Global SpeedUp"</Description>
+          <Options moHideChildren="1"/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+{$lua}
+local setmethod = mono_findMethod('Time','set_timeScale');
+mono_invoke_method('',setmethod,0,{{type=vtSingle,value=readFloat(getAddress('speed'))}})
+--print(readFloat(getAddress('speed')))
+{$asm}
+[DISABLE]
+{$lua}
+local setmethod = mono_findMethod('Time','set_timeScale');
+mono_invoke_method('',setmethod,0,{{type=vtSingle,value=1.0}})
+--print(readFloat(getAddress('speed')))
+{$asm}
+</AssemblerScript>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>55</ID>
+              <Description>"Speed Value"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>speed</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>48</ID>
+          <Description>"Visible Event CG "</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+aobscanregion(eventLock1,EventSItem:SetItemLock,EventSItem:SetItemLock+1e4,c6 46 ? ? 48 c7 45)
+aobscanregion(eventLock2,EventSItem:SetItemLock,EventSItem:SetItemLock+1e4,c6 46 ? ? 48 8b 46)
+aobscanregion(SetItemLock,CGGroupSItem:SetItemLock,CGGroupSItem:SetItemLock+160,75 06 33 c0 48 0f b6 f8)
+aobscanregion(UnlockMeet,CGGroupSItem:CGUnlockMeet,CGGroupSItem:CGUnlockMeet+249,75 ? 33 c0 4c 0f b6 f8 48 8b cd 48 83 c1 ? 49 ba ? ? ? ? ? ? ? ? 49 bb ? ? ? ? ? ? ? ? 41 ff d3 85 c0 75 ? 48 c7 45)
+aobscanregion(CheckUnLockCount,CGGroupSItem:CheckUnLockCount,CGGroupSItem:CheckUnLockCount+29a,75 ? 33 c0 4c 0f b6 f8 48 8b cd 48 83 c1 ? 49 ba ? ? ? ? ? ? ? ? 49 bb ? ? ? ? ? ? ? ? 41 ff d3 85 c0 75 ? 48 c7 85)
+
+registersymbol(eventLock1)
+registersymbol(eventLock2)
+registersymbol(SetItemLock)
+registersymbol(UnlockMeet)
+registersymbol(CheckUnLockCount)
+
+eventLock1+3:
+  db 00
+
+eventLock2+3:
+  db 00
+
+SetItemLock:
+  db EB 06
+
+UnlockMeet:
+  db EB 06
+
+CheckUnLockCount:
+  db EB 06
+
+[DISABLE]
+eventLock1+3:
+  db 01
+
+eventLock2+3:
+  db 01
+
+SetItemLock:
+  db 75 06
+
+UnlockMeet:
+  db 75 06
+
+CheckUnLockCount:
+  db 75 06
+
+unregistersymbol(*)
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>52</ID>
+          <Description>"Visible Cooking"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+PlayerData:HadGetItem:
+  mov eax,#1
+  ret
+
+[DISABLE]
+PlayerData:HadGetItem:
+  db 55 48 8B EC 48 83
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>22</ID>
+          <Description>"Toggle Cheat Button On Setting"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript Async="1">{$lua}
+if syntaxcheck then return end
+{$asm}
+
+[ENABLE]
+{$lua}
+-- Function to find a GameObject by path
+local function findGameObject(path)
+    local findMethod = mono_findMethod('', 'GameObject', 'Find')
+    if not findMethod then
+        print("Error: Could not locate GameObject.Find method.")
+        return nil
+    end
+    return mono_invoke_method('', findMethod, 0, {{type = vtString, value = path}})
+end
+
+-- Ensure 'cheat' symbol is registered
+if not getAddressSafe('cheat') then
+    local cheatPath = "MainUI/Popups/UI_SettingPopup(Clone)/Container/Buttons/ChatGameButton"
+    local cheatObject = findGameObject(cheatPath)
+    if cheatObject and cheatObject ~= 0 then
+        registerSymbol('cheat', cheatObject, false)
+    else
+        --print("Error: Could not find the specified GameObject at path:", cheatPath)
+        return
+    end
+end
+
+-- Set active state to 1 (enable)
+setActive('cheat', 1)
+{$asm}
+
+[DISABLE]
+{$lua}
+-- Set active state to 0 (disable)
+if getAddressSafe('cheat') then
+    setActive('cheat', 0)
+else
+    --print("Error: 'cheat' symbol not found. Cannot deactivate.")
+end
+{$asm}
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>23</ID>
+          <Description>"TestStatusTool"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript Async="1">{$lua}
+if syntaxcheck then return end
+{$asm}
+
+[ENABLE]
+{$lua}
+setActive('testTool', 1)
+{$asm}
+
+[DISABLE]
+{$lua}
+setActive('testTool', 0)
+{$asm}
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>0</ID>
+          <Description>"PlayerData"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>data</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>11</ID>
+              <Description>"Item_Attr_FoodEnergy"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>data</Address>
+              <Offsets>
+                <Offset>18</Offset>
+                <Offset>18+5*18</Offset>
+                <Offset>18</Offset>
+                <Offset>18</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>2</ID>
+              <Description>"Item_Gold"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>data</Address>
+              <Offsets>
+                <Offset>18</Offset>
+                <Offset>18+1*18</Offset>
+                <Offset>18</Offset>
+                <Offset>18</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>24</ID>
+              <Description>"Item_Attr_Favorability"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>data</Address>
+              <Offsets>
+                <Offset>18</Offset>
+                <Offset>18+12*18</Offset>
+                <Offset>18</Offset>
+                <Offset>18</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>3</ID>
+              <Description>"Item_Attr_Emotion"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>data</Address>
+              <Offsets>
+                <Offset>18</Offset>
+                <Offset>18+2*18</Offset>
+                <Offset>18</Offset>
+                <Offset>18</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>5</ID>
+              <Description>"Item_Attr_ActionPoint"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>data</Address>
+              <Offsets>
+                <Offset>18</Offset>
+                <Offset>18+4*18</Offset>
+                <Offset>18</Offset>
+                <Offset>18</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10</ID>
+              <Description>"Item_Attr_STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>data</Address>
+              <Offsets>
+                <Offset>18</Offset>
+                <Offset>18+6*18</Offset>
+                <Offset>18</Offset>
+                <Offset>18</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>9</ID>
+              <Description>"Item_Attr_DEX"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>data</Address>
+              <Offsets>
+                <Offset>18</Offset>
+                <Offset>18+7*18</Offset>
+                <Offset>18</Offset>
+                <Offset>18</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>8</ID>
+              <Description>"Item_Attr_INT"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>data</Address>
+              <Offsets>
+                <Offset>18</Offset>
+                <Offset>18+8*18</Offset>
+                <Offset>18</Offset>
+                <Offset>18</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols>
+    <SymbolEntry>
+      <Name>data</Name>
+      <Address>1A1AB6239F0</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>testTool</Name>
+      <Address>1A4651069C0</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>speed</Name>
+      <Address>1A1A2C10000</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>cheat</Name>
+      <Address>1A45DF6EF20</Address>
+    </SymbolEntry>
+  </UserdefinedSymbols>
+  <LuaScript>attachlist=getAutoAttachList()
+stringlist_add(attachlist,"Kaiju Princess 2.exe");
+
+function cycleFullCompact(sender,force) local state = not(compactmenuitem.Caption == 'Compact View Mode'); if force~=nil then state = not force end; compactmenuitem.Caption = state and 'Compact View Mode' or 'Full View Mode'; getMainForm().Splitter1.Visible = state; getMainForm().Panel5.Visible    = state; end; function addCompactMenu() if compactmenualreadyexists then return end; local parent = getMainForm().Menu.Items; compactmenuitem = createMenuItem(parent); parent.add(compactmenuitem); compactmenuitem.Caption = 'Compact View Mode'; compactmenuitem.OnClick = cycleFullCompact; compactmenualreadyexists = 'yes'; end; addCompactMenu(); cycleFullCompact(nil,true)
+
+</LuaScript>
+</CheatTable>
