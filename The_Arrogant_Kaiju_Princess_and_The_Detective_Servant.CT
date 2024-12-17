@@ -321,6 +321,11 @@ registersymbol(Orgasm_Flag)
 alloc(Stamina_Flag,8)
 registersymbol(Stamina_Flag)
 
+Orgasm_Flag:
+dd 0
+Stamina_Flag:
+dd 0
+
 newmem:
   push ebx
   mov ebx,[edi+08]
@@ -421,155 +426,159 @@ Stamina_Flag:
   <UserdefinedSymbols>
     <SymbolEntry>
       <Name>nowDeadLineStage</Name>
-      <Address>1810000</Address>
+      <Address>104E0000</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowDayRound</Name>
-      <Address>1810004</Address>
+      <Address>104E0004</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowActionValue</Name>
-      <Address>1810008</Address>
+      <Address>104E0008</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowMoodValue</Name>
-      <Address>181000C</Address>
+      <Address>104E000C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowTotalMoney</Name>
-      <Address>1810010</Address>
+      <Address>104E0010</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowMonsterHp</Name>
-      <Address>1810014</Address>
+      <Address>104E0014</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>maxMonsterHp</Name>
-      <Address>1810018</Address>
+      <Address>104E0018</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowBaseAttack</Name>
-      <Address>181001C</Address>
+      <Address>104E001C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowBaseDef</Name>
-      <Address>1810020</Address>
+      <Address>104E0020</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowSelectSoldier</Name>
-      <Address>1810024</Address>
+      <Address>104E0024</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowEndurance</Name>
-      <Address>1810028</Address>
+      <Address>104E0028</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowFriendlyValue</Name>
-      <Address>181002C</Address>
+      <Address>104E002C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowPleasingValue</Name>
-      <Address>1810030</Address>
+      <Address>104E0030</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowPleasingValue_DailyMax</Name>
-      <Address>1810034</Address>
+      <Address>104E0034</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowExerciseValue</Name>
-      <Address>1810038</Address>
+      <Address>104E0038</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowItemBag</Name>
-      <Address>181003C</Address>
+      <Address>104E003C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowWearClothes</Name>
-      <Address>1810040</Address>
+      <Address>104E0040</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>snowItemBag</Name>
-      <Address>1810044</Address>
+      <Address>104E0044</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>nowMapData</Name>
-      <Address>1810048</Address>
+      <Address>104E0048</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>flagData</Name>
-      <Address>181004C</Address>
+      <Address>104E004C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>hasBadEnd</Name>
-      <Address>1810050</Address>
+      <Address>104E0050</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>AvgPlayAt_Rest</Name>
-      <Address>1810054</Address>
+      <Address>104E0054</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>AvgPlayAt_Start</Name>
-      <Address>1810058</Address>
+      <Address>104E0058</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>Display_MapFlag_For_AvgID</Name>
-      <Address>181005C</Address>
+      <Address>104E005C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_Achievement</Name>
-      <Address>1810060</Address>
+      <Address>104E0060</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_Item</Name>
-      <Address>1810064</Address>
+      <Address>104E0064</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_CG</Name>
-      <Address>1810068</Address>
+      <Address>104E0068</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_Memory</Name>
-      <Address>181006C</Address>
+      <Address>104E006C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_ShopItem</Name>
-      <Address>1810070</Address>
+      <Address>104E0070</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_Dress</Name>
-      <Address>1810074</Address>
+      <Address>104E0074</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewOpen_MapPoint</Name>
-      <Address>1810078</Address>
+      <Address>104E0078</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>NewTag_Serve</Name>
-      <Address>181007C</Address>
+      <Address>104E007C</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>NewTag_HModePosture</Name>
+      <Address>104E0080</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>MapPointOpenDone</Name>
-      <Address>1810080</Address>
+      <Address>104E0084</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>isHModeTutorialMode</Name>
-      <Address>1810084</Address>
+      <Address>104E0088</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>BuffContainer</Name>
-      <Address>1810088</Address>
+      <Address>104E008C</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>isHModeEndure</Name>
-      <Address>181008C</Address>
+      <Address>104E0090</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>isHModeConstraint</Name>
-      <Address>1810090</Address>
+      <Address>104E0094</Address>
     </SymbolEntry>
     <SymbolEntry>
       <Name>data</Name>
-      <Address>5CB4D5C</Address>
+      <Address>5364EDC</Address>
     </SymbolEntry>
   </UserdefinedSymbols>
   <LuaScript>attachlist=getAutoAttachList()
