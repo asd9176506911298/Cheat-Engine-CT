@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="46">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"極品採花郎 / Romantic Escapades 2025-11-12 Yuki.kaco"</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"mono_initialize"</Description>
+      <Options moHideChildren="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+{$lua}
+local processName = "RE.exe"
+if not OpenProcess(processName) then
+  showMessage("Failed to attach to process: " .. processName)
+end
+mono_initialize()
+if syntaxcheck then return end
+if (LaunchMonoDataCollector() == 0) then end
+
+[DISABLE]
+
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>7</ID>
+          <Description>"H模式穿著刺青姿勢解鎖/H Mode Item,Tattoo,Pose Unlock"</Description>
+          <Options moHideChildren="1" moActivateChildrenAsWell="1"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>4</ID>
+              <Description>"穿著解鎖 / Clothes Unlock"</Description>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+alloc(ProtoBodyDecIsUnlockbkp,32)
+registersymbol(ProtoBodyDecIsUnlockbkp)
+
+ProtoBodyDecIsUnlockbkp:
+readmem(Game.ProtoBodyDec.get_IsUnlock,3)
+Game.ProtoBodyDec.get_IsUnlock:
+mov al,1
+ret
+
+[DISABLE]
+Game.ProtoBodyDec.get_IsUnlock:
+readmem(ProtoBodyDecIsUnlockbkp,3)
+dealloc(*)
+unregistersymbol(*)
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>5</ID>
+              <Description>"刺青解鎖 / Tattoo Unlock"</Description>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+alloc(ProtoBodyPartternIsUnlockbkp,32)
+registersymbol(ProtoBodyPartternIsUnlockbkp)
+
+ProtoBodyPartternIsUnlockbkp:
+readmem(Game.ProtoBodyParttern.get_IsUnlock,3)
+Game.ProtoBodyParttern.get_IsUnlock:
+mov al,1
+ret
+
+[DISABLE]
+Game.ProtoBodyParttern.get_IsUnlock:
+readmem(ProtoBodyPartternIsUnlockbkp,3)
+dealloc(*)
+unregistersymbol(*)
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>6</ID>
+              <Description>"姿勢解鎖 / Pose Unlock"</Description>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+alloc(ProtoTouchPoseIsUnlockbkp,32)
+registersymbol(ProtoTouchPoseIsUnlockbkp)
+
+ProtoTouchPoseIsUnlockbkp:
+readmem(Game.ProtoTouchPose.get_IsUnlock,3)
+Game.ProtoTouchPose.get_IsUnlock:
+mov al,1
+ret
+
+[DISABLE]
+Game.ProtoTouchPose.get_IsUnlock:
+readmem(ProtoTouchPoseIsUnlockbkp,3)
+dealloc(*)
+unregistersymbol(*)
+</AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

@@ -1,0 +1,183 @@
+崔鶯兒: QS
+菁菁: DT
+彤姨: AY
+慕容嫣: CN
+緋燕: WN
+玄霜: XW
+南宮翎: NW
+奈德利豹女碼頭籠子裡: YR
+黑白無常: WC
+
+黑白無常3P
+Id: 1012 Code: Touch_WC Cmd: npc.touch N_WC Circle 5
+
+奈德利 豹女 碼頭籠子裡
+Id: 10493 Code: BuySexF Cmd: npc.touch N_YR Cage_3 5
+
+小遊戲 
+鬥法
+Id: 671 Code: GameWN Cmd: npc.competition N_WN 2
+通脈
+Id: 672 Code: GameXW Cmd: npc.dredge N_XW 2
+
+Room
+Id: 20130 Code: Touch_CN Cmd: npc.touch N_CN Room 0
+Id: 20131 Code: Touch_AY Cmd: npc.touch N_AY Room 0
+Id: 20132 Code: Touch_DT Cmd: npc.touch N_DT Room 0
+Id: 20133 Code: Touch_QS Cmd: npc.touch N_QS Room 0
+Id: 20134 Code: Touch_WN Cmd: npc.touch N_WN Room 0
+Id: 20135 Code: Touch_XW Cmd: npc.touch N_XW Room 0
+Id: 20136 Code: Touch_NW Cmd: npc.touch N_NW Room 0
+
+調教
+Id: 346 Code: N_DT_AC Cmd: npc.acupuncture N_DT
+Id: 347 Code: N_AY_AC Cmd: npc.acupuncture N_AY
+Id: 348 Code: N_CN_AC Cmd: npc.acupuncture N_CN
+Id: 349 Code: N_QS_AC Cmd: npc.acupuncture N_QS
+Id: 351 Code: N_WN_AC Cmd: npc.acupuncture N_WN
+Id: 353 Code: N_XW_AC Cmd: npc.acupuncture N_XW
+Id: 355 Code: N_NW_AC Cmd: npc.acupuncture N_NW
+
+互動調戲 金手指無法用 因為缺少index 所以要用IngameDebugConsole 
+例如 npc.flirt N_AY 0 // 彤姨幫廚
+npc.flirt [String npc] [Integer idx]</b>: 调戏
+Id: 360 Code: Obey_DT Cmd: npc.flirt N_DT
+Id: 361 Code: Obey_AY Cmd: npc.flirt N_AY
+Id: 362 Code: Obey_CN Cmd: npc.flirt N_CN
+Id: 363 Code: Obey_QS Cmd: npc.flirt N_QS
+Id: 365 Code: Obey_WN Cmd: npc.flirt N_WN
+Id: 367 Code: Obey_XW Cmd: npc.flirt N_XW
+
+Morning 用完可解鎖晨襲 或用CE的體位
+Id: 163 Code: N_QS_Morning Cmd: npc.touch N_QS Hero 2
+Id: 164 Code: N_DT_Morning Cmd: npc.touch N_DT Hero 2
+Id: 165 Code: N_AY_Morning Cmd: npc.touch N_AY Hero 2
+Id: 166 Code: N_CN_Morning Cmd: npc.touch N_CN Hero 2
+Id: 167 Code: N_WN_Morning Cmd: npc.touch N_WN Hero 2
+Id: 168 Code: N_XW_Morning Cmd: npc.touch N_XW Hero 2
+Id: 169 Code: N_NW_Morning Cmd: npc.touch N_NW Hero 2
+
+Room Night 用完可解鎖夜襲 或用CE的體位
+Id: 205 Code: N_QS_Night Cmd: npc.touch N_QS Room 4
+Id: 206 Code: N_DT_Night Cmd: npc.touch N_DT Room 4
+Id: 207 Code: N_AY_Night Cmd: npc.touch N_AY Room 4
+Id: 208 Code: N_CN_Night Cmd: npc.touch N_CN Room 4
+Id: 209 Code: N_WN_Night Cmd: npc.touch N_WN Room 4
+Id: 210 Code: N_XW_Night Cmd: npc.touch N_XW Room 4
+Id: 211 Code: N_NW_Night Cmd: npc.touch N_NW Room 4
+
+自己尻
+Id: 8 Code: Doself_N_CN Cmd: story.play Self/Self_N_CN_1
+Id: 9 Code: Doself_N_QS Cmd: story.play Self/Self_N_QS_1
+Id: 10 Code: Doself_N_DT Cmd: story.play Self/Self_N_DT_1
+Id: 11 Code: Doself_N_AY Cmd: story.play Self/Self_N_AY_1
+
+床上
+Id: 20148 Code: Bed_CN Cmd: npc.touch N_CN Hero 0
+Id: 20149 Code: Bed_AY Cmd: npc.touch N_AY Hero 0
+Id: 20150 Code: Bed_DT Cmd: npc.touch N_DT Hero 0
+Id: 20151 Code: Bed_QS Cmd: npc.touch N_QS Hero 0
+Id: 20152 Code: Bed_WN Cmd: npc.touch N_WN Hero 0
+Id: 20153 Code: Bed_XW Cmd: npc.touch N_XW Hero 0
+Id: 20154 Code: Bed_NW Cmd: npc.touch N_NW Hero 0
+
+夢境
+Id: 99 Code: Rest_QS Cmd: npc.touch N_QS Hero 1
+Id: 105 Code: Rest_DT Cmd: npc.touch N_DT Hero 1
+Id: 111 Code: Rest_AY Cmd: npc.touch N_AY Hero 1
+Id: 117 Code: Rest_CN Cmd: npc.touch N_CN Hero 1
+Id: 123 Code: Rest_WN Cmd: npc.touch N_WN Hero 1
+Id: 129 Code: Rest_XW Cmd: npc.touch N_XW Hero 1
+Id: 135 Code: Rest_NW Cmd: npc.touch N_NW Hero 1
+
+
+
+MorningClear
+Id: 184 Code: N_QS_MorningClear Cmd: npc.touch N_QS Hero 3
+Id: 185 Code: N_DT_MorningClear Cmd: npc.touch N_DT Hero 3
+Id: 186 Code: N_AY_MorningClear Cmd: npc.touch N_AY Hero 3
+Id: 187 Code: N_CN_MorningClear Cmd: npc.touch N_CN Hero 3
+Id: 188 Code: N_WN_MorningClear Cmd: npc.touch N_WN Hero 3
+Id: 189 Code: N_XW_MorningClear Cmd: npc.touch N_XW Hero 3
+Id: 190 Code: N_NW_MorningClear Cmd: npc.touch N_NW Hero 3
+
+Id: 737 Code: Touch_CN_EC_Affair Cmd: npc.touch N_CN EC_Affair 0
+Id: 738 Code: Touch_AY_EC_Affair Cmd: npc.touch N_AY EC_Affair 0
+Id: 739 Code: Touch_DT_EC_Affair Cmd: npc.touch N_DT EC_Affair 0
+Id: 740 Code: Touch_QS_EC_Affair Cmd: npc.touch N_QS EC_Affair 0
+Id: 741 Code: Touch_WN_EC_Affair Cmd: npc.touch N_WN EC_Affair 0
+Id: 742 Code: Touch_XW_EC_Affair Cmd: npc.touch N_XW EC_Affair 0
+Id: 743 Code: Touch_NW_EC_Affair Cmd: npc.touch N_NW EC_Affair 0
+
+Id: 751 Code: Touch_CN_EC_Bathe Cmd: npc.touch N_CN EC_Bathe 0
+Id: 752 Code: Touch_AY_EC_Bathe Cmd: npc.touch N_AY EC_Bathe 0
+Id: 753 Code: Touch_DT_EC_Bathe Cmd: npc.touch N_DT EC_Bathe 0
+Id: 754 Code: Touch_QS_EC_Bathe Cmd: npc.touch N_QS EC_Bathe 0
+Id: 755 Code: Touch_WN_EC_Bathe Cmd: npc.touch N_WN EC_Bathe 0
+Id: 756 Code: Touch_XW_EC_Bathe Cmd: npc.touch N_XW EC_Bathe 0
+Id: 757 Code: Touch_NW_EC_Bathe Cmd: npc.touch N_NW EC_Bathe 0
+
+Id: 765 Code: Touch_CN_EC_Dancer Cmd: npc.touch N_CN EC_Dancer 0
+Id: 766 Code: Touch_AY_EC_Dancer Cmd: npc.touch N_AY EC_Dancer 0
+Id: 767 Code: Touch_DT_EC_Dancer Cmd: npc.touch N_DT EC_Dancer 0
+Id: 768 Code: Touch_QS_EC_Dancer Cmd: npc.touch N_QS EC_Dancer 0
+Id: 769 Code: Touch_WN_EC_Dancer Cmd: npc.touch N_WN EC_Dancer 0
+Id: 770 Code: Touch_XW_EC_Dancer Cmd: npc.touch N_XW EC_Dancer 0
+Id: 771 Code: Touch_NW_EC_Dancer Cmd: npc.touch N_NW EC_Dancer 0
+
+Id: 779 Code: Touch_CN_EC_Encounter Cmd: npc.touch N_CN EC_Encounter 0
+Id: 780 Code: Touch_AY_EC_Encounter Cmd: npc.touch N_AY EC_Encounter 0
+Id: 781 Code: Touch_DT_EC_Encounter Cmd: npc.touch N_DT EC_Encounter 0
+Id: 782 Code: Touch_QS_EC_Encounter Cmd: npc.touch N_QS EC_Encounter 0
+Id: 783 Code: Touch_WN_EC_Encounter Cmd: npc.touch N_WN EC_Encounter 0
+Id: 784 Code: Touch_XW_EC_Encounter Cmd: npc.touch N_XW EC_Encounter 0
+Id: 785 Code: Touch_NW_EC_Encounter Cmd: npc.touch N_NW EC_Encounter 0
+
+Id: 793 Code: Touch_CN_EC_Farm Cmd: npc.touch N_CN EC_Farm 0
+Id: 794 Code: Touch_AY_EC_Farm Cmd: npc.touch N_AY EC_Farm 0
+Id: 795 Code: Touch_DT_EC_Farm Cmd: npc.touch N_DT EC_Farm 0
+Id: 796 Code: Touch_QS_EC_Farm Cmd: npc.touch N_QS EC_Farm 0
+Id: 797 Code: Touch_WN_EC_Farm Cmd: npc.touch N_WN EC_Farm 0
+Id: 798 Code: Touch_XW_EC_Farm Cmd: npc.touch N_XW EC_Farm 0
+Id: 799 Code: Touch_NW_EC_Farm Cmd: npc.touch N_NW EC_Farm 0
+
+Id: 807 Code: Touch_CN_EC_LesPeek Cmd: npc.touch N_CN EC_LesPeek 0
+Id: 808 Code: Touch_AY_EC_LesPeek Cmd: npc.touch N_AY EC_LesPeek 0
+Id: 809 Code: Touch_DT_EC_LesPeek Cmd: npc.touch N_DT EC_LesPeek 0
+Id: 810 Code: Touch_QS_EC_LesPeek Cmd: npc.touch N_QS EC_LesPeek 0
+Id: 811 Code: Touch_WN_EC_LesPeek Cmd: npc.touch N_WN EC_LesPeek 0
+Id: 812 Code: Touch_XW_EC_LesPeek Cmd: npc.touch N_XW EC_LesPeek 0
+Id: 813 Code: Touch_NW_EC_LesPeek Cmd: npc.touch N_NW EC_LesPeek 0
+
+Id: 821 Code: Touch_CN_EC_PeekDT Cmd: npc.touch N_CN EC_PeekDT 0
+Id: 822 Code: Touch_AY_EC_PeekDT Cmd: npc.touch N_AY EC_PeekDT 0
+Id: 823 Code: Touch_DT_EC_PeekDT Cmd: npc.touch N_DT EC_PeekDT 0
+Id: 824 Code: Touch_QS_EC_PeekDT Cmd: npc.touch N_QS EC_PeekDT 0
+Id: 825 Code: Touch_WN_EC_PeekDT Cmd: npc.touch N_WN EC_PeekDT 0
+Id: 826 Code: Touch_XW_EC_PeekDT Cmd: npc.touch N_XW EC_PeekDT 0
+Id: 827 Code: Touch_NW_EC_PeekDT Cmd: npc.touch N_NW EC_PeekDT 0
+
+Id: 835 Code: Touch_CN_EC_Semen Cmd: npc.touch N_CN EC_Semen 0
+Id: 836 Code: Touch_AY_EC_Semen Cmd: npc.touch N_AY EC_Semen 0
+Id: 837 Code: Touch_DT_EC_Semen Cmd: npc.touch N_DT EC_Semen 0
+Id: 838 Code: Touch_QS_EC_Semen Cmd: npc.touch N_QS EC_Semen 0
+Id: 839 Code: Touch_WN_EC_Semen Cmd: npc.touch N_WN EC_Semen 0
+Id: 840 Code: Touch_XW_EC_Semen Cmd: npc.touch N_XW EC_Semen 0
+Id: 841 Code: Touch_NW_EC_Semen Cmd: npc.touch N_NW EC_Semen 0
+
+Id: 849 Code: Touch_CN_EC_Violence Cmd: npc.touch N_CN EC_Violence 0
+Id: 850 Code: Touch_AY_EC_Violence Cmd: npc.touch N_AY EC_Violence 0
+Id: 851 Code: Touch_DT_EC_Violence Cmd: npc.touch N_DT EC_Violence 0
+Id: 852 Code: Touch_QS_EC_Violence Cmd: npc.touch N_QS EC_Violence 0
+Id: 853 Code: Touch_WN_EC_Violence Cmd: npc.touch N_WN EC_Violence 0
+Id: 854 Code: Touch_XW_EC_Violence Cmd: npc.touch N_XW EC_Violence 0
+Id: 855 Code: Touch_NW_EC_Violence Cmd: npc.touch N_NW EC_Violence 0
+
+共浴
+Id: 57 Code: Bath_N_QS Cmd: npc.touch N_QS Bath 5
+Id: 58 Code: Bath_N_DT Cmd: npc.touch N_DT Bath 5
+Id: 59 Code: Bath_N_AY Cmd: npc.touch N_AY Bath 5
+Id: 60 Code: Bath_N_CN Cmd: npc.touch N_CN Bath 5
+Id: 61 Code: Bath_N_WN Cmd: npc.touch N_WN Bath 5
+Id: 62 Code: Bath_N_XW Cmd: npc.touch N_XW Bath 5
+Id: 63 Code: Bath_N_NW Cmd: npc.touch N_NW Bath 5

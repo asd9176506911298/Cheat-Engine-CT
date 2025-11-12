@@ -1,0 +1,2662 @@
+Id: 1 Code: OldBookDelivery Cmd: conv.frag OldBookDelivery_Talk
+Id: 2 Code: OldBookDelivery Cmd: conv.selectbox
+Id: 3 Code:  Cmd:
+Id: 4 Code: Doself_N_CN Cmd: player.interact_over
+Id: 5 Code: Doself_N_QS Cmd: player.interact_over
+Id: 6 Code: Doself_N_DT Cmd: player.interact_over
+Id: 7 Code: Doself_N_AY Cmd: player.interact_over
+Id: 8 Code: Doself_N_CN Cmd: story.play Self/Self_N_CN_1
+Id: 9 Code: Doself_N_QS Cmd: story.play Self/Self_N_QS_1
+Id: 10 Code: Doself_N_DT Cmd: story.play Self/Self_N_DT_1
+Id: 11 Code: Doself_N_AY Cmd: story.play Self/Self_N_AY_1
+Id: 12 Code: Doself_N_CN Cmd: item.add ItemYuanYang 1
+Id: 13 Code: Doself_N_QS Cmd: item.add ItemYuanYang 1
+Id: 14 Code: Doself_N_DT Cmd: item.add ItemYuanYang 1
+Id: 15 Code: Doself_N_AY Cmd: item.add ItemYuanYang 1
+Id: 16 Code:  Cmd:
+Id: 17 Code: AD_BR_ItemIngredients2002 Cmd: player.addbuff BR_ItemIngredients2002
+Id: 18 Code: AD_CB_RP_Upgrade Cmd: player.addbuff CB_RP_Upgrade
+Id: 19 Code: Chef_ComTalk Cmd: conv.speak ComTalk
+Id: 20 Code: Chef_ComTalk Cmd: conv.selectbox
+Id: 21 Code: AD_BH_Item_1 Cmd: player.addbuff BH_Item_1
+Id: 22 Code: AD_BH_Item_2 Cmd: player.addbuff BH_Item_2
+Id: 23 Code: AD_BH_Item_3 Cmd: player.addbuff BH_Item_3
+Id: 24 Code: AD_BH_Item_4 Cmd: player.addbuff BH_Item_4
+Id: 25 Code: AD_BLH_Item_1 Cmd: player.addbuff BLH_Item_1
+Id: 26 Code: AD_BLH_Item_2 Cmd: player.addbuff BLH_Item_2
+Id: 27 Code: AD_BR_ItemFood_1 Cmd: player.addbuff BR_ItemFood_1
+Id: 28 Code: AD_BR_ItemFood_2 Cmd: player.addbuff BR_ItemFood_2
+Id: 29 Code: AD_BR_ItemFood_3 Cmd: player.addbuff BR_ItemFood_3
+Id: 30 Code: AD_BR_ItemFood_4 Cmd: player.addbuff BR_ItemFood_4
+Id: 31 Code: AD_EB_ExpAdd Cmd: player.addbuff EB_ExpAdd
+Id: 32 Code: AD_EB_ExpAdd_More Cmd: player.addbuff EB_ExpAdd_More
+Id: 33 Code: AD_EB_MoveSpdUp1 Cmd: player.addbuff EB_MoveSpdUp1
+Id: 34 Code: AD_EB_MoveSpdUp2 Cmd: player.addbuff EB_MoveSpdUp2
+Id: 35 Code: AD_RB_Stun Cmd: player.addbuff RB_Stun
+Id: 36 Code: AD_RB_MoveSpd Cmd: player.addbuff RB_MoveSpd
+Id: 37 Code: AD_RB_CostRP Cmd: player.addbuff RB_CostRP
+Id: 38 Code: AD_BA_Item_1 Cmd: player.addbuff BA_Item_1
+Id: 39 Code: AD_BA_Item_2 Cmd: player.addbuff BA_Item_2
+Id: 40 Code: AD_BA_Item_3 Cmd: player.addbuff BA_Item_3
+Id: 41 Code: AD_BA_Item_4 Cmd: player.addbuff BA_Item_4
+Id: 42 Code:  Cmd:
+Id: 43 Code: Doself_N_CN_n Cmd: player.interact_over
+Id: 44 Code: Doself_N_QS_n Cmd: player.interact_over
+Id: 45 Code: Doself_N_DT_n Cmd: player.interact_over
+Id: 46 Code: Doself_N_AY_n Cmd: player.interact_over
+Id: 47 Code: Doself_N_CN_n Cmd: story.play Self/Self_N_CN_1
+Id: 48 Code: Doself_N_QS_n Cmd: story.play Self/Self_N_QS_1
+Id: 49 Code: Doself_N_DT_n Cmd: story.play Self/Self_N_DT_1
+Id: 50 Code: Doself_N_AY_n Cmd: story.play Self/Self_N_AY_1
+Id: 51 Code:  Cmd:
+Id: 52 Code: Build_Leave Cmd: conv.speak Build_Leave
+Id: 53 Code: BathLeave Cmd: day.jump_time 21
+Id: 54 Code: BathLeave Cmd: player.interact_over
+Id: 55 Code: BathLeaveCN Cmd: day.jump_time 19
+Id: 56 Code: BathLeaveCN Cmd: player.interact_over
+Id: 57 Code: Bath_N_QS Cmd: npc.touch N_QS Bath 5
+Id: 58 Code: Bath_N_DT Cmd: npc.touch N_DT Bath 5
+Id: 59 Code: Bath_N_AY Cmd: npc.touch N_AY Bath 5
+Id: 60 Code: Bath_N_CN Cmd: npc.touch N_CN Bath 5
+Id: 61 Code: Bath_N_WN Cmd: npc.touch N_WN Bath 5
+Id: 62 Code: Bath_N_XW Cmd: npc.touch N_XW Bath 5
+Id: 63 Code: Bath_N_NW Cmd: npc.touch N_NW Bath 5
+Id: 64 Code: Bath_N_QS Cmd: task.mark Bath_N_QS
+Id: 65 Code: Bath_N_DT Cmd: task.mark Bath_N_DT
+Id: 66 Code: Bath_N_AY Cmd: task.mark Bath_N_AY
+Id: 67 Code: Bath_N_CN Cmd: task.mark Bath_N_CN
+Id: 68 Code: Bath_N_WN Cmd: task.mark Bath_N_WN
+Id: 69 Code: Bath_N_XW Cmd: task.mark Bath_N_XW
+Id: 70 Code: Bath_N_NW Cmd: task.mark Bath_N_NW
+Id: 71 Code:  Cmd: day.jump_time 21
+Id: 72 Code:  Cmd: day.jump_time 21
+Id: 73 Code:  Cmd: day.jump_time 21
+Id: 74 Code:  Cmd: day.jump_time 19
+Id: 75 Code:  Cmd: day.jump_time 21
+Id: 76 Code:  Cmd: day.jump_time 21
+Id: 77 Code: Bath_N_QS Cmd: player.interact_over
+Id: 78 Code: Bath_N_DT Cmd: player.interact_over
+Id: 79 Code: Bath_N_AY Cmd: player.interact_over
+Id: 80 Code: Bath_N_CN Cmd: player.interact_over
+Id: 81 Code: Bath_N_WN Cmd: player.interact_over
+Id: 82 Code: Bath_N_XW Cmd: player.interact_over
+Id: 83 Code: Bath_N_NW Cmd: player.interact_over
+Id: 84 Code: ComLeave Cmd: player.interact_over
+Id: 85 Code: ComOver Cmd: player.interact_over
+Id: 86 Code: menu_cook Cmd: player.interact_over
+Id: 87 Code: menu_cook Cmd: ui.open product_cooking
+Id: 88 Code:  Cmd: conv.speak CookOver
+Id: 89 Code: menu_drug Cmd: player.interact_over
+Id: 90 Code: menu_drug Cmd: ui.open product_drug
+Id: 91 Code:  Cmd: conv.speak DrugOver
+Id: 92 Code: GetDailyTask Cmd: npc.interact_timeline N_SF
+Id: 93 Code: GetDailyTask Cmd: conv.speak DailyOver
+Id: 94 Code: GetDailyTask Cmd: task.get_daily 3
+Id: 95 Code: GetDailyTask Cmd: player.interact_over
+Id: 96 Code: menu_upgrade Cmd: ui.open product_tool
+Id: 97 Code:  Cmd: conv.speak UpgradeOver
+Id: 98 Code: menu_upgrade Cmd: player.interact_over
+Id: 99 Code: Rest_QS Cmd: npc.touch N_QS Hero 1
+Id: 100 Code: Rest_QS Cmd: day.jump_next_resttime_bed
+Id: 101 Code: Rest_QS Cmd: story.play Sleep/Sleep_Def
+Id: 102 Code: Rest_QS Cmd: player.translation Anchor_Wakeup
+Id: 103 Code: Rest_QS Cmd: record.save
+Id: 104 Code: Rest_QS Cmd: player.interact_over
+Id: 105 Code: Rest_DT Cmd: npc.touch N_DT Hero 1
+Id: 106 Code: Rest_DT Cmd: day.jump_next_resttime_bed
+Id: 107 Code: Rest_DT Cmd: story.play Sleep/Sleep_Def
+Id: 108 Code: Rest_DT Cmd: player.translation Anchor_Wakeup
+Id: 109 Code: Rest_DT Cmd: record.save
+Id: 110 Code: Rest_DT Cmd: player.interact_over
+Id: 111 Code: Rest_AY Cmd: npc.touch N_AY Hero 1
+Id: 112 Code: Rest_AY Cmd: day.jump_next_resttime_bed
+Id: 113 Code: Rest_AY Cmd: story.play Sleep/Sleep_Def
+Id: 114 Code: Rest_AY Cmd: player.translation Anchor_Wakeup
+Id: 115 Code: Rest_AY Cmd: record.save
+Id: 116 Code: Rest_AY Cmd: player.interact_over
+Id: 117 Code: Rest_CN Cmd: npc.touch N_CN Hero 1
+Id: 118 Code: Rest_CN Cmd: day.jump_next_resttime_bed
+Id: 119 Code: Rest_CN Cmd: story.play Sleep/Sleep_Def
+Id: 120 Code: Rest_CN Cmd: player.translation Anchor_Wakeup
+Id: 121 Code: Rest_CN Cmd: record.save
+Id: 122 Code: Rest_CN Cmd: player.interact_over
+Id: 123 Code: Rest_WN Cmd: npc.touch N_WN Hero 1
+Id: 124 Code: Rest_WN Cmd: day.jump_next_resttime_bed
+Id: 125 Code: Rest_WN Cmd: story.play Sleep/Sleep_Def
+Id: 126 Code: Rest_WN Cmd: player.translation Anchor_Wakeup
+Id: 127 Code: Rest_WN Cmd: record.save
+Id: 128 Code: Rest_WN Cmd: player.interact_over
+Id: 129 Code: Rest_XW Cmd: npc.touch N_XW Hero 1
+Id: 130 Code: Rest_XW Cmd: day.jump_next_resttime_bed
+Id: 131 Code: Rest_XW Cmd: story.play Sleep/Sleep_Def
+Id: 132 Code: Rest_XW Cmd: player.translation Anchor_Wakeup
+Id: 133 Code: Rest_XW Cmd: record.save
+Id: 134 Code: Rest_XW Cmd: player.interact_over
+Id: 135 Code: Rest_NW Cmd: npc.touch N_NW Hero 1
+Id: 136 Code: Rest_NW Cmd: day.jump_next_resttime_bed
+Id: 137 Code: Rest_NW Cmd: story.play Sleep/Sleep_Def
+Id: 138 Code: Rest_NW Cmd: player.translation Anchor_Wakeup
+Id: 139 Code: Rest_NW Cmd: record.save
+Id: 140 Code: Rest_NW Cmd: player.interact_over
+Id: 141 Code:  Cmd:
+Id: 142 Code: Build_Farm_1 Cmd: ui.open build Farm_1
+Id: 143 Code: Build_Farm_2 Cmd: ui.open build Farm_2
+Id: 144 Code: Build_Farm_3 Cmd: ui.open build Farm_3
+Id: 145 Code: Rest Cmd: day.jump_next_resttime_bed
+Id: 146 Code: Rest Cmd: player.translation Anchor_Wakeup
+Id: 147 Code: Rest Cmd: record.save
+Id: 148 Code: Rest Cmd: player.interact_over
+Id: 149 Code: N_QS_Morning Cmd: story.play Story_Morning_Touch_QS
+Id: 150 Code: N_DT_Morning Cmd: story.play Story_Morning_Touch_DT
+Id: 151 Code: N_AY_Morning Cmd: story.play Story_Morning_Touch_AY
+Id: 152 Code: N_CN_Morning Cmd: story.play Story_Morning_Touch_CN
+Id: 153 Code: N_WN_Morning Cmd: story.play Story_Morning_Touch_WN
+Id: 154 Code: N_XW_Morning Cmd: story.play Story_Morning_Touch_XW
+Id: 155 Code: N_NW_Morning Cmd: story.play Story_Morning_Touch_NW
+Id: 156 Code: N_QS_Morning Cmd: task.mark N_QS_Morning
+Id: 157 Code: N_DT_Morning Cmd: task.mark N_DT_Morning
+Id: 158 Code: N_AY_Morning Cmd: task.mark N_AY_Morning
+Id: 159 Code: N_CN_Morning Cmd: task.mark N_CN_Morning
+Id: 160 Code: N_WN_Morning Cmd: task.mark N_WN_Morning
+Id: 161 Code: N_XW_Morning Cmd: task.mark N_XW_Morning
+Id: 162 Code: N_NW_Morning Cmd: task.mark N_NW_Morning
+Id: 163 Code: N_QS_Morning Cmd: npc.touch N_QS Hero 2
+Id: 164 Code: N_DT_Morning Cmd: npc.touch N_DT Hero 2
+Id: 165 Code: N_AY_Morning Cmd: npc.touch N_AY Hero 2
+Id: 166 Code: N_CN_Morning Cmd: npc.touch N_CN Hero 2
+Id: 167 Code: N_WN_Morning Cmd: npc.touch N_WN Hero 2
+Id: 168 Code: N_XW_Morning Cmd: npc.touch N_XW Hero 2
+Id: 169 Code: N_NW_Morning Cmd: npc.touch N_NW Hero 2
+Id: 170 Code: N_QS_MorningClear Cmd: story.play Story_Morning_Touch_QS
+Id: 171 Code: N_DT_MorningClear Cmd: story.play Story_Morning_Touch_DT
+Id: 172 Code: N_AY_MorningClear Cmd: story.play Story_Morning_Touch_AY
+Id: 173 Code: N_CN_MorningClear Cmd: story.play Story_Morning_Touch_CN
+Id: 174 Code: N_WN_MorningClear Cmd: story.play Story_Morning_Touch_WN
+Id: 175 Code: N_XW_MorningClear Cmd: story.play Story_Morning_Touch_XW
+Id: 176 Code: N_NW_MorningClear Cmd: story.play Story_Morning_Touch_NW
+Id: 177 Code: N_QS_MorningClear Cmd: task.mark N_QS_Morning
+Id: 178 Code: N_DT_MorningClear Cmd: task.mark N_DT_Morning
+Id: 179 Code: N_AY_MorningClear Cmd: task.mark N_AY_Morning
+Id: 180 Code: N_CN_MorningClear Cmd: task.mark N_CN_Morning
+Id: 181 Code: N_WN_MorningClear Cmd: task.mark N_WN_Morning
+Id: 182 Code: N_XW_MorningClear Cmd: task.mark N_XW_Morning
+Id: 183 Code: N_NW_MorningClear Cmd: task.mark N_NW_Morning
+Id: 184 Code: N_QS_MorningClear Cmd: npc.touch N_QS Hero 3
+Id: 185 Code: N_DT_MorningClear Cmd: npc.touch N_DT Hero 3
+Id: 186 Code: N_AY_MorningClear Cmd: npc.touch N_AY Hero 3
+Id: 187 Code: N_CN_MorningClear Cmd: npc.touch N_CN Hero 3
+Id: 188 Code: N_WN_MorningClear Cmd: npc.touch N_WN Hero 3
+Id: 189 Code: N_XW_MorningClear Cmd: npc.touch N_XW Hero 3
+Id: 190 Code: N_NW_MorningClear Cmd: npc.touch N_NW Hero 3
+Id: 191 Code: N_QS_Night Cmd: player.interact_over
+Id: 192 Code: N_DT_Night Cmd: player.interact_over
+Id: 193 Code: N_AY_Night Cmd: player.interact_over
+Id: 194 Code: N_CN_Night Cmd: player.interact_over
+Id: 195 Code: N_WN_Night Cmd: player.interact_over
+Id: 196 Code: N_XW_Night Cmd: player.interact_over
+Id: 197 Code: N_NW_Night Cmd: player.interact_over
+Id: 198 Code: N_QS_Night Cmd: task.mark N_QS_Night
+Id: 199 Code: N_DT_Night Cmd: task.mark N_DT_Night
+Id: 200 Code: N_AY_Night Cmd: task.mark N_AY_Night
+Id: 201 Code: N_CN_Night Cmd: task.mark N_CN_Night
+Id: 202 Code: N_WN_Night Cmd: task.mark N_WN_Night
+Id: 203 Code: N_XW_Night Cmd: task.mark N_XW_Night
+Id: 204 Code: N_NW_Night Cmd: task.mark N_NW_Night
+Id: 205 Code: N_QS_Night Cmd: npc.touch N_QS Room 4
+Id: 206 Code: N_DT_Night Cmd: npc.touch N_DT Room 4
+Id: 207 Code: N_AY_Night Cmd: npc.touch N_AY Room 4
+Id: 208 Code: N_CN_Night Cmd: npc.touch N_CN Room 4
+Id: 209 Code: N_WN_Night Cmd: npc.touch N_WN Room 4
+Id: 210 Code: N_XW_Night Cmd: npc.touch N_XW Room 4
+Id: 211 Code: N_NW_Night Cmd: npc.touch N_NW Room 4
+Id: 212 Code: N_QS_Night Cmd: day.jump_next_resttime_bed
+Id: 213 Code: N_DT_Night Cmd: day.jump_next_resttime_bed
+Id: 214 Code: N_AY_Night Cmd: day.jump_next_resttime_bed
+Id: 215 Code: N_CN_Night Cmd: day.jump_next_resttime_bed
+Id: 216 Code: N_WN_Night Cmd: day.jump_next_resttime_bed
+Id: 217 Code: N_XW_Night Cmd: day.jump_next_resttime_bed
+Id: 218 Code: N_NW_Night Cmd: day.jump_next_resttime_bed
+Id: 219 Code: N_QS_Night Cmd: story.play Sleep/Sleep_Def
+Id: 220 Code: N_DT_Night Cmd: story.play Sleep/Sleep_Def
+Id: 221 Code: N_AY_Night Cmd: story.play Sleep/Sleep_Def
+Id: 222 Code: N_CN_Night Cmd: story.play Sleep/Sleep_Def
+Id: 223 Code: N_WN_Night Cmd: story.play Sleep/Sleep_Def
+Id: 224 Code: N_XW_Night Cmd: story.play Sleep/Sleep_Def
+Id: 225 Code: N_NW_Night Cmd: story.play Sleep/Sleep_Def
+Id: 226 Code: N_QS_Night Cmd: player.translation Anchor_Wakeup
+Id: 227 Code: N_DT_Night Cmd: player.translation Anchor_Wakeup
+Id: 228 Code: N_AY_Night Cmd: player.translation Anchor_Wakeup
+Id: 229 Code: N_CN_Night Cmd: player.translation Anchor_Wakeup
+Id: 230 Code: N_WN_Night Cmd: player.translation Anchor_Wakeup
+Id: 231 Code: N_XW_Night Cmd: player.translation Anchor_Wakeup
+Id: 232 Code: N_NW_Night Cmd: player.translation Anchor_Wakeup
+Id: 233 Code: N_QS_Night Cmd: story.play Sleep/Sleep_QS
+Id: 234 Code: N_DT_Night Cmd: story.play Sleep/Sleep_DT
+Id: 235 Code: N_AY_Night Cmd: story.play Sleep/Sleep_AY
+Id: 236 Code: N_CN_Night Cmd: story.play Sleep/Sleep_CN
+Id: 237 Code: N_WN_Night Cmd: story.play Sleep/Sleep_WN
+Id: 238 Code: N_XW_Night Cmd: story.play Sleep/Sleep_XW
+Id: 239 Code: N_NW_Night Cmd: story.play Sleep/Sleep_NW
+Id: 240 Code: N_QS_Night Cmd: player.translation Anchor_QS_Back
+Id: 241 Code: N_DT_Night Cmd: player.translation Anchor_DT_Bed
+Id: 242 Code: N_AY_Night Cmd: player.translation Anchor_AY_Bed
+Id: 243 Code: N_CN_Night Cmd: player.translation Anchor_CN_Bed
+Id: 244 Code: N_WN_Night Cmd: player.translation Anchor_WN_Home
+Id: 245 Code: N_XW_Night Cmd: player.translation Anchor_XW_Bed
+Id: 246 Code: N_NW_Night Cmd: player.translation Anchor_NW_Bed
+Id: 247 Code: N_QS_Night Cmd: record.save
+Id: 248 Code: N_DT_Night Cmd: record.save
+Id: 249 Code: N_AY_Night Cmd: record.save
+Id: 250 Code: N_CN_Night Cmd: record.save
+Id: 251 Code: N_WN_Night Cmd: record.save
+Id: 252 Code: N_XW_Night Cmd: record.save
+Id: 253 Code: N_NW_Night Cmd: record.save
+Id: 254 Code: BedETT Cmd: conv.speak Rest
+Id: 255 Code: BedETT Cmd: conv.selectbox
+Id: 256 Code: LevelBed Cmd: conv.speak Rest
+Id: 257 Code: BatheETT Cmd: conv.speak BatheETT
+Id: 258 Code: BatheETT Cmd: player.interact_over
+Id: 259 Code: Tree_Desc Cmd: conv.speak Tree_Desc_Talk
+Id: 260 Code: Tree_Desc Cmd: player.interact_over
+Id: 261 Code: Tree_Task_c Cmd: conv.speak Tree_Task_c_Talk
+Id: 262 Code: Tree_Task_c Cmd: player.interact_over
+Id: 263 Code: Table_Desc Cmd: conv.speak Table_Desc_Talk
+Id: 264 Code: Table_Desc Cmd: player.interact_over
+Id: 265 Code: Platform_Desc Cmd: conv.speak Platform_Desc_Talk
+Id: 266 Code: Platform_Desc Cmd: player.interact_over
+Id: 267 Code: Build_Platform Cmd: ui.open build Platform
+Id: 268 Code: Build_Platform Cmd: player.interact_over
+Id: 269 Code: Cow_Desc Cmd: conv.speak Cow_Desc
+Id: 270 Code: Cow_Desc Cmd: player.interact_over
+Id: 271 Code: Cow_Task_c Cmd: conv.speak Cow_Task_c
+Id: 272 Code: Cow_Task_c Cmd: player.interact_over
+Id: 273 Code: Flirt Cmd: conv.selectbox_flirt
+Id: 274 Code: Main_AY_H2_TG_Pre Cmd: conv.speak Main_AY_H2_TG_Pre
+Id: 275 Code: Main_AY_H2_TG_Pre Cmd: player.interact_over
+Id: 276 Code: ReplaceMine Cmd: conv.speak Miner_Talk
+Id: 277 Code: ReplaceMine Cmd: conv.selectbox
+Id: 278 Code: ShopGift Cmd: ui.open shop_fisherman
+Id: 279 Code: ShopGift Cmd: player.interact_over
+Id: 280 Code: Shop_normal Cmd: ui.open shop_normal
+Id: 281 Code: Shop_normal Cmd: player.interact_over
+Id: 282 Code: Shop_special Cmd: ui.open shop_special
+Id: 283 Code: Shop_special Cmd: player.interact_over
+Id: 284 Code: Gift_Shop Cmd: conv.speak Gift_Shop_Talk
+Id: 285 Code: Gift_Shop Cmd: conv.selectbox
+Id: 286 Code: WC_Shop Cmd: conv.speak WC_Shop_Talk
+Id: 287 Code: WC_Shop Cmd: conv.selectbox
+Id: 288 Code: NOR_Shop Cmd: conv.speak NOR_Shop_Talk
+Id: 289 Code: NOR_Shop Cmd: conv.selectbox
+Id: 290 Code: Tree_TaskTip Cmd: conv.speak Tree_TaskTip
+Id: 291 Code: Tree_TaskTip Cmd: player.interact_over
+Id: 292 Code: Platform_TaskTip Cmd: conv.speak Platform_TaskTip
+Id: 293 Code: QS_Task_6S Cmd: conv.speak QS_Task_6S_Desc
+Id: 294 Code: QS_Task_6S Cmd: player.interact_over
+Id: 295 Code: ItemChange2001 Cmd: item.add ItemMaterial2001 5
+Id: 296 Code: ItemChange3001 Cmd: item.add ItemMaterial3001 5
+Id: 297 Code: ItemChange4001 Cmd: item.add ItemMaterial4001 5
+Id: 298 Code: ItemChange1002 Cmd: item.add ItemMaterial1002 5
+Id: 299 Code:  Cmd:
+Id: 300 Code: menu_oldBook Cmd: conv.speak OldBook_delivery
+Id: 301 Code: menu_oldBook Cmd: conv.selectbox
+Id: 302 Code: menu_oldBook_empty Cmd: conv.speak OldBook_empty
+Id: 303 Code: menu_oldBook_empty Cmd: conv.selectbox
+Id: 304 Code: WaterETT Cmd: conv.speak WaterETT
+Id: 305 Code: WaterETT Cmd: player.interact_over
+Id: 306 Code: menu_oldBookShop Cmd: ui.open shop_formula
+Id: 307 Code: menu_oldBookShop Cmd: player.interact_over
+Id: 308 Code:  Cmd: conv.selectbox
+Id: 309 Code: ETT_Upgrade Cmd: conv.speak ETT_Upgrade
+Id: 310 Code: ETT_Upgrade Cmd: conv.selectbox
+Id: 311 Code: DailyTask_420 Cmd: player.interact_over
+Id: 312 Code: killtime Cmd: ui.open clock
+Id: 313 Code: XW_Task_FS_Talk Cmd: conv.speak XW_Task_FS_Talk
+Id: 314 Code: XW_Task_FS_Talk Cmd: player.interact_over
+Id: 315 Code: QS_RJ_Talk Cmd: conv.speak QS_RJ_Talk
+Id: 316 Code: QS_RJ_Talk Cmd: player.interact_over
+Id: 317 Code: BuildPF Cmd: ui.open build Pingfeng
+Id: 318 Code: BuildPF Cmd: player.interact_over
+Id: 319 Code: HD_PF Cmd: conv.selectbox
+Id: 320 Code: BuildTable Cmd: ui.open build Table
+Id: 321 Code: BuildTable Cmd: player.interact_over
+Id: 322 Code: BuildHulu Cmd: ui.open build Hulu
+Id: 323 Code: BuildHulu Cmd: player.interact_over
+Id: 324 Code: BuildTree Cmd: ui.open build Tree
+Id: 325 Code: BuildTree Cmd: player.interact_over
+Id: 326 Code: QS_Daily_Talk Cmd: conv.speak QS_Daily_Talk
+Id: 327 Code: QS_Daily_Talk Cmd: player.interact_over
+Id: 328 Code: N_DT_Heart_Talk Cmd: conv.speak N_DT_Heart_Talk
+Id: 329 Code: N_AY_Heart_Talk Cmd: conv.speak N_AY_Heart_Talk
+Id: 330 Code: N_CN_Heart_Talk Cmd: conv.speak N_CN_Heart_Talk
+Id: 331 Code: N_QS_Heart_Talk Cmd: conv.speak N_QS_Heart_Talk
+Id: 332 Code: N_DT_Heart_Talk Cmd: npc.add_favorability_by_talk N_DT
+Id: 333 Code: N_AY_Heart_Talk Cmd: npc.add_favorability_by_talk N_AY
+Id: 334 Code: N_CN_Heart_Talk Cmd: npc.add_favorability_by_talk N_CN
+Id: 335 Code: N_QS_Heart_Talk Cmd: npc.add_favorability_by_talk N_QS
+Id: 336 Code: N_DT_Heart_Talk Cmd: conv.selectbox
+Id: 337 Code: N_AY_Heart_Talk Cmd: conv.selectbox
+Id: 338 Code: N_CN_Heart_Talk Cmd: conv.selectbox
+Id: 339 Code: N_QS_Heart_Talk Cmd: conv.selectbox
+Id: 340 Code: menu_gift Cmd: ui.open gift
+Id: 341 Code:  Cmd:
+Id: 342 Code: N_DT_AC Cmd: player.interact_over
+Id: 343 Code: N_AY_AC Cmd: player.interact_over
+Id: 344 Code: N_CN_AC Cmd: player.interact_over
+Id: 345 Code: N_QS_AC Cmd: player.interact_over
+Id: 346 Code: N_DT_AC Cmd: npc.acupuncture N_DT
+Id: 347 Code: N_AY_AC Cmd: npc.acupuncture N_AY
+Id: 348 Code: N_CN_AC Cmd: npc.acupuncture N_CN
+Id: 349 Code: N_QS_AC Cmd: npc.acupuncture N_QS
+Id: 350 Code: N_WN_AC Cmd: player.interact_over
+Id: 351 Code: N_WN_AC Cmd: npc.acupuncture N_WN
+Id: 352 Code: N_XW_AC Cmd: player.interact_over
+Id: 353 Code: N_XW_AC Cmd: npc.acupuncture N_XW
+Id: 354 Code: N_NW_AC Cmd: player.interact_over
+Id: 355 Code: N_NW_AC Cmd: npc.acupuncture N_NW
+Id: 356 Code: Obey_DT Cmd: player.interact_over
+Id: 357 Code: Obey_AY Cmd: player.interact_over
+Id: 358 Code: Obey_CN Cmd: player.interact_over
+Id: 359 Code: Obey_QS Cmd: player.interact_over
+Id: 360 Code: Obey_DT Cmd: npc.flirt N_DT
+Id: 361 Code: Obey_AY Cmd: npc.flirt N_AY
+Id: 362 Code: Obey_CN Cmd: npc.flirt N_CN
+Id: 363 Code: Obey_QS Cmd: npc.flirt N_QS
+Id: 364 Code: Obey_WN Cmd: player.interact_over
+Id: 365 Code: Obey_WN Cmd: npc.flirt N_WN
+Id: 366 Code: Obey_XW Cmd: player.interact_over
+Id: 367 Code: Obey_XW Cmd: npc.flirt N_XW
+Id: 368 Code: T_I1_Room_Cry Cmd: conv.speak T_I1_Room_Cry
+Id: 369 Code: T_I1_Room_Sick Cmd: conv.speak T_I1_Room_Sick
+Id: 370 Code: T_I1_Room_Talk Cmd: conv.speak T_I1_Room_Talk
+Id: 371 Code: T_I1_Room_Wait Cmd: conv.speak T_I1_Room_Wait
+Id: 372 Code: T_I1_Outdoor_Wait Cmd: conv.speak T_I1_Outdoor_Wait
+Id: 373 Code: T_I1_Outdoor_Tea Cmd: conv.speak T_I1_Outdoor_Tea
+Id: 374 Code: T_I1_Outdoor_FatEat Cmd: conv.speak T_I1_Outdoor_FatEat
+Id: 375 Code: T_I1_Outdoor_TalkEat Cmd: conv.speak T_I1_Outdoor_TalkEat
+Id: 376 Code: T_I1_Outdoor_TalkH Cmd: conv.speak T_I1_Outdoor_TalkH
+Id: 377 Code: T_I1_Outdoor_Child Cmd: conv.speak T_I1_Outdoor_Child
+Id: 378 Code: T_I1_Outdoor_Fisher Cmd: conv.speak T_I1_Outdoor_Fisher
+Id: 379 Code: T_I1_Wharf_Captain Cmd: conv.speak T_I1_Wharf_Captain
+Id: 380 Code: T_I1_Wharf_Talk Cmd: conv.speak T_I1_Wharf_Talk
+Id: 381 Code: T_I2_Stage_EntryTalk Cmd: conv.speak T_I2_Stage_EntryTalk
+Id: 382 Code: T_I2_Stage_ShopShan Cmd: conv.speak T_I2_Stage_ShopShan
+Id: 383 Code: T_I2_Stage_Lantern Cmd: conv.speak T_I2_Stage_Lantern
+Id: 384 Code: T_I2_Stage_StageTalk1 Cmd: conv.speak T_I2_Stage_StageTalk1
+Id: 385 Code: T_I2_Stage_StageTalk2 Cmd: conv.speak T_I2_Stage_StageTalk2
+Id: 386 Code: T_I3_Palace_Weibing Cmd: conv.speak T_I3_Palace_Weibing
+Id: 387 Code: T_I3_Palace_Gongnv Cmd: conv.speak T_I3_Palace_Gongnv
+Id: 388 Code: T_I1_Room_Cry Cmd: player.interact_over
+Id: 389 Code: T_I1_Room_Sick Cmd: player.interact_over
+Id: 390 Code: T_I1_Room_Talk Cmd: player.interact_over
+Id: 391 Code: T_I1_Room_Wait Cmd: player.interact_over
+Id: 392 Code: T_I1_Outdoor_Wait Cmd: player.interact_over
+Id: 393 Code: T_I1_Outdoor_Tea Cmd: player.interact_over
+Id: 394 Code: T_I1_Outdoor_FatEat Cmd: player.interact_over
+Id: 395 Code: T_I1_Outdoor_TalkEat Cmd: player.interact_over
+Id: 396 Code: T_I1_Outdoor_TalkH Cmd: player.interact_over
+Id: 397 Code: T_I1_Outdoor_Child Cmd: player.interact_over
+Id: 398 Code: T_I1_Outdoor_Fisher Cmd: conv.selectbox
+Id: 399 Code: T_I1_Wharf_Captain Cmd: player.interact_over
+Id: 400 Code: T_I1_Wharf_Talk Cmd: player.interact_over
+Id: 401 Code: T_I2_Stage_EntryTalk Cmd: player.interact_over
+Id: 402 Code: T_I2_Stage_ShopShan Cmd: conv.selectbox
+Id: 403 Code: T_I2_Stage_Lantern Cmd: conv.selectbox
+Id: 404 Code: T_I2_Stage_StageTalk1 Cmd: player.interact_over
+Id: 405 Code: T_I2_Stage_StageTalk2 Cmd: player.interact_over
+Id: 406 Code: T_I3_Palace_Weibing Cmd: player.interact_over
+Id: 407 Code: T_I3_Palace_Gongnv Cmd: player.interact_over
+Id: 408 Code: Portal_1 Cmd: conv.selectbox
+Id: 409 Code: Portal_2 Cmd: conv.selectbox
+Id: 410 Code: Portal_3 Cmd: conv.selectbox
+Id: 411 Code: Portal_4 Cmd: conv.selectbox
+Id: 412 Code: Portal_5 Cmd: conv.selectbox
+Id: 413 Code: Destination Cmd: player.interact_over
+Id: 414 Code: Destination Cmd: ui.bat_menu Menu_Portal
+Id: 415 Code: Destination_1 Cmd: player.trans_well Anchor_Portal_1 Translate/Translate_Default
+Id: 416 Code: Destination_2 Cmd: player.trans_well Anchor_Portal_2 Translate/Translate_2
+Id: 417 Code: Destination_3 Cmd: player.trans_well Anchor_Portal_3 Translate/Translate_3
+Id: 418 Code: Destination_4 Cmd: player.trans_well Anchor_Portal_4 Translate/Translate_4
+Id: 419 Code: Destination_5 Cmd: player.trans_well Anchor_Portal_5 Translate/Translate_5
+Id: 420 Code:  Cmd:
+Id: 421 Code:  Cmd:
+Id: 422 Code:  Cmd:
+Id: 423 Code:  Cmd:
+Id: 424 Code:  Cmd:
+Id: 425 Code: Destination_1 Cmd: record.save
+Id: 426 Code: Destination_2 Cmd: record.save
+Id: 427 Code: Destination_3 Cmd: record.save
+Id: 428 Code: Destination_4 Cmd: record.save
+Id: 429 Code: Destination_5 Cmd: record.save
+Id: 430 Code: Destination_1 Cmd: player.interact_over
+Id: 431 Code: Destination_2 Cmd: player.interact_over
+Id: 432 Code: Destination_3 Cmd: player.interact_over
+Id: 433 Code: Destination_4 Cmd: player.interact_over
+Id: 434 Code: Destination_5 Cmd: player.interact_over
+Id: 435 Code: DailyBathe Cmd: player.bath
+Id: 436 Code: DailyBathe Cmd: item.add ItemConBath 1
+Id: 437 Code: DailyBathe Cmd: player.interact_over
+Id: 438 Code: Work Cmd: player.work
+Id: 439 Code: Work Cmd: item.add ItemConWork 1
+Id: 440 Code: SelectBox Cmd: conv.selectbox
+Id: 441 Code: SleepTip Cmd: conv.speak SleepTalk
+Id: 442 Code: SleepTip Cmd: conv.selectbox
+Id: 443 Code: SleepTip_Only Cmd: conv.speak SleepTalk
+Id: 444 Code: SleepTip_Only Cmd: player.interact_over
+Id: 445 Code: SleepTip_LiangTing Cmd: conv.speak SleepTip_LiangTing
+Id: 446 Code: SleepTip_LiangTing Cmd: player.interact_over
+Id: 447 Code: SleepTip_AfterHeal Cmd: conv.speak SleepTip_AfterHeal
+Id: 448 Code: SleepTip_AfterHeal Cmd: player.interact_over
+Id: 449 Code: SleepTip_PF Cmd: conv.speak SleepTip_PF
+Id: 450 Code: SleepTip_PF Cmd: player.interact_over
+Id: 451 Code: SleepTip_Table Cmd: conv.speak SleepTip_Table
+Id: 452 Code: SleepTip_Table Cmd: player.interact_over
+Id: 453 Code: SleepTip_Hulu Cmd: conv.speak SleepTip_Hulu
+Id: 454 Code: SleepTip_Hulu Cmd: player.interact_over
+Id: 455 Code: SleepLeave Cmd: player.interact_over
+Id: 456 Code: BuildUpgrade Cmd: ui.open build Tree
+Id: 457 Code: BuildUpgrade Cmd: player.interact_over
+Id: 458 Code: LevelMax Cmd: conv.speak LevelMax
+Id: 459 Code: LevelMax Cmd: conv.selectbox
+Id: 460 Code: Exercise Cmd: player.exercise
+Id: 461 Code: Train_1 Cmd: story.play Train/Train_1
+Id: 462 Code: Train_2 Cmd: story.play Train/Train_2
+Id: 463 Code: Train_3 Cmd: story.play Train/Train_3
+Id: 464 Code: Train_4 Cmd: story.play Train/Train_4
+Id: 465 Code: Train_5 Cmd: story.play Train/Train_5
+Id: 466 Code: BuildPortal_5 Cmd: ui.open build Portal_5
+Id: 467 Code: BuildPortal_5 Cmd: player.interact_over
+Id: 468 Code: BuildPortal_4 Cmd: ui.open build Portal_4
+Id: 469 Code: BuildPortal_4 Cmd: player.interact_over
+Id: 470 Code: BuildPortal_3 Cmd: ui.open build Portal_3
+Id: 471 Code: BuildPortal_3 Cmd: player.interact_over
+Id: 472 Code: BuildPortal_2 Cmd: ui.open build Portal_2
+Id: 473 Code: BuildPortal_2 Cmd: player.interact_over
+Id: 474 Code: ShopFormula Cmd: ui.open shop_formula
+Id: 475 Code: ShopFormula Cmd: conv.selectbox
+Id: 476 Code: ShopFisherman Cmd: conv.speak FishTalk
+Id: 477 Code: ShopFisherman Cmd: player.interact_over
+Id: 478 Code: FishTalk_c Cmd: conv.speak FishTalk_c
+Id: 479 Code: FishTalk_c Cmd: player.interact_over
+Id: 480 Code: Verse Cmd: conv.speak Verse
+Id: 481 Code: Verse Cmd: ui.open verse
+Id: 482 Code: Verse Cmd: player.interact_over
+Id: 483 Code: DT_Fear_Talk Cmd: conv.speak DT_Fear_Talk
+Id: 484 Code: DT_Fear_Talk Cmd: player.interact_over
+Id: 485 Code: Portal_1_Talk Cmd: conv.speak Portal_1_Talk
+Id: 486 Code: Portal_1_Talk Cmd: player.interact_over
+Id: 487 Code: CabinetsUpgrade Cmd: ui.open build Cabinets
+Id: 488 Code: CabinetsUpgrade Cmd: player.interact_over
+Id: 489 Code: CabinetsUI Cmd: player.sales_box
+Id: 490 Code: CabinetsUI Cmd: player.interact_over
+Id: 491 Code: T_I1_Affair_Child Cmd: conv.speak T_I1_Affair_Child
+Id: 492 Code: T_I1_Affair_W Cmd: conv.speak T_I1_Affair_W
+Id: 493 Code: T_I1_Affair_M Cmd: conv.speak T_I1_Affair_M
+Id: 494 Code: T_I1_PeekDT_M Cmd: conv.speak T_I1_PeekDT_M
+Id: 495 Code: T_I1_PeekDT_W Cmd: conv.speak T_I1_PeekDT_W
+Id: 496 Code: T_I1_EP Cmd: conv.speak T_I1_EP
+Id: 497 Code: T_I1_Violence Cmd: conv.speak T_I1_Violence
+Id: 498 Code: T_I1_Wharf_Whore Cmd: conv.speak T_I1_Wharf_Whore
+Id: 499 Code: T_I1_Wharf_Chaungong Cmd: conv.speak T_I1_Wharf_Chaungong
+Id: 500 Code: T_I2_Bathe_Entry Cmd: conv.speak T_I2_Bathe_Entry
+Id: 501 Code: T_I2_Farm_M Cmd: conv.speak T_I2_Farm_M
+Id: 502 Code: T_I2_Stage_M Cmd: conv.speak T_I2_Stage_M
+Id: 503 Code: T_I2_Farm_W Cmd: conv.speak T_I2_Farm_W
+Id: 504 Code: T_I1_Encounter_W Cmd: conv.speak T_I1_Encounter_W
+Id: 505 Code: T_I1_Room_Strong Cmd: conv.speak T_I1_Room_Strong
+Id: 506 Code: T_I1_Affair_Child Cmd: player.interact_over
+Id: 507 Code: T_I1_Affair_W Cmd: player.interact_over
+Id: 508 Code: T_I1_Affair_M Cmd: player.interact_over
+Id: 509 Code: T_I1_PeekDT_M Cmd: player.interact_over
+Id: 510 Code: T_I1_PeekDT_W Cmd: player.interact_over
+Id: 511 Code: T_I1_EP Cmd: player.interact_over
+Id: 512 Code: T_I1_Violence Cmd: player.interact_over
+Id: 513 Code: T_I1_Wharf_Whore Cmd: player.interact_over
+Id: 514 Code: T_I1_Wharf_Chaungong Cmd: player.interact_over
+Id: 515 Code: T_I2_Bathe_Entry Cmd: player.interact_over
+Id: 516 Code: T_I2_Farm_M Cmd: player.interact_over
+Id: 517 Code: T_I2_Stage_M Cmd: player.interact_over
+Id: 518 Code: T_I2_Farm_W Cmd: conv.selectbox
+Id: 519 Code: T_I1_Encounter_W Cmd: player.interact_over
+Id: 520 Code: T_I1_Room_Strong Cmd: player.interact_over
+Id: 521 Code: T_I2_Farm_M_H5 Cmd: conv.speak T_I2_Farm_M_H5
+Id: 522 Code: T_I2_Farm_M_H5 Cmd: player.interact_over
+Id: 523 Code: T_I2_Stage_M_H5 Cmd: conv.speak T_I2_Stage_M_H5
+Id: 524 Code: T_I2_Stage_M_H5 Cmd: player.interact_over
+Id: 525 Code: Main_AY_H2_TG_Talk Cmd: conv.speak Main_AY_H2_TG_Talk
+Id: 526 Code: Main_AY_H2_TG_Talk Cmd: Item.add ItemMain_AY_H2_TG 1
+Id: 527 Code: Main_AY_H2_TG_Error Cmd: conv.speak Main_AY_H2_TG_Error
+Id: 528 Code: Main_AY_H2_TG_Done Cmd: conv.speak Main_AY_H2_TG_Done
+Id: 529 Code: Main_AY_H2_TG_Talk Cmd: player.interact_over
+Id: 530 Code: Main_AY_H2_TG_Error Cmd: player.interact_over
+Id: 531 Code: Main_AY_H2_TG_Done Cmd: player.interact_over
+Id: 532 Code: Main_AY_H3_Pre_Talk Cmd: conv.speak Main_AY_H3_Pre_Talk
+Id: 533 Code: Main_AY_H3_Pre_Talk Cmd: player.interact_over
+Id: 534 Code: Main_AY_H1S_Talk Cmd: conv.speak Main_AY_H1S_Talk
+Id: 535 Code: Main_AY_H1S_Talk Cmd: player.interact_over
+Id: 536 Code: Main_AY_H2S_Pre Cmd: conv.speak Main_AY_H2S_Pre
+Id: 537 Code: Main_AY_H2S_Pre Cmd: player.interact_over
+Id: 538 Code: Main_AY_H2_TG_Talk_1 Cmd: conv.speak Main_AY_H2_TG_Talk
+Id: 539 Code: Main_AY_H2_TG_Talk_1 Cmd: task.take Main_AY_H2_Pre_S
+Id: 540 Code: Main_AY_H2_TG_Talk_1 Cmd: Item.add ItemMain_AY_H2_TG 1
+Id: 541 Code: Main_AY_H2_TG_Talk_1 Cmd: player.interact_over
+Id: 542 Code: EC_Affair Cmd: story.play Encounter/EC_Affair
+Id: 543 Code: EC_Bathe Cmd: story.play Encounter/EC_Bathe
+Id: 544 Code: EC_Dancer Cmd: story.play Encounter/EC_Dancer
+Id: 545 Code: EC_Encounter Cmd: story.play Encounter/EC_Encounter
+Id: 546 Code: EC_Farm Cmd: story.play Encounter/EC_Farm
+Id: 547 Code: EC_LesPeek Cmd: story.play Encounter/EC_LesPeek
+Id: 548 Code: EC_Mother Cmd: story.play Encounter/EC_Mother
+Id: 549 Code: EC_PeekDT Cmd: story.play Encounter/EC_PeekDT
+Id: 550 Code: EC_Semen Cmd: story.play Encounter/EC_Semen
+Id: 551 Code: EC_Violence Cmd: story.play Encounter/EC_Violence
+Id: 552 Code: EC_Affair Cmd: task.mark Task_EC_Affair
+Id: 553 Code: EC_Bathe Cmd: task.mark Task_EC_Bathe
+Id: 554 Code: EC_Dancer Cmd: task.mark Task_EC_Dancer
+Id: 555 Code: EC_Encounter Cmd: task.mark Task_EC_Encounter
+Id: 556 Code: EC_Farm Cmd: task.mark Task_EC_Farm
+Id: 557 Code: EC_LesPeek Cmd: task.mark Task_EC_LesPeek
+Id: 558 Code: EC_Mother Cmd: task.mark Task_EC_Mother
+Id: 559 Code: EC_PeekDT Cmd: task.mark Task_EC_PeekDT
+Id: 560 Code: EC_Semen Cmd: task.mark Task_EC_Semen
+Id: 561 Code: EC_Violence Cmd: task.mark Task_EC_Violence
+Id: 562 Code: EC_Affair Cmd: item.add ItemEC_Affair 1
+Id: 563 Code: EC_Bathe Cmd: item.add ItemEC_Bathe 1
+Id: 564 Code: EC_Dancer Cmd: item.add ItemEC_Dancer 1
+Id: 565 Code: EC_Encounter Cmd: item.add ItemEC_Encounter 1
+Id: 566 Code: EC_Farm Cmd: item.add ItemEC_Farm 1
+Id: 567 Code: EC_LesPeek Cmd: item.add ItemEC_LesPeek 1
+Id: 568 Code: EC_Mother Cmd: item.add ItemEC_Mother 1
+Id: 569 Code: EC_PeekDT Cmd: item.add ItemEC_PeekDT 1
+Id: 570 Code: EC_Semen Cmd: item.add ItemEC_Semen 1
+Id: 571 Code: EC_Violence Cmd: item.add ItemEC_Violence 1
+Id: 572 Code:  Cmd: day.jump_time 15
+Id: 573 Code:  Cmd: day.jump_time 21
+Id: 574 Code:  Cmd: day.jump_time 21
+Id: 575 Code:  Cmd: day.jump_time 13
+Id: 576 Code:  Cmd: day.jump_time 19
+Id: 577 Code:  Cmd: day.jump_time 15
+Id: 578 Code:  Cmd: day.jump_time 15
+Id: 579 Code:  Cmd: day.jump_time 17
+Id: 580 Code:  Cmd: day.jump_time 13
+Id: 581 Code:  Cmd: day.jump_time 11
+Id: 582 Code: EC_Affair Cmd: player.interact_over
+Id: 583 Code: EC_Bathe Cmd: player.interact_over
+Id: 584 Code: EC_Dancer Cmd: player.interact_over
+Id: 585 Code: EC_Encounter Cmd: player.interact_over
+Id: 586 Code: EC_Farm Cmd: player.interact_over
+Id: 587 Code: EC_LesPeek Cmd: player.interact_over
+Id: 588 Code: EC_Mother Cmd: player.interact_over
+Id: 589 Code: EC_PeekDT Cmd: player.interact_over
+Id: 590 Code: EC_Semen Cmd: player.interact_over
+Id: 591 Code: EC_Violence Cmd: player.interact_over
+Id: 592 Code: PF_Talk Cmd: conv.speak PF_Talk
+Id: 593 Code: QS_DoorTalk Cmd: conv.speak QS_Door_Talk
+Id: 594 Code: QS_DoorTalk Cmd: player.interact_over
+Id: 595 Code: Build_Farm_QS Cmd: ui.open build Farm_QS
+Id: 596 Code: Build_Farm_QS Cmd: player.interact_over
+Id: 597 Code: GiftSeed Cmd: conv.speak GiftSeed
+Id: 598 Code: GiftSeed Cmd: item.reward Seed
+Id: 599 Code: GiftSeed Cmd: item.add ItemConVeg 1
+Id: 600 Code: GiftSeed Cmd: player.interact_over
+Id: 601 Code: GiftSeed_c Cmd: conv.speak GiftSeed_c
+Id: 602 Code: GiftSeed_c Cmd: player.interact_over
+Id: 603 Code: Build_Farmhouse_Pre Cmd: conv.speak Task_Build_Farmhouse_Pre
+Id: 604 Code: Build_Farmhouse_Pre Cmd: task.take Task_Build_Farmhouse
+Id: 605 Code: Build_Farmhouse_Pre Cmd: player.interact_over
+Id: 606 Code: Build_Farmhouse_Post Cmd: conv.speak Task_Build_Farmhouse_Post
+Id: 607 Code: Build_Farmhouse_Post Cmd: task.delivery Task_Build_Farmhouse
+Id: 608 Code: Build_Farmhouse_Post Cmd: player.interact_over
+Id: 609 Code: Build_Net_Pre Cmd: conv.speak Task_Build_Net_Pre
+Id: 610 Code: Build_Net_Pre Cmd: task.take Task_Build_Net_Pre
+Id: 611 Code: Build_Net_Pre Cmd: player.interact_over
+Id: 612 Code: Task_Build_Net_Next Cmd: task.take Task_Build_Net
+Id: 613 Code: Build_Net_Post Cmd: conv.speak Task_Build_Net_Post
+Id: 614 Code: Build_Net_Post Cmd: task.delivery Task_Build_Net
+Id: 615 Code: Build_Net_Post Cmd: player.interact_over
+Id: 616 Code: Needle_Pre Cmd: conv.speak Task_Needle_Pre
+Id: 617 Code: Needle_Pre Cmd: task.take Task_Needle
+Id: 618 Code: Needle_Pre Cmd: player.interact_over
+Id: 619 Code: Needle_Post Cmd: conv.speak Task_Needle_Post
+Id: 620 Code: Needle_Post Cmd: task.delivery Task_Needle
+Id: 621 Code: Needle_Post Cmd: player.interact_over
+Id: 622 Code: Build_Farmhouse Cmd: ui.open build Farmhouse
+Id: 623 Code: Build_Farmhouse Cmd: player.interact_over
+Id: 624 Code: Build_Net Cmd: ui.open build Net
+Id: 625 Code: Build_Net Cmd: player.interact_over
+Id: 626 Code: Build_Bridge Cmd: ui.open build Bridge
+Id: 627 Code: Build_Bridge Cmd: player.interact_over
+Id: 628 Code: Build_LiangTing Cmd: ui.open build LiangTing
+Id: 629 Code: Build_LiangTing Cmd: player.interact_over
+Id: 630 Code: Build_House Cmd: ui.open build House
+Id: 631 Code: Build_House Cmd: player.interact_over
+Id: 632 Code: Build_HouseXW Cmd: ui.open build HouseXW
+Id: 633 Code: Build_HouseXW Cmd: player.interact_over
+Id: 634 Code: Build_Bed Cmd: ui.open build Bed
+Id: 635 Code: Build_Bed Cmd: player.interact_over
+Id: 636 Code: Build_IncenseBurner Cmd: ui.open build IncenseBurner
+Id: 637 Code: Build_IncenseBurner Cmd: player.interact_over
+Id: 638 Code: TodayWorkOver Cmd: conv.speak TodayWorkOver
+Id: 639 Code: TodayWorkOver Cmd: player.interact_over
+Id: 640 Code: ReplaceCopper Cmd: item.replace ItemMaterial1001 10 ItemMaterial2001 5
+Id: 641 Code: ReplaceSilver Cmd: item.replace ItemMaterial2001 10 ItemMaterial3001 5
+Id: 642 Code: ReplaceGolden Cmd: item.replace ItemMaterial3001 10 ItemMaterial4001 5
+Id: 643 Code: Day_QS_Daily Cmd: conv.speak Day_QS_Daily
+Id: 644 Code: Day_QS_Daily Cmd: player.interact_over
+Id: 645 Code: QS_Task_SF_Post Cmd: conv.speak QS_Task_SF_Post
+Id: 646 Code: QS_Task_SF_Post Cmd: player.interact_over
+Id: 647 Code: GmItem Cmd: conv.speak GmItemTlak
+Id: 648 Code: GmItem Cmd: item.add ItemGM 1
+Id: 649 Code: GmItem Cmd: conv.selectbox
+Id: 650 Code: GmGold Cmd: conv.speak GmGoldTlak
+Id: 651 Code: GmGold Cmd: item.remove ItemGM 5
+Id: 652 Code: GmGold Cmd: item.add ItemGold 5000
+Id: 653 Code: GmGold Cmd: item.add ItemGM_Null 1
+Id: 654 Code: GmGold Cmd: conv.selectbox
+Id: 655 Code: TaskOreChange_Pre Cmd: conv.speak TaskOreChange_Pre
+Id: 656 Code: TaskOreChange_Pre Cmd: task.take TaskOreChange
+Id: 657 Code: TaskOreChange_Pre Cmd: player.interact_over
+Id: 658 Code: TaskOreChange_Post Cmd: conv.speak TaskOreChange_Post
+Id: 659 Code: TaskOreChange_Post Cmd: task.delivery TaskOreChange
+Id: 660 Code: TaskOreChange_Post Cmd: player.interact_over
+Id: 661 Code: GM_Null Cmd: conv.speak GmNullTlak
+Id: 662 Code: GM_Null Cmd: player.interact_over
+Id: 663 Code: Build_Net_Tip Cmd: conv.speak Build_Net_Tip
+Id: 664 Code: Build_Net_Tip Cmd: player.interact_over
+Id: 665 Code: Illusion Cmd: conv.selectbox_illusion
+Id: 666 Code: UseSoulStone Cmd: conv.speak Task_Portal_Guide
+Id: 667 Code: UseSoulStone Cmd: task.take Task_Portal_Guide
+Id: 668 Code: UseSoulStone Cmd: player.interact_over
+Id: 669 Code: GameWN Cmd: player.interact_over
+Id: 670 Code: GameXW Cmd: player.interact_over
+Id: 671 Code: GameWN Cmd: npc.competition N_WN 2
+Id: 672 Code: GameXW Cmd: npc.dredge N_XW 2
+Id: 673 Code: CageTouch Cmd: npc.touch N_YR Cage_3 5
+Id: 674 Code: CallGirl Cmd: conv.selectbox_call_girl
+Id: 675 Code: AddItemXuanShuang Cmd: item.add ItemFlirt_N_XW 30
+Id: 676 Code: AddItemGift501 Cmd: item.add ItemGift501 50
+Id: 677 Code: N_XW_Injuried_Talk Cmd: conv.speak N_XW_Talk_C2_1
+Id: 678 Code: N_XW_Injuried_Talk Cmd: conv.selectbox
+Id: 679 Code: N_XW_Talk_3_F Cmd: conv.speak N_XW_Talk_1
+Id: 680 Code: N_XW_Talk_3_F Cmd: player.interact_over
+Id: 681 Code: Gold Cmd: item.add ItemGold 10000
+Id: 682 Code: Copper Cmd: item.add ItemMaterial2001 10
+Id: 683 Code: Silver Cmd: item.add ItemMaterial3001 10
+Id: 684 Code: CuiYiner Cmd: item.add ItemFlirt_N_QS 30
+Id: 685 Code: Tong Cmd: item.add ItemFlirt_N_AY 30
+Id: 686 Code: Jingjing Cmd: item.add ItemFlirt_N_DT 30
+Id: 687 Code: MurongYan Cmd: item.add ItemFlirt_N_CN 30
+Id: 688 Code: FeiYan Cmd: item.add ItemFlirt_N_WN 30
+Id: 689 Code: SetPosition Cmd: player.translation Anchor_Shop
+Id: 690 Code: Food Cmd: item.add ItemFood107 5
+Id: 691 Code: XuanShuang Cmd: item.add ItemFlirt_N_XW 30
+Id: 692 Code: NangongLing Cmd: item.add ItemFlirt_N_NW 30
+Id: 693 Code: BuySexNoCoins Cmd: conv.speak BuySexNoCoins
+Id: 694 Code: BuySexNoCoins Cmd: player.interact_over
+Id: 695 Code: Main_NW_Weibing Cmd: conv.speak Main_NW_Weibing
+Id: 696 Code: Main_NW_Weibing Cmd: player.interact_over
+Id: 697 Code: N_General Cmd: conv.speak N_General_T
+Id: 698 Code: N_General Cmd: player.interact_over
+Id: 699 Code: N_DS Cmd: conv.speak N_DS_T
+Id: 700 Code: N_DS Cmd: player.interact_over
+Id: 701 Code: N_TJ Cmd: conv.speak N_TJ_T
+Id: 702 Code: N_TJ Cmd: player.interact_over
+Id: 703 Code: Build_MSG_2 Cmd: ui.open build MSG_2
+Id: 704 Code: Build_MSG_3 Cmd: ui.open build MSG_3
+Id: 705 Code: Build_MSG_4 Cmd: ui.open build MSG_4
+Id: 706 Code: Build_MSG_5 Cmd: ui.open build MSG_5
+Id: 707 Code: Build_Stage Cmd: ui.open build Stage
+Id: 708 Code: Build_MSG_2 Cmd: player.interact_over
+Id: 709 Code: Build_MSG_3 Cmd: player.interact_over
+Id: 710 Code: Build_MSG_4 Cmd: player.interact_over
+Id: 711 Code: Build_MSG_5 Cmd: player.interact_over
+Id: 712 Code: Build_Stage Cmd: player.interact_over
+Id: 713 Code: Touch_Fail Cmd: conv.speak Touch_Fail
+Id: 714 Code: Touch_Fail Cmd: player.interact_over
+Id: 715 Code: Touch_MSG_2 Cmd: npc.touch N_YR Cage_3 5
+Id: 716 Code: Touch_MSG_3 Cmd: npc.touch N_YR Cage_3 5
+Id: 717 Code: Touch_MSG_4 Cmd: npc.touch N_YR Cage_3 5
+Id: 718 Code: Touch_MSG_5 Cmd: npc.touch N_YR Cage_3 5
+Id: 719 Code: N_DS_2 Cmd: conv.speak N_DS_T2
+Id: 720 Code: N_DS_2 Cmd: player.interact_over
+Id: 721 Code: Call_EC_Affair Cmd: conv.selectbox
+Id: 722 Code: Call_EC_Bathe Cmd: conv.selectbox
+Id: 723 Code: Call_EC_Dancer Cmd: conv.selectbox
+Id: 724 Code: Call_EC_Encounter Cmd: conv.selectbox
+Id: 725 Code: Call_EC_Farm Cmd: conv.selectbox
+Id: 726 Code: Call_EC_LesPeek Cmd: conv.selectbox
+Id: 727 Code: Call_EC_PeekDT Cmd: conv.selectbox
+Id: 728 Code: Call_EC_Semen Cmd: conv.selectbox
+Id: 729 Code: Call_EC_Violence Cmd: conv.selectbox
+Id: 730 Code: Touch_CN_EC_Affair Cmd: player.interact_over
+Id: 731 Code: Touch_AY_EC_Affair Cmd: player.interact_over
+Id: 732 Code: Touch_DT_EC_Affair Cmd: player.interact_over
+Id: 733 Code: Touch_QS_EC_Affair Cmd: player.interact_over
+Id: 734 Code: Touch_WN_EC_Affair Cmd: player.interact_over
+Id: 735 Code: Touch_XW_EC_Affair Cmd: player.interact_over
+Id: 736 Code: Touch_NW_EC_Affair Cmd: player.interact_over
+Id: 737 Code: Touch_CN_EC_Affair Cmd: npc.touch N_CN EC_Affair 0
+Id: 738 Code: Touch_AY_EC_Affair Cmd: npc.touch N_AY EC_Affair 0
+Id: 739 Code: Touch_DT_EC_Affair Cmd: npc.touch N_DT EC_Affair 0
+Id: 740 Code: Touch_QS_EC_Affair Cmd: npc.touch N_QS EC_Affair 0
+Id: 741 Code: Touch_WN_EC_Affair Cmd: npc.touch N_WN EC_Affair 0
+Id: 742 Code: Touch_XW_EC_Affair Cmd: npc.touch N_XW EC_Affair 0
+Id: 743 Code: Touch_NW_EC_Affair Cmd: npc.touch N_NW EC_Affair 0
+Id: 744 Code: Touch_CN_EC_Bathe Cmd: player.interact_over
+Id: 745 Code: Touch_AY_EC_Bathe Cmd: player.interact_over
+Id: 746 Code: Touch_DT_EC_Bathe Cmd: player.interact_over
+Id: 747 Code: Touch_QS_EC_Bathe Cmd: player.interact_over
+Id: 748 Code: Touch_WN_EC_Bathe Cmd: player.interact_over
+Id: 749 Code: Touch_XW_EC_Bathe Cmd: player.interact_over
+Id: 750 Code: Touch_NW_EC_Bathe Cmd: player.interact_over
+Id: 751 Code: Touch_CN_EC_Bathe Cmd: npc.touch N_CN EC_Bathe 0
+Id: 752 Code: Touch_AY_EC_Bathe Cmd: npc.touch N_AY EC_Bathe 0
+Id: 753 Code: Touch_DT_EC_Bathe Cmd: npc.touch N_DT EC_Bathe 0
+Id: 754 Code: Touch_QS_EC_Bathe Cmd: npc.touch N_QS EC_Bathe 0
+Id: 755 Code: Touch_WN_EC_Bathe Cmd: npc.touch N_WN EC_Bathe 0
+Id: 756 Code: Touch_XW_EC_Bathe Cmd: npc.touch N_XW EC_Bathe 0
+Id: 757 Code: Touch_NW_EC_Bathe Cmd: npc.touch N_NW EC_Bathe 0
+Id: 758 Code: Touch_CN_EC_Dancer Cmd: player.interact_over
+Id: 759 Code: Touch_AY_EC_Dancer Cmd: player.interact_over
+Id: 760 Code: Touch_DT_EC_Dancer Cmd: player.interact_over
+Id: 761 Code: Touch_QS_EC_Dancer Cmd: player.interact_over
+Id: 762 Code: Touch_WN_EC_Dancer Cmd: player.interact_over
+Id: 763 Code: Touch_XW_EC_Dancer Cmd: player.interact_over
+Id: 764 Code: Touch_NW_EC_Dancer Cmd: player.interact_over
+Id: 765 Code: Touch_CN_EC_Dancer Cmd: npc.touch N_CN EC_Dancer 0
+Id: 766 Code: Touch_AY_EC_Dancer Cmd: npc.touch N_AY EC_Dancer 0
+Id: 767 Code: Touch_DT_EC_Dancer Cmd: npc.touch N_DT EC_Dancer 0
+Id: 768 Code: Touch_QS_EC_Dancer Cmd: npc.touch N_QS EC_Dancer 0
+Id: 769 Code: Touch_WN_EC_Dancer Cmd: npc.touch N_WN EC_Dancer 0
+Id: 770 Code: Touch_XW_EC_Dancer Cmd: npc.touch N_XW EC_Dancer 0
+Id: 771 Code: Touch_NW_EC_Dancer Cmd: npc.touch N_NW EC_Dancer 0
+Id: 772 Code: Touch_CN_EC_Encounter Cmd: player.interact_over
+Id: 773 Code: Touch_AY_EC_Encounter Cmd: player.interact_over
+Id: 774 Code: Touch_DT_EC_Encounter Cmd: player.interact_over
+Id: 775 Code: Touch_QS_EC_Encounter Cmd: player.interact_over
+Id: 776 Code: Touch_WN_EC_Encounter Cmd: player.interact_over
+Id: 777 Code: Touch_XW_EC_Encounter Cmd: player.interact_over
+Id: 778 Code: Touch_NW_EC_Encounter Cmd: player.interact_over
+Id: 779 Code: Touch_CN_EC_Encounter Cmd: npc.touch N_CN EC_Encounter 0
+Id: 780 Code: Touch_AY_EC_Encounter Cmd: npc.touch N_AY EC_Encounter 0
+Id: 781 Code: Touch_DT_EC_Encounter Cmd: npc.touch N_DT EC_Encounter 0
+Id: 782 Code: Touch_QS_EC_Encounter Cmd: npc.touch N_QS EC_Encounter 0
+Id: 783 Code: Touch_WN_EC_Encounter Cmd: npc.touch N_WN EC_Encounter 0
+Id: 784 Code: Touch_XW_EC_Encounter Cmd: npc.touch N_XW EC_Encounter 0
+Id: 785 Code: Touch_NW_EC_Encounter Cmd: npc.touch N_NW EC_Encounter 0
+Id: 786 Code: Touch_CN_EC_Farm Cmd: player.interact_over
+Id: 787 Code: Touch_AY_EC_Farm Cmd: player.interact_over
+Id: 788 Code: Touch_DT_EC_Farm Cmd: player.interact_over
+Id: 789 Code: Touch_QS_EC_Farm Cmd: player.interact_over
+Id: 790 Code: Touch_WN_EC_Farm Cmd: player.interact_over
+Id: 791 Code: Touch_XW_EC_Farm Cmd: player.interact_over
+Id: 792 Code: Touch_NW_EC_Farm Cmd: player.interact_over
+Id: 793 Code: Touch_CN_EC_Farm Cmd: npc.touch N_CN EC_Farm 0
+Id: 794 Code: Touch_AY_EC_Farm Cmd: npc.touch N_AY EC_Farm 0
+Id: 795 Code: Touch_DT_EC_Farm Cmd: npc.touch N_DT EC_Farm 0
+Id: 796 Code: Touch_QS_EC_Farm Cmd: npc.touch N_QS EC_Farm 0
+Id: 797 Code: Touch_WN_EC_Farm Cmd: npc.touch N_WN EC_Farm 0
+Id: 798 Code: Touch_XW_EC_Farm Cmd: npc.touch N_XW EC_Farm 0
+Id: 799 Code: Touch_NW_EC_Farm Cmd: npc.touch N_NW EC_Farm 0
+Id: 800 Code: Touch_CN_EC_LesPeek Cmd: player.interact_over
+Id: 801 Code: Touch_AY_EC_LesPeek Cmd: player.interact_over
+Id: 802 Code: Touch_DT_EC_LesPeek Cmd: player.interact_over
+Id: 803 Code: Touch_QS_EC_LesPeek Cmd: player.interact_over
+Id: 804 Code: Touch_WN_EC_LesPeek Cmd: player.interact_over
+Id: 805 Code: Touch_XW_EC_LesPeek Cmd: player.interact_over
+Id: 806 Code: Touch_NW_EC_LesPeek Cmd: player.interact_over
+Id: 807 Code: Touch_CN_EC_LesPeek Cmd: npc.touch N_CN EC_LesPeek 0
+Id: 808 Code: Touch_AY_EC_LesPeek Cmd: npc.touch N_AY EC_LesPeek 0
+Id: 809 Code: Touch_DT_EC_LesPeek Cmd: npc.touch N_DT EC_LesPeek 0
+Id: 810 Code: Touch_QS_EC_LesPeek Cmd: npc.touch N_QS EC_LesPeek 0
+Id: 811 Code: Touch_WN_EC_LesPeek Cmd: npc.touch N_WN EC_LesPeek 0
+Id: 812 Code: Touch_XW_EC_LesPeek Cmd: npc.touch N_XW EC_LesPeek 0
+Id: 813 Code: Touch_NW_EC_LesPeek Cmd: npc.touch N_NW EC_LesPeek 0
+Id: 814 Code: Touch_CN_EC_PeekDT Cmd: player.interact_over
+Id: 815 Code: Touch_AY_EC_PeekDT Cmd: player.interact_over
+Id: 816 Code: Touch_DT_EC_PeekDT Cmd: player.interact_over
+Id: 817 Code: Touch_QS_EC_PeekDT Cmd: player.interact_over
+Id: 818 Code: Touch_WN_EC_PeekDT Cmd: player.interact_over
+Id: 819 Code: Touch_XW_EC_PeekDT Cmd: player.interact_over
+Id: 820 Code: Touch_NW_EC_PeekDT Cmd: player.interact_over
+Id: 821 Code: Touch_CN_EC_PeekDT Cmd: npc.touch N_CN EC_PeekDT 0
+Id: 822 Code: Touch_AY_EC_PeekDT Cmd: npc.touch N_AY EC_PeekDT 0
+Id: 823 Code: Touch_DT_EC_PeekDT Cmd: npc.touch N_DT EC_PeekDT 0
+Id: 824 Code: Touch_QS_EC_PeekDT Cmd: npc.touch N_QS EC_PeekDT 0
+Id: 825 Code: Touch_WN_EC_PeekDT Cmd: npc.touch N_WN EC_PeekDT 0
+Id: 826 Code: Touch_XW_EC_PeekDT Cmd: npc.touch N_XW EC_PeekDT 0
+Id: 827 Code: Touch_NW_EC_PeekDT Cmd: npc.touch N_NW EC_PeekDT 0
+Id: 828 Code: Touch_CN_EC_Semen Cmd: player.interact_over
+Id: 829 Code: Touch_AY_EC_Semen Cmd: player.interact_over
+Id: 830 Code: Touch_DT_EC_Semen Cmd: player.interact_over
+Id: 831 Code: Touch_QS_EC_Semen Cmd: player.interact_over
+Id: 832 Code: Touch_WN_EC_Semen Cmd: player.interact_over
+Id: 833 Code: Touch_XW_EC_Semen Cmd: player.interact_over
+Id: 834 Code: Touch_NW_EC_Semen Cmd: player.interact_over
+Id: 835 Code: Touch_CN_EC_Semen Cmd: npc.touch N_CN EC_Semen 0
+Id: 836 Code: Touch_AY_EC_Semen Cmd: npc.touch N_AY EC_Semen 0
+Id: 837 Code: Touch_DT_EC_Semen Cmd: npc.touch N_DT EC_Semen 0
+Id: 838 Code: Touch_QS_EC_Semen Cmd: npc.touch N_QS EC_Semen 0
+Id: 839 Code: Touch_WN_EC_Semen Cmd: npc.touch N_WN EC_Semen 0
+Id: 840 Code: Touch_XW_EC_Semen Cmd: npc.touch N_XW EC_Semen 0
+Id: 841 Code: Touch_NW_EC_Semen Cmd: npc.touch N_NW EC_Semen 0
+Id: 842 Code: Touch_CN_EC_Violence Cmd: player.interact_over
+Id: 843 Code: Touch_AY_EC_Violence Cmd: player.interact_over
+Id: 844 Code: Touch_DT_EC_Violence Cmd: player.interact_over
+Id: 845 Code: Touch_QS_EC_Violence Cmd: player.interact_over
+Id: 846 Code: Touch_WN_EC_Violence Cmd: player.interact_over
+Id: 847 Code: Touch_XW_EC_Violence Cmd: player.interact_over
+Id: 848 Code: Touch_NW_EC_Violence Cmd: player.interact_over
+Id: 849 Code: Touch_CN_EC_Violence Cmd: npc.touch N_CN EC_Violence 0
+Id: 850 Code: Touch_AY_EC_Violence Cmd: npc.touch N_AY EC_Violence 0
+Id: 851 Code: Touch_DT_EC_Violence Cmd: npc.touch N_DT EC_Violence 0
+Id: 852 Code: Touch_QS_EC_Violence Cmd: npc.touch N_QS EC_Violence 0
+Id: 853 Code: Touch_WN_EC_Violence Cmd: npc.touch N_WN EC_Violence 0
+Id: 854 Code: Touch_XW_EC_Violence Cmd: npc.touch N_XW EC_Violence 0
+Id: 855 Code: Touch_NW_EC_Violence Cmd: npc.touch N_NW EC_Violence 0
+Id: 856 Code: SetCN_1 Cmd: var.set_int N_CN 1
+Id: 857 Code: SetCN_2 Cmd: var.set_int N_CN 2
+Id: 858 Code: SetCN_3 Cmd: var.set_int N_CN 3
+Id: 859 Code: SetCN_4 Cmd: var.set_int N_CN 4
+Id: 860 Code: SetCN_5 Cmd: var.set_int N_CN 5
+Id: 861 Code: SetCN_6 Cmd: var.set_int N_CN 6
+Id: 862 Code: SetCN_7 Cmd: var.set_int N_CN 7
+Id: 863 Code: SetCN_1 Cmd: player.interact_over
+Id: 864 Code: SetCN_2 Cmd: player.interact_over
+Id: 865 Code: SetCN_3 Cmd: player.interact_over
+Id: 866 Code: SetCN_4 Cmd: player.interact_over
+Id: 867 Code: SetCN_5 Cmd: player.interact_over
+Id: 868 Code: SetCN_6 Cmd: player.interact_over
+Id: 869 Code: SetCN_7 Cmd: player.interact_over
+Id: 870 Code: SetAY_1 Cmd: var.set_int N_AY 1
+Id: 871 Code: SetAY_2 Cmd: var.set_int N_AY 2
+Id: 872 Code: SetAY_3 Cmd: var.set_int N_AY 3
+Id: 873 Code: SetAY_4 Cmd: var.set_int N_AY 4
+Id: 874 Code: SetAY_5 Cmd: var.set_int N_AY 5
+Id: 875 Code: SetAY_6 Cmd: var.set_int N_AY 6
+Id: 876 Code: SetAY_7 Cmd: var.set_int N_AY 7
+Id: 877 Code: SetAY_1 Cmd: player.interact_over
+Id: 878 Code: SetAY_2 Cmd: player.interact_over
+Id: 879 Code: SetAY_3 Cmd: player.interact_over
+Id: 880 Code: SetAY_4 Cmd: player.interact_over
+Id: 881 Code: SetAY_5 Cmd: player.interact_over
+Id: 882 Code: SetAY_6 Cmd: player.interact_over
+Id: 883 Code: SetAY_7 Cmd: player.interact_over
+Id: 884 Code: SetQS_1 Cmd: var.set_int N_QS 1
+Id: 885 Code: SetQS_2 Cmd: var.set_int N_QS 2
+Id: 886 Code: SetQS_3 Cmd: var.set_int N_QS 3
+Id: 887 Code: SetQS_4 Cmd: var.set_int N_QS 4
+Id: 888 Code: SetQS_5 Cmd: var.set_int N_QS 5
+Id: 889 Code: SetQS_6 Cmd: var.set_int N_QS 6
+Id: 890 Code: SetQS_7 Cmd: var.set_int N_QS 7
+Id: 891 Code: SetQS_1 Cmd: player.interact_over
+Id: 892 Code: SetQS_2 Cmd: player.interact_over
+Id: 893 Code: SetQS_3 Cmd: player.interact_over
+Id: 894 Code: SetQS_4 Cmd: player.interact_over
+Id: 895 Code: SetQS_5 Cmd: player.interact_over
+Id: 896 Code: SetQS_6 Cmd: player.interact_over
+Id: 897 Code: SetQS_7 Cmd: player.interact_over
+Id: 898 Code: SetDT_1 Cmd: var.set_int N_DT 1
+Id: 899 Code: SetDT_2 Cmd: var.set_int N_DT 2
+Id: 900 Code: SetDT_3 Cmd: var.set_int N_DT 3
+Id: 901 Code: SetDT_4 Cmd: var.set_int N_DT 4
+Id: 902 Code: SetDT_5 Cmd: var.set_int N_DT 5
+Id: 903 Code: SetDT_6 Cmd: var.set_int N_DT 6
+Id: 904 Code: SetDT_7 Cmd: var.set_int N_DT 7
+Id: 905 Code: SetDT_1 Cmd: player.interact_over
+Id: 906 Code: SetDT_2 Cmd: player.interact_over
+Id: 907 Code: SetDT_3 Cmd: player.interact_over
+Id: 908 Code: SetDT_4 Cmd: player.interact_over
+Id: 909 Code: SetDT_5 Cmd: player.interact_over
+Id: 910 Code: SetDT_6 Cmd: player.interact_over
+Id: 911 Code: SetDT_7 Cmd: player.interact_over
+Id: 912 Code: SetWN_1 Cmd: var.set_int N_WN 1
+Id: 913 Code: SetWN_2 Cmd: var.set_int N_WN 2
+Id: 914 Code: SetWN_3 Cmd: var.set_int N_WN 3
+Id: 915 Code: SetWN_4 Cmd: var.set_int N_WN 4
+Id: 916 Code: SetWN_5 Cmd: var.set_int N_WN 5
+Id: 917 Code: SetWN_6 Cmd: var.set_int N_WN 6
+Id: 918 Code: SetWN_7 Cmd: var.set_int N_WN 7
+Id: 919 Code: SetWN_1 Cmd: player.interact_over
+Id: 920 Code: SetWN_2 Cmd: player.interact_over
+Id: 921 Code: SetWN_3 Cmd: player.interact_over
+Id: 922 Code: SetWN_4 Cmd: player.interact_over
+Id: 923 Code: SetWN_5 Cmd: player.interact_over
+Id: 924 Code: SetWN_6 Cmd: player.interact_over
+Id: 925 Code: SetWN_7 Cmd: player.interact_over
+Id: 926 Code: SetXW_1 Cmd: var.set_int N_XW 1
+Id: 927 Code: SetXW_2 Cmd: var.set_int N_XW 2
+Id: 928 Code: SetXW_3 Cmd: var.set_int N_XW 3
+Id: 929 Code: SetXW_4 Cmd: var.set_int N_XW 4
+Id: 930 Code: SetXW_5 Cmd: var.set_int N_XW 5
+Id: 931 Code: SetXW_6 Cmd: var.set_int N_XW 6
+Id: 932 Code: SetXW_7 Cmd: var.set_int N_XW 7
+Id: 933 Code: SetXW_1 Cmd: player.interact_over
+Id: 934 Code: SetXW_2 Cmd: player.interact_over
+Id: 935 Code: SetXW_3 Cmd: player.interact_over
+Id: 936 Code: SetXW_4 Cmd: player.interact_over
+Id: 937 Code: SetXW_5 Cmd: player.interact_over
+Id: 938 Code: SetXW_6 Cmd: player.interact_over
+Id: 939 Code: SetXW_7 Cmd: player.interact_over
+Id: 940 Code: SetNW_1 Cmd: var.set_int N_NW 1
+Id: 941 Code: SetNW_2 Cmd: var.set_int N_NW 2
+Id: 942 Code: SetNW_3 Cmd: var.set_int N_NW 3
+Id: 943 Code: SetNW_4 Cmd: var.set_int N_NW 4
+Id: 944 Code: SetNW_5 Cmd: var.set_int N_NW 5
+Id: 945 Code: SetNW_6 Cmd: var.set_int N_NW 6
+Id: 946 Code: SetNW_7 Cmd: var.set_int N_NW 7
+Id: 947 Code: SetNW_1 Cmd: player.interact_over
+Id: 948 Code: SetNW_2 Cmd: player.interact_over
+Id: 949 Code: SetNW_3 Cmd: player.interact_over
+Id: 950 Code: SetNW_4 Cmd: player.interact_over
+Id: 951 Code: SetNW_5 Cmd: player.interact_over
+Id: 952 Code: SetNW_6 Cmd: player.interact_over
+Id: 953 Code: SetNW_7 Cmd: player.interact_over
+Id: 954 Code: BaguaTip Cmd: conv.speak  BaguaTipTlak
+Id: 955 Code: BaguaTip Cmd: conv.selectbox
+Id: 956 Code: BaguaTipUI Cmd: player.interact_over
+Id: 957 Code: BaguaTipUI Cmd: ui.open tip_bagua
+Id: 958 Code: BaguaTipAY Cmd: conv.speak  Task_GirlClue_AY
+Id: 959 Code: BaguaTipQS Cmd: conv.speak  Task_GirlClue_QS
+Id: 960 Code: BaguaTipDT Cmd: conv.speak  Task_GirlClue_DT
+Id: 961 Code: BaguaTipCN Cmd: conv.speak  Task_GirlClue_CN
+Id: 962 Code: BaguaTipWN Cmd: conv.speak  Task_GirlClue_WN
+Id: 963 Code: BaguaTipXW Cmd: conv.speak  Task_GirlClue_XW
+Id: 964 Code: BaguaTipNW Cmd: conv.speak  Task_GirlClue_NW
+Id: 965 Code: BaguaTipAY Cmd: conv.selectbox
+Id: 966 Code: BaguaTipQS Cmd: conv.selectbox
+Id: 967 Code: BaguaTipDT Cmd: conv.selectbox
+Id: 968 Code: BaguaTipCN Cmd: conv.selectbox
+Id: 969 Code: BaguaTipWN Cmd: conv.selectbox
+Id: 970 Code: BaguaTipXW Cmd: conv.selectbox
+Id: 971 Code: BaguaTipNW Cmd: conv.selectbox
+Id: 972 Code: Bagua1 Cmd: conv.selectbox
+Id: 973 Code: Bagua2 Cmd: conv.selectbox
+Id: 974 Code: Bagua3 Cmd: conv.selectbox
+Id: 975 Code: Bagua4 Cmd: conv.selectbox
+Id: 976 Code: Bagua5 Cmd: conv.selectbox
+Id: 977 Code: Bagua6 Cmd: conv.selectbox
+Id: 978 Code: Bagua7 Cmd: conv.selectbox
+Id: 979 Code: Task_ED_Call_NW Cmd: conv.speak Task_ED_Call_NW
+Id: 980 Code: Task_ED_Call_QS Cmd: conv.speak Task_ED_Call_QS
+Id: 981 Code: Task_ED_Call_AY Cmd: conv.speak Task_ED_Call_AY
+Id: 982 Code: Task_ED_Call_DT Cmd: conv.speak Task_ED_Call_DT
+Id: 983 Code: Task_ED_Call_CN Cmd: conv.speak Task_ED_Call_CN
+Id: 984 Code: Task_ED_Call_WN Cmd: conv.speak Task_ED_Call_WN
+Id: 985 Code: Task_ED_Call_XW Cmd: conv.speak Task_ED_Call_XW
+Id: 986 Code: Task_ED_Call_NW Cmd: task.mark Task_ED_Call_NW
+Id: 987 Code: Task_ED_Call_QS Cmd: task.mark Task_ED_Call_QS
+Id: 988 Code: Task_ED_Call_AY Cmd: task.mark Task_ED_Call_AY
+Id: 989 Code: Task_ED_Call_DT Cmd: task.mark Task_ED_Call_DT
+Id: 990 Code: Task_ED_Call_CN Cmd: task.mark Task_ED_Call_CN
+Id: 991 Code: Task_ED_Call_WN Cmd: task.mark Task_ED_Call_WN
+Id: 992 Code: Task_ED_Call_XW Cmd: task.mark Task_ED_Call_XW
+Id: 993 Code: Task_ED_Call_NW Cmd: item.add ItemTaskMarkGirls 1
+Id: 994 Code: Task_ED_Call_QS Cmd: item.add ItemTaskMarkGirls 1
+Id: 995 Code: Task_ED_Call_AY Cmd: item.add ItemTaskMarkGirls 1
+Id: 996 Code: Task_ED_Call_DT Cmd: item.add ItemTaskMarkGirls 1
+Id: 997 Code: Task_ED_Call_CN Cmd: item.add ItemTaskMarkGirls 1
+Id: 998 Code: Task_ED_Call_WN Cmd: item.add ItemTaskMarkGirls 1
+Id: 999 Code: Task_ED_Call_XW Cmd: item.add ItemTaskMarkGirls 1
+Id: 1000 Code: Task_ED_Call_NW Cmd: player.interact_over
+Id: 1001 Code: Task_ED_Call_QS Cmd: player.interact_over
+Id: 1002 Code: Task_ED_Call_AY Cmd: player.interact_over
+Id: 1003 Code: Task_ED_Call_DT Cmd: player.interact_over
+Id: 1004 Code: Task_ED_Call_CN Cmd: player.interact_over
+Id: 1005 Code: Task_ED_Call_WN Cmd: player.interact_over
+Id: 1006 Code: Task_ED_Call_XW Cmd: player.interact_over
+Id: 1007 Code: Talk_ED_CloseGap Cmd: conv.speak Talk_ED_CloseGap
+Id: 1008 Code: Talk_ED_CloseGap Cmd: player.interact_over
+Id: 1009 Code: Talk_ED_WC_B Cmd: conv.speak Talk_ED_WC_B
+Id: 1010 Code: Talk_ED_WC_B Cmd: conv.selectbox
+Id: 1011 Code: Touch_WC Cmd: player.interact_over
+Id: 1012 Code: Touch_WC Cmd: npc.touch N_WC Circle 5
+Id: 10001 Code: GameStart Cmd: story.play Story_OP
+Id: 10002 Code: GameStart Cmd: story.play Story_OP_BeSave
+Id: 10003 Code: GameStart Cmd: story.play Story_OP_Hero
+Id: 10004 Code: GameStart Cmd: player.seed Garden ItemSeed2004 6 1
+Id: 10005 Code: GameStart Cmd: item.add ItemGoHome 1
+Id: 10006 Code: GameStart Cmd: item.add ItemSpe1 1
+Id: 10007 Code: GameStart Cmd: item.shortcut ItemGoHome 0
+Id: 10008 Code: GameStart Cmd: item.shortcut ItemSpe1 1
+Id: 10009 Code: GameStart Cmd: record.save
+Id: 10010 Code: SceneIntro Cmd: story.play Story_OP_Scene
+Id: 10011 Code: SceneIntro Cmd: task.take Main_OP
+Id: 10012 Code: SceneIntro Cmd: task.delivery Main_OP
+Id: 10013 Code: SceneIntro Cmd: task.take Main_100S
+Id: 10014 Code: Task_Main_101_g Cmd: conv.speak Main_101_g_Talk
+Id: 10015 Code: Task_Main_101_g Cmd: task.take TaskGuideWood1
+Id: 10016 Code: TaskGuideWood1_c Cmd: task.take TaskGuideWood2
+Id: 10017 Code: TaskGuideWood2_c Cmd: task.take Main_101
+Id: 10018 Code: TaskGuideWood3_c Cmd: task.take Main_101
+Id: 10019 Code: Task_Main_101_c Cmd: conv.speak Main_101_c_Talk
+Id: 10020 Code: Task_Main_101_c Cmd: task.delivery Main_101
+Id: 10021 Code: Task_Main_101_c Cmd: task.take Main_QS_H2S_Task
+Id: 10022 Code: Main_101S_g Cmd: conv.speak Main_101S_g_Talk
+Id: 10023 Code: Main_101S_g Cmd: task.take Main_101S
+Id: 10024 Code: Main_101S_c Cmd: conv.speak Main_101S_c_Talk
+Id: 10025 Code: Main_101S_c Cmd: task.delivery Main_101S
+Id: 10026 Code: Task_Main_102_g Cmd: conv.speak Main_102_g_Talk
+Id: 10027 Code: Task_Main_102_g Cmd: task.take TaskGuideHerb1
+Id: 10028 Code: TaskGuideHerb1_c Cmd: task.take Main_102
+Id: 10029 Code: Task_Main_102_c Cmd: conv.speak Main_102_c_Talk
+Id: 10030 Code: Task_Main_102_c Cmd: task.delivery Main_102
+Id: 10031 Code: Task_Main_102_c Cmd: task.take Main_102S
+Id: 10032 Code: Task_Main_103_g Cmd: conv.speak N_AY_Task_Hello_Pre
+Id: 10033 Code: Task_Main_103_g Cmd: task.take TaskGuideOre1
+Id: 10034 Code: TaskGuideOre1_c Cmd: task.take Main_103
+Id: 10035 Code: Task_Main_103_c Cmd: conv.speak N_AY_Task_Hello_Post
+Id: 10036 Code: Task_Main_103_c Cmd: task.delivery Main_103
+Id: 10037 Code: Task_Main_103_c Cmd: task.take Task_Needle_G0
+Id: 10038 Code: Task_Needle_G0_c Cmd: conv.speak N_AY_Task_JiJIng_Pre
+Id: 10039 Code: Task_Needle_G0_c Cmd: task.delivery Task_Needle_G0
+Id: 10040 Code: Task_Needle_G0_c Cmd: task.take Task_Needle_G1
+Id: 10041 Code: Task_Needle_G1_c Cmd: task.delivery Task_Needle_G1
+Id: 10042 Code: Task_Needle_G1_c Cmd: conv.speak Task_Needle_G1_Talk
+Id: 10043 Code: Task_Needle_G1_c Cmd: task.take Task_Needle_G2
+Id: 10044 Code: Task_Main_104_g Cmd: conv.speak Main_104_g_Talk
+Id: 10045 Code: Task_Main_104_g Cmd: task.take Main_104
+Id: 10046 Code: Task_Main_104_c Cmd: task.delivery Main_104
+Id: 10047 Code: Task_Main_104_c Cmd: conv.speak Main_105_g_Talk
+Id: 10048 Code: Task_Main_104_c Cmd: task.take Main_105
+Id: 10049 Code: Task_Main_105_c Cmd: task.delivery Main_105
+Id: 10050 Code: Task_Main_105_c Cmd: story.play Story_AY_Bathe
+Id: 10051 Code: Task_Main_105_c Cmd: player.translation Anchor_AY_Bed
+Id: 10052 Code: Task_Main_105_c Cmd: task.take Main_AY_H1_Task
+Id: 10053 Code: Task_Main_105_c Cmd: task.take Main_AY_H1_Task_S
+Id: 10054 Code: Main_AY_H2_Pre Cmd: conv.speak Main_AY_H2_Pre_Talk
+Id: 10055 Code: Main_AY_H2_Pre Cmd: task.delivery Main_AY_H1_Task
+Id: 10056 Code: Main_AY_H2_Pre Cmd: task.take Main_AY_H1S_Task
+Id: 10057 Code: Main_AY_H1S_Task_c Cmd: conv.speak Main_AY_H1S_Task_c
+Id: 10058 Code: Main_AY_H1S_Task_c Cmd: task.take Main_AY_H2_Pre
+Id: 10059 Code: Main_AY_H2_Task_c Cmd: conv.speak Main_AY_H2_Task_c
+Id: 10060 Code: Main_AY_H2_Task_c Cmd: task.take Main_AY_H2S_Task
+Id: 10061 Code: Main_AY_H2_Task_c Cmd: task.take Main_AY_H2_Task_S
+Id: 10062 Code: Main_AY_H2S_Task_c Cmd: story.play Story_AY_Lost
+Id: 10063 Code: Main_AY_H2S_Task_c Cmd: task.delivery Main_AY_H2S_Task
+Id: 10064 Code: Main_AY_H2S_Task_c Cmd: task.take Main_AY_H2X_Task
+Id: 10065 Code: AY_Perform_Peek Cmd: story.play Story_AY_Peek
+Id: 10066 Code: AY_Perform_Peek Cmd: task.delivery Main_AY_H2X_Task
+Id: 10067 Code: AY_Perform_Peek Cmd: task.take Main_AY_H2_Post
+Id: 10068 Code: AY_Perform_Peek Cmd: task.take Main_AY_H2_Post_S
+Id: 10069 Code: Main_AY_H3_Pre Cmd: story.play Story_AY_RePeek
+Id: 10070 Code: Main_AY_H3_Pre Cmd: task.delivery Main_AY_H2_Post
+Id: 10071 Code: Main_AY_H3_Pre Cmd: task.take Main_AY_H3_Pre
+Id: 10072 Code: Main_AY_H3_Pre Cmd: task.take Main_AY_H3_Pre_S
+Id: 10073 Code: AY_Perform_SnakeBit Cmd: story.play Story_AY_SnakeBit
+Id: 10074 Code: AY_Perform_SnakeBit Cmd: story.play Story_AY_SnakeAfter
+Id: 10075 Code: AY_Perform_SnakeBit Cmd: story.play Story_AY_GetUp
+Id: 10076 Code: AY_Perform_SnakeBit Cmd: task.delivery Main_AY_H3_Task
+Id: 10077 Code: AY_Perform_SnakeBit Cmd: player.translation Anchor_Wakeup
+Id: 10078 Code: AY_Perform_SnakeBit Cmd: day.jump_next_resttime
+Id: 10079 Code: AY_Perform_SnakeBit Cmd: npc.add_npc_favorability_star N_AY
+Id: 10080 Code: AY_Perform_SnakeBit Cmd: task.take Main_AY_H4_Pre
+Id: 10081 Code:  Cmd:
+Id: 10082 Code: Main_AY_H4_Task_c Cmd: conv.speak Main_AY_H4_c
+Id: 10083 Code: Main_AY_H4_Task_c Cmd: task.take Main_AY_H4S_Task
+Id: 10084 Code: Main_AY_H4S_Task_c Cmd: task.delivery Main_AY_H4S_Task
+Id: 10085 Code: Main_AY_H4S_Task_c Cmd: story.play Story_AY_PengFeng
+Id: 10086 Code: Main_AY_H4S_Task_c Cmd: story.play Story_AY_Bingo
+Id: 10087 Code: Main_AY_H4S_Task_c Cmd: task.take Main_AY_H5S_Task
+Id: 10088 Code: Main_AY_H4S_Task_c Cmd: player.translation Anchor_AY_Bed
+Id: 10089 Code: Main_AY_H4S_Task_c Cmd: npc.add_npc_favorability_star N_AY
+Id: 10090 Code: Main_AY_H4S_Task_c Cmd: task.take Main_AY_H5_Pre
+Id: 10091 Code: Main_AY_H4S_Task_c Cmd: task.take Main_AY_H4_Sleep
+Id: 10092 Code: H5_Tip Cmd: conv.speak H5_Tip
+Id: 10093 Code: H5_Tip Cmd: conv.selectbox
+Id: 10094 Code: Task_Main_100_c Cmd: task.delivery Main_100
+Id: 10095 Code: CN_Task_1_g Cmd: conv.speak CN_Task_1_g_Talk
+Id: 10096 Code: CN_Task_1_g Cmd: task.take CN_Task_1
+Id: 10097 Code: Story_CN_Comming Cmd: story.play Story_CN_Comming
+Id: 10098 Code: Story_CN_Comming Cmd: task.take CN_Task_1S
+Id: 10099 Code: Story_CN_Comming Cmd: task.delivery CN_Task_1S
+Id: 10100 Code: CN_Task_1_c Cmd: conv.speak CN_Task_1_c_Talk
+Id: 10101 Code: CN_Task_1_c Cmd: task.delivery CN_Task_1
+Id: 10102 Code: CN_Task_1_c Cmd: task.take Main_CN_H1_Pre
+Id: 10103 Code: Main_CN_H1_c Cmd: task.delivery Main_CN_H1_Task
+Id: 10104 Code: Main_CN_H1_c Cmd: conv.speak Main_CN_H1_c
+Id: 10105 Code: Main_CN_H1_c Cmd: task.take Main_CN_H1S_Task
+Id: 10106 Code: Main_CN_H1S_c Cmd: conv.speak Main_CN_H1S_c
+Id: 10107 Code: Main_CN_H1S_c Cmd: task.delivery Main_CN_H1S_Task
+Id: 10108 Code: Main_CN_H1S_c Cmd: task.take CN_Task_2
+Id: 10109 Code: CN_Task_2_c Cmd: conv.speak CN_Task_2_c_Talk
+Id: 10110 Code: CN_Task_2_c Cmd: task.delivery CN_Task_2
+Id: 10111 Code: CN_Task_2_c Cmd: task.take CN_Task_3
+Id: 10112 Code: CN_Task_2_c Cmd: npc.add_npc_favorability_star N_CN
+Id: 10113 Code: CN_Perform_2 Cmd: story.play Story_CN_Spring
+Id: 10114 Code: CN_Perform_2 Cmd: day.advance_to_hour 19
+Id: 10115 Code: CN_Perform_2 Cmd: conv.speak Main_CN_H1X_g
+Id: 10116 Code: CN_Perform_2 Cmd: task.delivery CN_Task_3
+Id: 10117 Code: CN_Perform_2 Cmd: task.take Main_CN_H1X_Task
+Id: 10118 Code: Main_CN_H1X_c Cmd: conv.speak Main_CN_H1X_c
+Id: 10119 Code: Main_CN_H1X_c Cmd: task.delivery Main_CN_H1X_Task
+Id: 10120 Code: Main_CN_H1X_c Cmd: task.take Main_CN_H2_Pre
+Id: 10121 Code: Main_CN_H2S_c Cmd: conv.speak Main_CN_H2_c
+Id: 10122 Code: Main_CN_H2S_c Cmd: task.delivery Main_CN_H2_Task
+Id: 10123 Code: Main_CN_H2S_c Cmd: player.interact_over
+Id: 10124 Code: Main_CN_H2S_c Cmd: npc.add_npc_favorability_star N_CN
+Id: 10125 Code: Main_CN_H2S_c Cmd: npc.acupuncture N_CN
+Id: 10126 Code: Main_CN_H2S_c Cmd: task.take Main_CN_H3_Pre
+Id: 10127 Code: CN_Perform_3 Cmd: story.play Story_CN_Massage
+Id: 10128 Code: CN_Perform_3 Cmd: story.play Story_CN_QuickShoot
+Id: 10129 Code: CN_Perform_3 Cmd: task.delivery Main_CN_H3_Task
+Id: 10130 Code: CN_Perform_3 Cmd: npc.add_npc_favorability_star N_CN
+Id: 10131 Code: CN_Perform_3 Cmd: task.take Main_CN_H4_Pre
+Id: 10132 Code: CN_BXZ_DO Cmd: task.delivery Main_CN_H4_Task
+Id: 10133 Code: CN_BXZ_DO Cmd: player.interact_over
+Id: 10134 Code: CN_BXZ_DO Cmd: story.play Story_CN_BXZ_Chat_A
+Id: 10135 Code: CN_BXZ_DO Cmd: story.play Story_CN_BXZ_Chat_B
+Id: 10136 Code: CN_BXZ_DO Cmd: story.play Story_CN_BXZ_DO
+Id: 10137 Code: CN_BXZ_DO Cmd: task.take Main_CN_H5S_Task
+Id: 10138 Code: CN_BXZ_DO Cmd: npc.add_npc_favorability_star N_CN
+Id: 10139 Code: CN_BXZ_DO Cmd: player.translation Anchor_CN_Bed
+Id: 10140 Code: CN_BXZ_DO Cmd: task.take Main_CN_H4_Sleep
+Id: 10141 Code: CN_BXZ_DO Cmd: task.take Main_CN_H5_Pre
+Id: 10142 Code: CN_Task_6S_c Cmd: task.delivery CN_Task_6S
+Id: 10143 Code: WC_Perform_DT Cmd: story.play Story_WC_DT
+Id: 10144 Code: WC_Perform_DT Cmd: task.take WC_Task_0
+Id: 10145 Code: WC_Perform_DT Cmd: task.delivery WC_Task_0
+Id: 10146 Code: WC_Perform_DT Cmd: task.take WC_Task_0S
+Id: 10147 Code: WC_Perform_DT Cmd: task.take WC_Task_1
+Id: 10148 Code: WC_Perform_Comming Cmd: story.play Story_WC_Comming
+Id: 10149 Code: WC_Perform_Comming Cmd: story.play Story_WC_CommingDoul
+Id: 10150 Code: WC_Perform_Comming Cmd: task.take WC_Task_Comming
+Id: 10151 Code: WC_Perform_Comming Cmd: task.delivery WC_Task_Comming
+Id: 10152 Code: WC_Perform_Comming Cmd: task.delivery WC_Task_1
+Id: 10153 Code: WC_Perform_Comming Cmd: task.take WC_Task_Sleep
+Id: 10154 Code: WC_Perform_Comming Cmd: item.add Item_DT_Stable 1
+Id: 10155 Code: BT_Portal_2_Talk Cmd: conv.speak BT_Portal_2_Talk
+Id: 10156 Code: BT_Portal_2_Talk Cmd: task.take BT_Portal_2
+Id: 10157 Code: DT_Perform_Kick Cmd: story.play Story_DT_Kick
+Id: 10158 Code: DT_Perform_Kick Cmd: task.take DT_Task_1S
+Id: 10159 Code: DT_Perform_Kick Cmd: task.delivery DT_Task_1S
+Id: 10160 Code: DT_Perform_Kick Cmd: task.take Main_DT_H2_Pre
+Id: 10161 Code: DT_Task_1_g Cmd: conv.speak Main_DT_H2S_g
+Id: 10162 Code: DT_Task_1_g Cmd: task.delivery Main_DT_H2_Task
+Id: 10163 Code: DT_Task_1_g Cmd: task.take Main_DT_H1_Task
+Id: 10164 Code: Main_DT_H1 Cmd: task.delivery Main_DT_H1_Task
+Id: 10165 Code: Main_DT_H1 Cmd: story.play Story_DT_TrainPre
+Id: 10166 Code: Main_DT_H1 Cmd: task.take Main_DT_H2S_Task
+Id: 10167 Code: DT_Task_3_g Cmd: conv.speak DT_Task_3_g_Talk
+Id: 10168 Code: DT_Task_3_g Cmd: task.take DT_Task_3
+Id: 10169 Code: DT_Task_3_c Cmd: story.play Story_DT_Tree
+Id: 10170 Code:  Cmd:
+Id: 10171 Code:  Cmd:
+Id: 10172 Code: DT_Task_3_c Cmd: task.delivery Main_DT_H2S_Task
+Id: 10173 Code: DT_Task_3_c Cmd: npc.add_npc_favorability_star N_DT
+Id: 10174 Code: DT_Task_3_c Cmd: task.take Main_DT_H3_Pre
+Id: 10175 Code: Main_DT_H3_c Cmd: conv.speak Main_DT_H3S_g
+Id: 10176 Code: Main_DT_H3_c Cmd: task.delivery Main_DT_H3_Task
+Id: 10177 Code: Main_DT_H3_c Cmd: task.take Main_DT_H3S_Task
+Id: 10178 Code: DT_Task_6_g Cmd: conv.speak DT_Task_6_g_Talk
+Id: 10179 Code: DT_Task_6_g Cmd: task.delivery DT_Task_5
+Id: 10180 Code: DT_Task_6_g Cmd: task.take DT_Task_6
+Id: 10181 Code: Story_DT_Stone Cmd: story.play Story_DT_Stone
+Id: 10182 Code: Story_DT_Stone Cmd: story.play Story_DT_SOS
+Id: 10183 Code: Story_DT_Stone Cmd: task.delivery Main_DT_H3S_Task
+Id: 10184 Code: Story_DT_Stone Cmd: npc.add_npc_favorability_star N_DT
+Id: 10185 Code: Story_DT_Stone Cmd: task.take Main_DT_H4_Pre
+Id: 10186 Code: Main_DT_H4_c Cmd: conv.speak Main_DT_H4S_c
+Id: 10187 Code: Main_DT_H4_c Cmd: player.interact_over
+Id: 10188 Code: Main_DT_H4_c Cmd: task.delivery Main_DT_H4_Task
+Id: 10189 Code: Main_DT_H4_c Cmd: story.play Story_DT_HuLu_Look
+Id: 10190 Code: Main_DT_H4_c Cmd: story.play Story_DT_HuLu_DO
+Id: 10191 Code: Main_DT_H4_c Cmd: task.take Main_DT_H5S_Task
+Id: 10192 Code: Main_DT_H4_c Cmd: player.translation Anchor_DT_Bed
+Id: 10193 Code: Main_DT_H4_c Cmd: npc.add_npc_favorability_star N_DT
+Id: 10194 Code: Main_DT_H4_c Cmd: task.take Main_DT_H5_Pre
+Id: 10195 Code: Main_DT_H4_c Cmd: task.take Main_DT_H4_Sleep
+Id: 10196 Code: Main_QS_H2S_c Cmd: conv.speak Main_QS_H2S_c
+Id: 10197 Code: Main_QS_H2S_c Cmd: task.delivery Main_QS_H2S_Task
+Id: 10198 Code: Main_QS_H2S_c Cmd: conv.frag OldBookDelivery_Talk
+Id: 10199 Code: Main_QS_H2S_c Cmd: task.take Main_QS_H2X_Task
+Id: 10200 Code: Main_QS_H2X_c Cmd: conv.speak Main_QS_H2X_c
+Id: 10201 Code: Main_QS_H2X_c Cmd: task.delivery Main_QS_H2X_Task
+Id: 10202 Code: Main_QS_H2X_c Cmd: task.take Main_QS_H2Y_Task
+Id: 10203 Code: Main_QS_H2Y_c Cmd: conv.speak Main_QS_H2Y_c
+Id: 10204 Code: Main_QS_H2Y_c Cmd: task.delivery Main_QS_H2Y_Task
+Id: 10205 Code: Main_QS_H2Y_c Cmd: task.take Main_QS_H2Z_Task
+Id: 10206 Code: Story_QS_Daily Cmd: story.play Story_QS_Daily
+Id: 10207 Code: Story_QS_Daily Cmd: task.delivery Main_QS_H2Z_Task
+Id: 10208 Code: Story_QS_Daily Cmd: task.take Task_QS_Daily
+Id: 10209 Code: Story_QS_Daily Cmd: task.take Task_QS_DailyNext
+Id: 10210 Code: Main_QS_H2A_c Cmd: conv.speak Main_QS_H2A_c
+Id: 10211 Code: Main_QS_H2A_c Cmd: task.delivery Main_QS_H2A_Task
+Id: 10212 Code: Main_QS_TalkAY Cmd: conv.speak Main_QS_TalkAY
+Id: 10213 Code: Main_QS_TalkAY Cmd: task.delivery Main_QS_TalkAY
+Id: 10214 Code: Main_QS_TalkDT Cmd: conv.speak Main_QS_TalkDT
+Id: 10215 Code: Main_QS_TalkDT Cmd: task.delivery Main_QS_TalkDT
+Id: 10216 Code: Main_QS_TalkAY_End Cmd: conv.speak Main_QS_TalkAY_End
+Id: 10217 Code: Main_QS_TalkAY_End Cmd: task.delivery Main_QS_TalkAY
+Id: 10218 Code: Main_QS_TalkAY_End Cmd: task.delivery Main_QS_TalkAY_End
+Id: 10219 Code: Main_QS_TalkAY_End Cmd: task.delivery Main_QS_H2A_Task
+Id: 10220 Code: Main_QS_TalkDT_End Cmd: conv.speak Main_QS_TalkDT_End
+Id: 10221 Code: Main_QS_TalkDT_End Cmd: task.delivery Main_QS_TalkDT
+Id: 10222 Code: Main_QS_TalkDT_End Cmd: task.delivery Main_QS_TalkDT_End
+Id: 10223 Code: Main_QS_TalkDT_End Cmd: task.delivery Main_QS_H2A_Task
+Id: 10224 Code: QS_Perform_Water Cmd: story.play Story_QS_Water
+Id: 10225 Code: QS_Perform_Water Cmd: story.play Story_QS_WaterUnder
+Id: 10226 Code: QS_Perform_Water Cmd: story.play Story_QS_Beach
+Id: 10227 Code: QS_Perform_Water Cmd: task.delivery Main_QS_H3_Task
+Id: 10228 Code: QS_Perform_Water Cmd: task.take Main_QS_H3S_Task
+Id: 10229 Code: QS_Perform_Water Cmd: task.take QS_Task_Sleep
+Id: 10230 Code: QS_Perform_Water Cmd: player.translation Anchor_QS_Back
+Id: 10231 Code: QS_Perform_Water Cmd: npc.add_npc_favorability_star N_QS
+Id: 10232 Code: QS_Sleep_Talk Cmd: conv.speak QS_Sleep_Talk
+Id: 10233 Code: QS_Door_Talk Cmd: story.play Story_QS_Talk_Door
+Id: 10234 Code: QS_Door_Talk Cmd: task.delivery Main_QS_H3S_Task
+Id: 10235 Code: QS_Door_Talk Cmd: task.take QS_Task_Door
+Id: 10236 Code: QS_Door_Talk Cmd: task.delivery QS_Task_Door
+Id: 10237 Code: QS_Door_Talk Cmd: task.take Main_QS_H4_Pre
+Id: 10238 Code: Daily_Sub_A Cmd: conv.speak Daily_Sub_A
+Id: 10239 Code: Daily_Sub_A Cmd: item.add ItemNote 1
+Id: 10240 Code: Daily_Sub_A Cmd: task.take Daily_Sub_A
+Id: 10241 Code: Daily_Sub_A Cmd: task.delivery Daily_Sub_A
+Id: 10242 Code: Daily_Sub_B Cmd: conv.speak Daily_Sub_B
+Id: 10243 Code: Daily_Sub_B Cmd: item.add ItemNote 1
+Id: 10244 Code: Daily_Sub_B Cmd: task.take Daily_Sub_B
+Id: 10245 Code: Daily_Sub_B Cmd: task.delivery Daily_Sub_B
+Id: 10246 Code: Daily_Sub_C Cmd: conv.speak Daily_Sub_C
+Id: 10247 Code: Daily_Sub_C Cmd: item.add ItemNote 1
+Id: 10248 Code: Daily_Sub_C Cmd: task.take Daily_Sub_C
+Id: 10249 Code: Daily_Sub_C Cmd: task.delivery Daily_Sub_C
+Id: 10250 Code: Daily_Sub_D Cmd: conv.speak Daily_Sub_D
+Id: 10251 Code: Daily_Sub_D Cmd: item.add ItemNote 1
+Id: 10252 Code: Daily_Sub_D Cmd: task.take Daily_Sub_D
+Id: 10253 Code: Daily_Sub_D Cmd: task.delivery Daily_Sub_D
+Id: 10254 Code: QS_Task_H4S Cmd: conv.speak QS_Task_H4S
+Id: 10255 Code: QS_Task_H4S Cmd: task.delivery Main_QS_H4_Task
+Id: 10256 Code: QS_Task_H4S Cmd: task.take Main_QS_H4S_Task
+Id: 10257 Code: Story_QS_Cry Cmd: task.delivery Main_QS_H4S_Task
+Id: 10258 Code: Story_QS_Cry Cmd: story.play Story_QS_Cry
+Id: 10259 Code: Story_QS_Cry Cmd: story.play Story_QS_CryAfter
+Id: 10260 Code: Story_QS_Cry Cmd: story.play Story_QS_Cut
+Id: 10261 Code: Story_QS_Cry Cmd: task.take QS_Task_Find
+Id: 10262 Code: Story_QS_Cry Cmd: npc.set_npc_favor_star N_QS 0
+Id: 10263 Code: QS_Task_SF_Sad Cmd: conv.speak QS_Task_SF_Sad
+Id: 10264 Code: QS_Task_SF_Sad Cmd: task.delivery QS_Task_Find
+Id: 10265 Code: QS_Task_SF_Sad Cmd: task.take Main_QS_H4X_Task
+Id: 10266 Code: QS_H4X_Task_c Cmd: conv.speak QS_Task_AskAY_Pre
+Id: 10267 Code: QS_H4X_Task_c Cmd: task.delivery Main_QS_H4X_Task
+Id: 10268 Code: QS_H4X_Task_c Cmd: task.take Main_QS_XN_Task
+Id: 10269 Code: QS_H4Y_Task_c Cmd: conv.speak QS_Task_AskAY_Post
+Id: 10270 Code: QS_H4Y_Task_c Cmd: task.delivery Main_QS_XN_Task
+Id: 10271 Code: QS_H4Y_Task_c Cmd: task.take Main_QS_H4Y_Task
+Id: 10272 Code: QS_H4Y_Task_c Cmd: item.add ItemHerb2007 1
+Id: 10273 Code: QS_H4Y_Task_c Cmd: item.add ItemHerb3003 1
+Id: 10274 Code: QS_Task_CheckRoom Cmd: conv.speak QS_Task_CheckRoom
+Id: 10275 Code: QS_Task_CheckRoom Cmd: task.delivery Main_QS_H4Y_Task
+Id: 10276 Code: QS_Task_CheckRoom Cmd: task.take Main_QS_H4Z_Task
+Id: 10277 Code: QS_Task_ExpelBag Cmd: task.delivery Main_QS_H4Z_Task
+Id: 10278 Code: QS_Task_ExpelBag Cmd: conv.speak QS_Task_ExpelBag
+Id: 10279 Code: QS_Task_ExpelBag Cmd: task.take Main_QS_H4A_Task
+Id: 10280 Code:  Cmd:
+Id: 10281 Code: Story_QS_ReMeet Cmd: story.play Story_QS_ReMeet
+Id: 10282 Code: Story_QS_ReMeet Cmd: task.delivery Main_QS_H4A_Task
+Id: 10283 Code: Story_QS_ReMeet Cmd: task.take Main_QS_H4B_Task
+Id: 10284 Code: QS_Task_HouseClue_A Cmd: conv.speak QS_Task_HouseClue_A
+Id: 10285 Code: QS_Task_HouseClue Cmd: task.take Main_QS_H4C_Task
+Id: 10286 Code: HouseClue_A Cmd: conv.speak HouseClue_A
+Id: 10287 Code: QS_Task_HouseClue_B Cmd: conv.speak QS_Task_HouseClue_B
+Id: 10288 Code: QS_Task_HouseClue_C Cmd: conv.speak QS_Task_HouseClue_C
+Id: 10289 Code: QS_Task_HouseClue_D Cmd: story.play Story_QS_Clue
+Id: 10290 Code: QS_Task_ReqWC_UnReady Cmd: conv.speak QS_Task_ReqWC_UnReady
+Id: 10291 Code: QS_Task_ReqWC_Pre Cmd: task.delivery Main_QS_H4C_Task
+Id: 10292 Code: QS_Task_ReqWC_Pre Cmd: conv.speak QS_Task_ReqWC_Pre
+Id: 10293 Code: QS_Task_ReqWC_Pre Cmd: task.take Main_QS_H4D_Task
+Id: 10294 Code: QS_Memory_A Cmd: story.play Story_QS_Memory_A
+Id: 10295 Code: QS_Memory_A Cmd: task.take QS_Task_Memory_A
+Id: 10296 Code: QS_Memory_A Cmd: task.delivery QS_Task_Memory_A
+Id: 10297 Code: QS_Memory_A Cmd: item.add ItemMemory 1
+Id: 10298 Code: QS_Memory_B Cmd: story.play Story_QS_Memory_B
+Id: 10299 Code: QS_Memory_B Cmd: task.take QS_Task_Memory_B
+Id: 10300 Code: QS_Memory_B Cmd: task.delivery QS_Task_Memory_B
+Id: 10301 Code: QS_Memory_B Cmd: item.add ItemMemory 1
+Id: 10302 Code: QS_Memory_C Cmd: story.play Story_QS_Memory_C
+Id: 10303 Code: QS_Memory_C Cmd: task.take QS_Task_Memory_C
+Id: 10304 Code: QS_Memory_C Cmd: task.delivery QS_Task_Memory_C
+Id: 10305 Code: QS_Memory_C Cmd: item.add ItemMemory 1
+Id: 10306 Code: QS_Memory_D Cmd: story.play Story_QS_Memory_D
+Id: 10307 Code: QS_Memory_D Cmd: task.take QS_Task_Memory_D
+Id: 10308 Code: QS_Memory_D Cmd: task.delivery QS_Task_Memory_D
+Id: 10309 Code: QS_Memory_D Cmd: item.add ItemMemory 1
+Id: 10310 Code: QS_Memory_E Cmd: story.play Story_QS_Memory_E
+Id: 10311 Code: QS_Memory_E Cmd: item.add ItemMemory 1
+Id: 10312 Code: QS_Memory_E Cmd: task.delivery Main_QS_H4D_Task
+Id: 10313 Code: QS_Memory_E Cmd: task.take Main_QS_H4E_Task
+Id: 10314 Code: ED Cmd: task.delivery Main_QS_H4E_Task
+Id: 10315 Code: ED Cmd: story.play Story_QS_TransPre
+Id: 10316 Code: ED Cmd: story.play Story_QS_Translate
+Id: 10317 Code: ED Cmd: story.play Story_QS_TransFix
+Id: 10318 Code: ED Cmd: story.play Story_ED_Ship
+Id: 10319 Code: ED Cmd: npc.set_npc_favor_star N_QS 5
+Id: 10320 Code: ED Cmd: day.advance_to_hour 7
+Id: 10321 Code: ED Cmd: player.translation Anchor_Wakeup
+Id: 10322 Code: ED Cmd: record.mark_pass
+Id: 10323 Code: ED Cmd: record.save
+Id: 10324 Code: ED Cmd: procedure.return_to_login
+Id: 10325 Code: GamePass Cmd: story.play Story_ED_Return
+Id: 10326 Code: GamePass Cmd: record.save
+Id: 10327 Code: Main_WN_H1_Pre Cmd: conv.speak N_WN_Task_SF_Req_Pre
+Id: 10328 Code: Main_WN_H1_Pre Cmd: task.take Main_WN_H1_Pre
+Id: 10329 Code: Story_WN_Dance Cmd: story.play Story_WN_Dance
+Id: 10330 Code: Story_WN_Dance Cmd: task.take Main_WN_H1_Dance
+Id: 10331 Code: Story_WN_Dance Cmd: task.delivery Main_WN_H1_Dance
+Id: 10332 Code: Main_WN_H1_Talk_N Cmd: conv.speak N_WN_Task_Fight_A_UnReady
+Id: 10333 Code: Main_WN_H1_Talk_N Cmd: conv.selectbox
+Id: 10334 Code: Main_WN_H1 Cmd: conv.speak N_WN_Task_Fight_A_Pre
+Id: 10335 Code: Main_WN_H1 Cmd: task.delivery Main_WN_H1_Pre
+Id: 10336 Code: Main_WN_H1 Cmd: task.take Main_WN_H1
+Id: 10337 Code: Main_WN_H1 Cmd: conv.speak N_WN_Task_Fight_A_Post
+Id: 10338 Code: Main_WN_H1 Cmd: player.interact_over
+Id: 10339 Code:  Cmd: player.translation Anchor_Wakeup
+Id: 10340 Code: Main_WN_H1 Cmd: story.play Story_WN_Feet
+Id: 10341 Code: Main_WN_H1 Cmd: npc.add_npc_favorability_star N_WN
+Id: 10342 Code:  Cmd: day.jump_next_resttime
+Id: 10343 Code: Main_WN_H2_Pre Cmd: conv.speak N_WN_Task_Fight_B_UnReady
+Id: 10344 Code: Main_WN_H2_Pre Cmd: task.delivery Main_WN_H1
+Id: 10345 Code: Main_WN_H2_Pre Cmd: task.take Main_WN_H2_Pre
+Id: 10346 Code: Main_WN_H2_Talk_N Cmd: conv.speak N_WN_Task_Fight_B_UnReady
+Id: 10347 Code: Main_WN_H2_Talk_N Cmd: conv.selectbox
+Id: 10348 Code: Main_WN_H2 Cmd: conv.speak N_WN_Task_Fight_B_Pre
+Id: 10349 Code: Main_WN_H2 Cmd: task.delivery Main_WN_H2_Pre
+Id: 10350 Code: Main_WN_H2 Cmd: task.take Main_WN_H2_Build
+Id: 10351 Code: Main_WN_H2_Build Cmd: task.take Main_WN_H2_PK
+Id: 10352 Code: Main_WN_H2_PK Cmd: player.interact_over
+Id: 10353 Code: Main_WN_H2_PK Cmd: player.translation Anchor_WN_Bed
+Id: 10354 Code: Main_WN_H2_PK Cmd: story.play Story_WN_BuildTing
+Id: 10355 Code: Main_WN_H2_PK Cmd: npc.competition N_WN 0
+Id: 10356 Code: Main_WN_H2_PK_S Cmd: npc.add_npc_favorability_star N_WN
+Id: 10357 Code: Main_WN_H2_PK_S Cmd: story.play Story_WN_KouBB_After
+Id: 10358 Code: Main_WN_H2_PK_S Cmd: story.play Story_WN_KouBB_After_M
+Id: 10359 Code: Main_WN_H2_PK_S Cmd: task.take Main_WN_H3_Pre
+Id: 10360 Code: Main_WN_H2_PK_S Cmd: day.jump_next_resttime
+Id: 10361 Code: Main_WN_H3_Talk_N Cmd: conv.speak N_WN_Task_Fight_C_UnReady
+Id: 10362 Code: Main_WN_H3_Talk_N Cmd: conv.selectbox
+Id: 10363 Code: Main_WN_H3 Cmd: conv.speak N_WN_Task_Fight_C_Pre
+Id: 10364 Code: Main_WN_H3 Cmd: task.delivery Main_WN_H3_Pre
+Id: 10365 Code: Main_WN_H3 Cmd: task.take Main_WN_H3_Recover
+Id: 10366 Code: Main_WN_H3_Recover Cmd: conv.speak N_WN_Task_AskQS_Pre
+Id: 10367 Code: Main_WN_H3_Recover Cmd: task.delivery Main_WN_H3_Recover
+Id: 10368 Code: Main_WN_H3_Recover Cmd: task.take Main_WN_H3_Find
+Id: 10369 Code: Main_WN_H3_Find Cmd: conv.speak N_WN_Task_AskQS_Post
+Id: 10370 Code: Main_WN_H3_Find Cmd: task.take Main_WN_H3_PK
+Id: 10371 Code: Main_WN_H3_PK Cmd: player.interact_over
+Id: 10372 Code: Main_WN_H3_PK Cmd: npc.competition N_WN 1
+Id: 10373 Code: Main_WN_H3_PK Cmd: day.jump_time 22
+Id: 10374 Code: Main_WN_H3_PK Cmd: player.translation Anchor_WN_Bed
+Id: 10375 Code: Main_WN_H3_PK_S Cmd: story.play Story_WN_Fight_C_After
+Id: 10376 Code: Main_WN_H3_PK_S Cmd: task.take Main_WN_H3_Tomorrow
+Id: 10377 Code:  Cmd: day.jump_next_resttime
+Id: 10378 Code: Main_WN_H3_PK_S Cmd: task.take Main_WN_H3_Sleep
+Id: 10379 Code: Main_WN_H3_Sleep Cmd: task.delivery Main_WN_H3_Sleep
+Id: 10380 Code: N_WN_SexBodyClue Cmd: story.play Story_WN_SexBodyClue
+Id: 10381 Code: N_WN_SexBodyClue Cmd: task.take Main_WN_H3_QS
+Id: 10382 Code: N_WN_SexBodyClue Cmd: task.delivery Main_WN_H3_QS
+Id: 10383 Code: Story_WN_Scold Cmd: story.play Story_WN_Scold
+Id: 10384 Code: Story_WN_Scold Cmd: task.delivery Main_WN_H3_Tomorrow
+Id: 10385 Code: Story_WN_Scold Cmd: task.take Main_WN_H3_Give
+Id: 10386 Code: Main_WN_H3_Give Cmd: conv.speak Main_WN_H3_Give
+Id: 10387 Code: Main_WN_H3_Give Cmd: task.delivery Main_WN_H3_Give
+Id: 10388 Code: Main_WN_H3_Give Cmd: task.take Main_WN_H3_Bee
+Id: 10389 Code: Give_Pre Cmd: conv.speak Give_Pre
+Id: 10390 Code: Give_Post Cmd: conv.speak Give_Post
+Id: 10391 Code: Story_WN_Scold_After Cmd: story.play Story_WN_Scold_After
+Id: 10392 Code: Story_WN_Scold_After Cmd: task.delivery Main_WN_H3_Bee
+Id: 10393 Code: Story_WN_Scold_After Cmd: task.take Main_WN_H3_Look
+Id: 10394 Code: Story_WN_SaveBody Cmd: story.play Story_WN_SaveBody
+Id: 10395 Code: Story_WN_SaveBody Cmd: story.play Story_WN_SaveBody_M
+Id: 10396 Code: Story_WN_SaveBody Cmd: npc.add_npc_favorability_star N_WN
+Id: 10397 Code: Story_WN_SaveBody Cmd: task.delivery Main_WN_H3_Look
+Id: 10398 Code: Story_WN_SaveBody Cmd: task.take Main_WN_H4_Pre
+Id: 10399 Code: Story_WN_SaveBody Cmd: player.translation Anchor_WN_Bed
+Id: 10400 Code: Story_WN_SaveBody Cmd: day.jump_next_resttime
+Id: 10401 Code: Main_WN_H4_Talk_N Cmd: conv.speak N_WN_Task_Fight_D_UnReady
+Id: 10402 Code: Main_WN_H4_Talk_N Cmd: conv.selectbox
+Id: 10403 Code: Main_WN_H4 Cmd: conv.speak N_WN_Task_Fight_D_Pre
+Id: 10404 Code: Main_WN_H4 Cmd: task.delivery Main_WN_H4_Pre
+Id: 10405 Code: Main_WN_H4 Cmd: task.take Main_WN_H4_PK
+Id: 10406 Code: Main_WN_H4_PK Cmd: player.interact_over
+Id: 10407 Code: Main_WN_H4_PK Cmd: npc.competition N_WN 2
+Id: 10408 Code: Main_WN_H4_PK Cmd: day.jump_time 22
+Id: 10409 Code: Main_WN_H4_PK Cmd: player.translation Anchor_WN_Bed
+Id: 10410 Code: Main_WN_H4_PK_S Cmd: story.play Story_WN_Fight_D_After
+Id: 10411 Code: Main_WN_H4_PK_S Cmd: task.take Main_WN_H4_Heal
+Id: 10412 Code: Main_WN_H4_PK_S Cmd: npc.add_npc_favorability_star N_WN
+Id: 10413 Code:  Cmd: day.jump_next_resttime
+Id: 10414 Code: Main_WN_H4_Prepare Cmd: conv.speak N_WN_Task_Fight_D_QS_Pre
+Id: 10415 Code: Main_WN_H4_Prepare Cmd: task.delivery Main_WN_H4_Heal
+Id: 10416 Code: Main_WN_H4_Prepare Cmd: task.take Main_WN_H4_Exchange
+Id: 10417 Code: Exchange_Pre Cmd: conv.speak Exchange_Pre
+Id: 10418 Code: Main_WN_H4_Exchange Cmd: conv.speak N_WN_Task_Fight_D_QS_Post
+Id: 10419 Code: Main_WN_H4_Exchange Cmd: task.delivery Main_WN_H4_Exchange
+Id: 10420 Code: Main_WN_H4_Exchange Cmd: task.take Main_WN_H4_DoHeal
+Id: 10421 Code: Main_WN_H4_DoHeal Cmd: story.play Story_WN_BodyHeal_Pre
+Id: 10422 Code: Main_WN_H4_DoHeal Cmd: story.play Story_WN_BodyHeal
+Id: 10423 Code: Main_WN_H4_DoHeal Cmd: task.delivery Main_WN_H4_DoHeal
+Id: 10424 Code: Main_WN_H4_DoHeal Cmd: task.take Main_WN_H5_Pre
+Id: 10425 Code: Main_WN_H4_DoHeal Cmd: player.translation Anchor_WN_Bed
+Id: 10426 Code: Main_WN_H4_DoHeal Cmd: task.take Main_WN_H4_Sleep
+Id: 10427 Code:  Cmd: day.jump_next_resttime
+Id: 10428 Code: Main_WN_H5_Talk_N Cmd: conv.speak N_WN_Task_Fight_E_UnReady
+Id: 10429 Code: Main_WN_H5_Talk_N Cmd: conv.selectbox
+Id: 10430 Code: Main_WN_H5 Cmd: conv.speak N_WN_Task_Fight_E_Pre
+Id: 10431 Code: Main_WN_H5 Cmd: task.delivery Main_WN_H5_Pre
+Id: 10432 Code: Main_WN_H5 Cmd: task.take Main_WN_H4_Build
+Id: 10433 Code: Main_WN_H4_Build Cmd: story.play Story_WN_House_After
+Id: 10434 Code: Main_WN_H4_Build Cmd: task.take Main_WN_H5_Build
+Id: 10435 Code: Main_WN_H5_Build Cmd: task.take Main_WN_H5_GoHome
+Id: 10436 Code: N_WN_GoHome Cmd: conv.speak N_WN_Task_Fight_E_Post
+Id: 10437 Code: N_WN_GoHome Cmd: player.interact_over
+Id: 10438 Code: N_WN_GoHome Cmd: task.delivery Main_WN_H5_GoHome
+Id: 10439 Code: N_WN_GoHome Cmd: story.play Story_WN_GoHome
+Id: 10440 Code: N_WN_GoHome Cmd: npc.touch  N_WN Room 0
+Id: 10441 Code: N_WN_GoHome Cmd: npc.add_npc_favorability_star N_WN
+Id: 10442 Code: N_WN_GoHome Cmd: story.play Story_WN_FFight_After
+Id: 10443 Code: N_WN_GoHome Cmd: player.translation Anchor_WN_Home
+Id: 10444 Code: N_WN_GoHome Cmd: record.save
+Id: 10445 Code: N_WN_GoHome Cmd: day.jump_next_resttime
+Id: 10446 Code:  Cmd:
+Id: 10447 Code: QS_Task_Miss_c Cmd: task.delivery QS_Task_Miss
+Id: 10448 Code: QS_Perform_Miss Cmd: story.play Story_QS_Miss
+Id: 10449 Code: QS_Perform_Miss Cmd: task.take QS_Task_Water
+Id: 10450 Code: QS_Task_Sleep_c Cmd: task.delivery QS_Task_Sleep
+Id: 10451 Code: QS_Task_1S_c Cmd: task.delivery QS_Task_1S
+Id: 10452 Code: QS_Perform_Memory Cmd: story.play Story_QS_Memory
+Id: 10453 Code: QS_Perform_Memory Cmd: task.take QS_Task_1
+Id: 10454 Code: QS_Perform_Scold Cmd: story.play Story_QS_Scold
+Id: 10455 Code: QS_Perform_Scold Cmd: task.delivery QS_Task_0S
+Id: 10456 Code: QS_Perform_Scold Cmd: task.take QS_Task_0S
+Id: 10457 Code: QS_Task_0_g Cmd: conv.speak QS_Task_0_g_Talk
+Id: 10458 Code: QS_Task_0_g Cmd: task.take QS_Task_0
+Id: 10459 Code: QS_Task_0_c Cmd: conv.speak QS_Task_0_c_Talk
+Id: 10460 Code: QS_Task_0_c Cmd: task.delivery QS_Task_0
+Id: 10461 Code: BT_AY_PF_g Cmd: conv.speak BT_AY_PF_g_Talk
+Id: 10462 Code: BT_AY_PF_g Cmd: task.take BT_AY_PF
+Id: 10463 Code: BT_AY_PF_c Cmd: task.delivery BT_AY_PF
+Id: 10464 Code: BT_AY_PF_c Cmd: player.interact_over
+Id: 10465 Code: BT_AY_PF_c Cmd: story.play Touch/N_AY_Touch_CP_QS
+Id: 10466 Code: Play_AY Cmd: player.interact_over
+Id: 10467 Code: Play_AY Cmd: story.play Touch/N_AY_Touch_CP_QS
+Id: 10468 Code:  Cmd:
+Id: 10469 Code: Story_YR_Comming Cmd: story.play Story_YR_Comming
+Id: 10470 Code: Story_YR_Comming Cmd: task.take YR_Comming
+Id: 10471 Code: Story_YR_BuyFirst Cmd: player.interact_over
+Id: 10472 Code: Story_YR_BuyFirst Cmd: story.play Story_YR_BuyFirst
+Id: 10473 Code: Story_YR_BuyFirst Cmd: story.play Story_YR_MouthEat
+Id: 10474 Code: Story_YR_BuyFirst Cmd: item.remove ItemGold 100
+Id: 10475 Code: Story_YR_BuyFirst Cmd: task.delivery YR_Comming
+Id: 10476 Code: Story_YR_BuyFirst Cmd: npc.touch N_YR Cage_1 5
+Id: 10477 Code: Story_YR_BuyFirst Cmd: task.take BuySex2
+Id: 10478 Code: BuySex1 Cmd: player.interact_over
+Id: 10479 Code: BuySex1 Cmd: npc.touch N_YR Cage_1 5
+Id: 10480 Code: BuySex1 Cmd: item.remove ItemGold 100
+Id: 10481 Code: BuySex2 Cmd: conv.speak N_YR_Task_BuySec_Pre
+Id: 10482 Code: BuySex2 Cmd: player.interact_over
+Id: 10483 Code: BuySex2 Cmd: npc.touch N_YR Cage_2 5
+Id: 10484 Code: BuySex2 Cmd: item.remove ItemGold 300
+Id: 10485 Code: BuySex2 Cmd: task.mark BuySex2
+Id: 10486 Code: BuySex2 Cmd: task.take BuySex3
+Id: 10487 Code: BuySex3 Cmd: conv.speak N_YR_Task_BuyTrd_Pre
+Id: 10488 Code: BuySex3 Cmd: player.interact_over
+Id: 10489 Code: BuySex3 Cmd: npc.touch N_YR Cage_3 5
+Id: 10490 Code: BuySex3 Cmd: item.remove ItemGold 500
+Id: 10491 Code: BuySex3 Cmd: task.mark BuySex3
+Id: 10492 Code: BuySexF Cmd: player.interact_over
+Id: 10493 Code: BuySexF Cmd: npc.touch N_YR Cage_3 5
+Id: 10494 Code: Story_XW_Comming Cmd: story.play Story_XW_Comming
+Id: 10495 Code: Story_XW_Comming Cmd: task.mark Story_XW_Comming
+Id: 10496 Code: Main_XW_H1_SF Cmd: conv.speak N_XW_Task_Comming_Post
+Id: 10497 Code: Main_XW_H1_SF Cmd: task.take Main_XW_H1_SF
+Id: 10498 Code: Main_XW_H1_Pre Cmd: conv.speak N_XW_Task_Assist_A_Pre
+Id: 10499 Code: Main_XW_H1_Pre Cmd: task.delivery Main_XW_H1_SF
+Id: 10500 Code: Main_XW_H1_Pre Cmd: task.take Main_XW_H1_Pre
+Id: 10501 Code: Main_XW_H1_Talk_N Cmd: conv.speak N_XW_Task_Assist_A_UnReady
+Id: 10502 Code: Main_XW_H1_Talk_N Cmd: conv.selectbox
+Id: 10503 Code: Main_XW_H1 Cmd: conv.speak N_XW_Task_Assist_A_Post
+Id: 10504 Code: Main_XW_H1 Cmd: task.delivery Main_XW_H1_Pre
+Id: 10505 Code: Main_XW_H1 Cmd: task.take Main_XW_H1_PK
+Id: 10506 Code: Main_XW_H1_PK Cmd: player.interact_over
+Id: 10507 Code: Main_XW_H1_PK Cmd: npc.dredge N_XW 0
+Id: 10508 Code: Main_XW_H1_PK_S Cmd: player.translation Anchor_Wakeup
+Id: 10509 Code: Main_XW_H1_PK_S Cmd: task.take Main_XW_H1_Train
+Id: 10510 Code: Main_XW_H1_PK_S Cmd: npc.add_npc_favorability_star N_XW
+Id: 10511 Code: Main_XW_H1_PK_S Cmd: day.jump_next_resttime
+Id: 10512 Code: Main_XW_H1_PK_S Cmd: story.play Story_XW_DredgePost
+Id: 10513 Code: Main_XW_H1_PK_S Cmd: story.play Sleep/Sleep_Def
+Id: 10514 Code: Main_XW_H1_PK_S Cmd: record.save
+Id: 10515 Code: Main_XW_H2_Pre Cmd: story.play Story_XW_Train
+Id: 10516 Code: Main_XW_H2_Pre Cmd: task.delivery Main_XW_H1_Train
+Id: 10517 Code: Main_XW_H2_Pre Cmd: task.take Main_XW_H2_Pre
+Id: 10518 Code: Main_XW_H2_Talk_N Cmd: conv.speak N_XW_Task_Assist_B_UnReady
+Id: 10519 Code: Main_XW_H2_Talk_N Cmd: conv.selectbox
+Id: 10520 Code: Main_XW_H2 Cmd: conv.speak N_XW_Task_Assist_B_Post
+Id: 10521 Code: Main_XW_H2 Cmd: task.delivery Main_XW_H2_Pre
+Id: 10522 Code: Main_XW_H2 Cmd: task.take Main_XW_H2_PK
+Id: 10523 Code: Main_XW_H2_PK Cmd: player.interact_over
+Id: 10524 Code: Main_XW_H2_PK Cmd: npc.dredge N_XW 1
+Id: 10525 Code: Main_XW_H2_PK_S Cmd: player.translation Anchor_Wakeup
+Id: 10526 Code: Main_XW_H2_PK_S Cmd: task.take Main_XW_H2_Find
+Id: 10527 Code: Main_XW_H2_PK_S Cmd: npc.add_npc_favorability_star N_XW
+Id: 10528 Code: Main_XW_H2_PK_S Cmd: day.jump_next_resttime
+Id: 10529 Code: Main_XW_H2_PK_S Cmd: story.play Story_XW_DredgePost
+Id: 10530 Code: Main_XW_H2_PK_S Cmd: story.play Sleep/Sleep_Def
+Id: 10531 Code: Main_XW_H2_PK_S Cmd: record.save
+Id: 10532 Code: Story_XW_LostYR Cmd: story.play Story_XW_LostYR
+Id: 10533 Code: Story_XW_LostYR Cmd: task.delivery Main_XW_H2_Find
+Id: 10534 Code: Story_XW_LostYR Cmd: task.take Main_XW_H2_Gun
+Id: 10535 Code: Story_XW_SaveYR Cmd: story.play Story_XW_SaveYR
+Id: 10536 Code: Story_XW_SaveYR Cmd: task.delivery Main_XW_H2_Gun
+Id: 10537 Code: Story_XW_SaveYR Cmd: task.take Main_XW_H3_Pre
+Id: 10538 Code: Main_XW_H3_Talk_N Cmd: conv.speak N_XW_Task_Assist_C_UnReady
+Id: 10539 Code: Main_XW_H3_Talk_N Cmd: conv.selectbox
+Id: 10540 Code: Main_XW_H3 Cmd: task.delivery Main_XW_H3_Pre
+Id: 10541 Code: Main_XW_H3 Cmd: player.interact_over
+Id: 10542 Code: Main_XW_H3 Cmd: story.play Story_XW_RecvMsg
+Id: 10543 Code: Main_XW_H3 Cmd: task.take Main_XW_H3_Boom
+Id: 10544 Code: Main_XW_H3_Boom Cmd: task.delivery Main_XW_H3_Boom
+Id: 10545 Code: Main_XW_H3_Boom Cmd: story.play Story_XW_EnterCave
+Id: 10546 Code: Main_XW_H3_Boom Cmd: task.take Main_XW_H3_PK
+Id: 10547 Code: Main_XW_H3_PK Cmd: player.interact_over
+Id: 10548 Code: Main_XW_H3_PK Cmd: npc.dredge N_XW 2
+Id: 10549 Code: Main_XW_H3_PK_S Cmd: story.play Story_XW_CaveML
+Id: 10550 Code: Main_XW_H3_PK_S Cmd: story.play Story_XW_CaveSF
+Id: 10551 Code: Main_XW_H3_PK_S Cmd: npc.add_npc_favorability_star N_XW
+Id: 10552 Code: Main_XW_H3_PK_S Cmd: player.translation Anchor_Wakeup
+Id: 10553 Code: Main_XW_H3_PK_S Cmd: day.jump_next_resttime
+Id: 10554 Code: Main_XW_H3_PK_S Cmd: task.take Main_XW_H3_Build
+Id: 10555 Code: Main_XW_H3_PK_S Cmd: story.play Story_XW_DredgePost
+Id: 10556 Code: Main_XW_H3_PK_S Cmd: story.play Sleep/Sleep_Def
+Id: 10557 Code: Main_XW_H3_PK_S Cmd: record.save
+Id: 10558 Code: Main_XW_H3_Build Cmd: task.take Main_XW_H4_Pre
+Id: 10559 Code: Main_XW_H4_Talk_N Cmd: conv.speak N_XW_Task_Assist_D_UnReady
+Id: 10560 Code: Main_XW_H4_Talk_N Cmd: conv.selectbox
+Id: 10561 Code: Main_XW_H4 Cmd: conv.speak N_XW_Task_Assist_D_Post
+Id: 10562 Code: Main_XW_H4 Cmd: task.delivery Main_XW_H4_Pre
+Id: 10563 Code: Main_XW_H4 Cmd: task.take Main_XW_H4_Find
+Id: 10564 Code: Main_XW_H5_Pre Cmd: story.play Story_XW_SleepPre
+Id: 10565 Code: Main_XW_H5_Pre Cmd: story.play Story_XW_SleepPost
+Id: 10566 Code: Main_XW_H5_Pre Cmd: task.delivery Main_XW_H4_Find
+Id: 10567 Code: Main_XW_H5_Pre Cmd: task.take Main_XW_H5_Pre
+Id: 10568 Code: Main_XW_H5_Pre Cmd: npc.add_npc_favorability_star N_XW
+Id: 10569 Code: Main_XW_H5_Pre Cmd: player.translation Anchor_Wakeup
+Id: 10570 Code: Main_XW_H5_Pre Cmd: day.jump_next_resttime
+Id: 10571 Code: Main_XW_H5_Talk_N Cmd: conv.speak N_XW_Task_Assist_E_UnReady
+Id: 10572 Code: Main_XW_H5_Talk_N Cmd: conv.selectbox
+Id: 10573 Code: Main_XW_H5 Cmd: conv.speak N_XW_Task_Assist_E_Post
+Id: 10574 Code: Main_XW_H5 Cmd: task.delivery Main_XW_H5_Pre
+Id: 10575 Code: Main_XW_H5 Cmd: task.take Main_XW_H5_AskSF
+Id: 10576 Code: Main_XW_H5_AskSF Cmd: conv.speak N_XW_Task_SF_E_Pre
+Id: 10577 Code: Main_XW_H5_AskSF Cmd: task.delivery Main_XW_H5_AskSF
+Id: 10578 Code: Main_XW_H5_AskSF Cmd: task.take Main_XW_H5_GiftSF
+Id: 10579 Code: Main_XW_H5_GiftSF Cmd: conv.speak N_XW_Task_SF_E_Post
+Id: 10580 Code: Main_XW_H5_GiftSF Cmd: task.delivery Main_XW_H5_GiftSF
+Id: 10581 Code: Main_XW_H5_GiftSF Cmd: task.take Main_XW_H5_Reply
+Id: 10582 Code: Story_XW_FinalHit Cmd: story.play Story_XW_FinalHit
+Id: 10583 Code: Story_XW_FinalHit Cmd: player.translation Anchor_Wakeup
+Id: 10584 Code: Story_XW_FinalHit Cmd: day.jump_next_resttime
+Id: 10585 Code: Story_XW_FinalHit Cmd: task.delivery Main_XW_H5_Reply
+Id: 10586 Code: Story_XW_FinalHit Cmd: task.take Main_XW_H5_Find
+Id: 10587 Code: Story_XW_AskSF Cmd: story.play Story_XW_AskSF
+Id: 10588 Code: Story_XW_AskSF Cmd: task.delivery Main_XW_H5_Find
+Id: 10589 Code: Story_XW_AskSF Cmd: task.take Main_XW_H5_Bye
+Id: 10590 Code: Main_XW_H5_Bye Cmd: story.play Story_XW_ShipPre
+Id: 10591 Code: Main_XW_H5_Bye Cmd: npc.touch  N_XW Ship 0
+Id: 10592 Code: Main_XW_H5_Bye Cmd: story.play Story_XW_ShipPost
+Id: 10593 Code: Main_XW_H5_Bye Cmd: task.delivery Main_XW_H5_Bye
+Id: 10594 Code: Main_XW_H5_Bye Cmd: npc.add_npc_favorability_star N_XW
+Id: 10595 Code: Main_XW_H5_Bye Cmd: player.translation Anchor_XW_Bed
+Id: 10596 Code: Main_XW_H5_Bye Cmd: record.save
+Id: 10597 Code: Main_XW_H5_Bye Cmd: day.jump_next_resttime
+Id: 10598 Code: Main_NW_H0_Begin Cmd: conv.speak N_NW_Task_DT_Find_SF
+Id: 10599 Code: Main_NW_H0_Begin Cmd: task.take Main_NW_H0_Begin
+Id: 10600 Code: Story_NW_SF_Exp Cmd: story.play Story_NW_SF_Exp
+Id: 10601 Code: Story_NW_SF_Exp Cmd: task.delivery Main_NW_H0_Begin
+Id: 10602 Code: Main_NW_H0_Wood Cmd: conv.speak N_NW_Task_Method_SF
+Id: 10603 Code: Main_NW_H0_Wood Cmd: task.take Main_NW_H0_Wood
+Id: 10604 Code: Story_NW_SF_Method Cmd: story.play Story_NW_SF_Method
+Id: 10605 Code: Story_NW_SF_Method Cmd: task.delivery Main_NW_H0_Wood
+Id: 10606 Code: Story_NW_SF_Method Cmd: task.take Main_NW_H1_Pre
+Id: 10607 Code: Main_NW_H1_Talk_N Cmd: conv.speak N_NW_Task_MSG_A_UnReady
+Id: 10608 Code: Main_NW_H1_Talk_N Cmd: conv.selectbox
+Id: 10609 Code: Main_NW_H1 Cmd: task.delivery Main_NW_H1_Pre
+Id: 10610 Code: Main_NW_H1 Cmd: player.interact_over
+Id: 10611 Code: Main_NW_H1 Cmd: story.play Story_NW_MSG_A_Over
+Id: 10612 Code: Main_NW_H1 Cmd: npc.add_npc_favorability_star N_NW
+Id: 10613 Code: Main_NW_H1 Cmd: player.translation Anchor_NW_Door
+Id: 10614 Code: Main_NW_H1_Gift Cmd: conv.speak N_NW_Task_Maid_Deal_Pre
+Id: 10615 Code: Main_NW_H1_Gift Cmd: task.take Main_NW_H1_Gift
+Id: 10616 Code: Main_NW_H1_Find Cmd: conv.speak N_NW_Task_Maid_Deal_Post
+Id: 10617 Code: Main_NW_H1_Find Cmd: task.delivery Main_NW_H1_Gift
+Id: 10618 Code: Main_NW_H1_Find Cmd: task.take Main_NW_H1_Find
+Id: 10619 Code: Story_NW_Explain Cmd: story.play Story_NW_Explain
+Id: 10620 Code: Story_NW_Explain Cmd: task.delivery Main_NW_H1_Find
+Id: 10621 Code: Story_NW_Explain Cmd: task.take Main_NW_H1_Build
+Id: 10622 Code: Main_NW_H2_Pre Cmd: task.take Main_NW_H2_Pre
+Id: 10623 Code: Main_NW_H2_Talk_N Cmd: conv.speak N_NW_Task_MSG_B_UnReady
+Id: 10624 Code: Main_NW_H2_Talk_N Cmd: conv.selectbox
+Id: 10625 Code: Main_NW_H2 Cmd: task.delivery Main_NW_H2_Pre
+Id: 10626 Code: Main_NW_H2 Cmd: player.interact_over
+Id: 10627 Code: Main_NW_H2 Cmd: story.play Story_NW_MSG_B_Over
+Id: 10628 Code: Main_NW_H2 Cmd: npc.add_npc_favorability_star N_NW
+Id: 10629 Code: Main_NW_H2 Cmd: player.translation Anchor_Wakeup
+Id: 10630 Code: Main_NW_H2 Cmd: day.jump_time 7
+Id: 10631 Code: Main_NW_H2 Cmd: story.play Story_NW_Home_StandUp
+Id: 10632 Code: Main_NW_H2 Cmd: task.take Main_NW_H2_Check
+Id: 10633 Code: Story_NW_Check_Elixir Cmd: story.play Story_NW_Check_Elixir
+Id: 10634 Code: Story_NW_Check_Elixir Cmd: task.delivery Main_NW_H2_Check
+Id: 10635 Code: Story_NW_Check_Elixir Cmd: task.take Main_NW_H2_Change
+Id: 10636 Code: Story_NW_Check_Elixir Cmd: task.take Main_NW_H2_Tomorrow
+Id: 10637 Code: Main_NW_H2_Tomorrow Cmd: task.delivery Main_NW_H2_Tomorrow
+Id: 10638 Code: Main_NW_H2_Change Cmd: conv.speak N_NW_Task_Rep_Elixir_Post
+Id: 10639 Code: Main_NW_H2_Change Cmd: task.delivery Main_NW_H2_Change
+Id: 10640 Code: Main_NW_H2_Change Cmd: task.take Main_NW_H2_Build
+Id: 10641 Code: Main_NW_H3_Pre Cmd: task.take Main_NW_H3_Pre
+Id: 10642 Code: Main_NW_H3_Talk_N Cmd: conv.speak N_NW_Task_MSG_C_UnReady
+Id: 10643 Code: Main_NW_H3_Talk_N Cmd: conv.selectbox
+Id: 10644 Code: Main_NW_H3 Cmd: task.delivery Main_NW_H3_Pre
+Id: 10645 Code: Main_NW_H3 Cmd: player.interact_over
+Id: 10646 Code: Main_NW_H3 Cmd: story.play Story_NW_MSG_C_Over
+Id: 10647 Code: Main_NW_H3 Cmd: npc.add_npc_favorability_star N_NW
+Id: 10648 Code: Main_NW_H3 Cmd: story.play Story_NW_Room_Stay
+Id: 10649 Code: Main_NW_H3 Cmd: player.translation Anchor_NW_Bed
+Id: 10650 Code: Main_NW_H3 Cmd: day.jump_time 7
+Id: 10651 Code: Main_NW_H3 Cmd: task.take Main_NW_H3_Build
+Id: 10652 Code: Main_NW_H4_Pre Cmd: task.take Main_NW_H4_Pre
+Id: 10653 Code: Main_NW_H4_Talk_N Cmd: conv.speak N_NW_Task_MSG_D_UnReady
+Id: 10654 Code: Main_NW_H4_Talk_N Cmd: conv.selectbox
+Id: 10655 Code: Main_NW_H4 Cmd: task.delivery Main_NW_H4_Pre
+Id: 10656 Code: Main_NW_H4 Cmd: player.interact_over
+Id: 10657 Code: Main_NW_H4 Cmd: story.play Story_NW_MSG_D_Over
+Id: 10658 Code: Main_NW_H4 Cmd: npc.add_npc_favorability_star N_NW
+Id: 10659 Code: Main_NW_H4 Cmd: task.take Main_NW_H4_Build
+Id: 10660 Code: Main_NW_H5_Pre Cmd: task.take Main_NW_H5_Pre
+Id: 10661 Code: Main_NW_H5_Talk_N Cmd: conv.speak N_NW_Task_MSG_E_UnReady
+Id: 10662 Code: Main_NW_H5_Talk_N Cmd: conv.selectbox
+Id: 10663 Code: Main_NW_H5 Cmd: task.delivery Main_NW_H5_Pre
+Id: 10664 Code: Main_NW_H5 Cmd: player.interact_over
+Id: 10665 Code: Main_NW_H5 Cmd: story.play Story_NW_MSG_E_Over
+Id: 10666 Code: Main_NW_H5 Cmd: task.take Main_NW_H5_Plan
+Id: 10667 Code: Main_NW_H5_Plan Cmd: conv.speak N_NW_Task_Threat_Post
+Id: 10668 Code: Main_NW_H5_Plan Cmd: task.delivery Main_NW_H5_Plan
+Id: 10669 Code: Main_NW_H5_Plan Cmd: task.take Main_NW_H5_Build
+Id: 10670 Code: Main_NW_H5_Show Cmd: task.take Main_NW_H5_Show
+Id: 10671 Code: Main_NW_H5_Show Cmd: task.take Main_NW_H5_Tomorrow
+Id: 10672 Code: Main_NW_End Cmd: task.delivery Main_NW_H5_Show
+Id: 10673 Code: Main_NW_End Cmd: story.play Story_NW_Ceremony_Pre
+Id: 10674 Code: Main_NW_End Cmd: story.play Story_NW_Ceremony_After
+Id: 10675 Code: Main_NW_End Cmd: story.play Story_NW_Ceremony_Fuck
+Id: 10676 Code: Main_NW_End Cmd: npc.touch  N_NW Final 0
+Id: 10677 Code: Main_NW_End Cmd: story.play Story_NW_Ceremony_Final
+Id: 10678 Code: Main_NW_End Cmd: npc.add_npc_favorability_star N_NW
+Id: 10679 Code: Main_NW_End Cmd: player.translation Anchor_NW_Bed
+Id: 10680 Code: Main_NW_End Cmd: day.jump_next_resttime
+Id: 10681 Code: Main_NW_End Cmd: record.save
+Id: 10682 Code: Main_ED_Find Cmd: conv.speak Task_ED_CloseGap_Pre
+Id: 10683 Code: Main_ED_Find Cmd: task.take Main_ED_Find
+Id: 10684 Code: WorldChip1 Cmd: story.play_sequance Story_ED_Memory
+Id: 10685 Code: WorldChip1 Cmd: task.mark WorldChip1
+Id: 10686 Code: WorldChip1 Cmd: item.add ItemWorldChip 1
+Id: 10687 Code: WorldChip2 Cmd: story.play_sequance Story_ED_Memory
+Id: 10688 Code: WorldChip2 Cmd: task.mark WorldChip2
+Id: 10689 Code: WorldChip2 Cmd: item.add ItemWorldChip 1
+Id: 10690 Code: WorldChip3 Cmd: story.play_sequance Story_ED_Memory
+Id: 10691 Code: WorldChip3 Cmd: task.mark WorldChip3
+Id: 10692 Code: WorldChip3 Cmd: item.add ItemWorldChip 1
+Id: 10693 Code: WorldChip4 Cmd: story.play_sequance Story_ED_Memory
+Id: 10694 Code: WorldChip4 Cmd: task.mark WorldChip4
+Id: 10695 Code: WorldChip4 Cmd: item.add ItemWorldChip 1
+Id: 10696 Code: WorldChip5 Cmd: story.play_sequance Story_ED_Memory
+Id: 10697 Code: WorldChip5 Cmd: task.mark WorldChip5
+Id: 10698 Code: WorldChip5 Cmd: item.add ItemWorldChip 1
+Id: 10699 Code: WorldChip6 Cmd: story.play_sequance Story_ED_Memory
+Id: 10700 Code: WorldChip6 Cmd: task.mark WorldChip6
+Id: 10701 Code: WorldChip6 Cmd: item.add ItemWorldChip 1
+Id: 10702 Code: WorldChip7 Cmd: story.play_sequance Story_ED_Memory
+Id: 10703 Code: WorldChip7 Cmd: task.mark WorldChip7
+Id: 10704 Code: WorldChip7 Cmd: item.add ItemWorldChip 1
+Id: 10705 Code: WorldChip8 Cmd: story.play_sequance Story_ED_Memory
+Id: 10706 Code: WorldChip8 Cmd: task.mark WorldChip8
+Id: 10707 Code: WorldChip8 Cmd: item.add ItemWorldChip 1
+Id: 10708 Code: WorldChip9 Cmd: story.play_sequance Story_ED_Memory
+Id: 10709 Code: WorldChip9 Cmd: task.mark WorldChip9
+Id: 10710 Code: WorldChip9 Cmd: item.add ItemWorldChip 1
+Id: 10711 Code: Main_ED_Pick Cmd: task.delivery Main_ED_Find
+Id: 10712 Code: Main_ED_Pick Cmd: story.play Story_ED_WC_Take_Pre
+Id: 10713 Code: Main_ED_Pick Cmd: npc.touch N_WC Circle 5
+Id: 10714 Code: Main_ED_Pick Cmd: story.play Story_ED_WC_Take_Post
+Id: 10715 Code: Main_ED_Pick Cmd: task.take Main_ED_Pick
+Id: 10716 Code: Main_ED_BaGua Cmd: story.play Story_ED_Girls_Take_Pre
+Id: 10717 Code: Main_ED_BaGua Cmd: task.delivery Main_ED_Pick
+Id: 10718 Code: Main_ED_BaGua Cmd: task.take Main_ED_Bagua
+Id: 10719 Code: Main_ED_BaGua Cmd: var.set_int N_CN 0
+Id: 10720 Code: Main_ED_BaGua Cmd: var.set_int N_AY 0
+Id: 10721 Code: Main_ED_BaGua Cmd: var.set_int N_WN 0
+Id: 10722 Code: Main_ED_BaGua Cmd: var.set_int N_DT 0
+Id: 10723 Code: Main_ED_BaGua Cmd: var.set_int N_QS 0
+Id: 10724 Code: Main_ED_BaGua Cmd: var.set_int N_XW 0
+Id: 10725 Code: Main_ED_BaGua Cmd: var.set_int N_CN 0
+Id: 10726 Code: Ending Cmd: story.play Story_ED_Girls_Take_Post_A
+Id: 10727 Code: Ending Cmd: story.play Story_ED_Girls_Take_Post_B
+Id: 10728 Code: Ending Cmd: story.play Story_ED_Girls_Take_Post_C
+Id: 10729 Code: Ending Cmd: day.advance_to_hour 7
+Id: 10730 Code: Ending Cmd: player.translation Anchor_Wakeup
+Id: 10731 Code: Ending Cmd: record.mark_pass_s2
+Id: 10732 Code: Ending Cmd: record.save
+Id: 10733 Code: Ending Cmd: procedure.return_to_login
+Id: 20001 Code: Main_AY_H2 Cmd: conv.speak Main_AY_H2
+Id: 20002 Code: Main_AY_H2_Talk_N Cmd: conv.speak Main_AY_H2_Talk_N
+Id: 20003 Code: Main_AY_H3 Cmd: conv.speak Main_AY_H3
+Id: 20004 Code: Main_AY_H3_Talk_N Cmd: conv.speak Main_AY_H3_Talk_N
+Id: 20005 Code: Main_AY_H4 Cmd: conv.speak Main_AY_H4
+Id: 20006 Code: Main_AY_H4_Talk_N Cmd: conv.speak Main_AY_H4_Talk_N
+Id: 20007 Code: Main_AY_H5 Cmd: conv.speak Main_AY_H5
+Id: 20008 Code: Main_AY_H5_Talk_N Cmd: conv.speak Main_AY_H5_Talk_N
+Id: 20009 Code: Main_DT_H2 Cmd: conv.speak Main_DT_H2
+Id: 20010 Code: Main_DT_H2_Talk_N Cmd: conv.speak Main_DT_H2_Talk_N
+Id: 20011 Code: Main_DT_H3 Cmd: conv.speak Main_DT_H3
+Id: 20012 Code: Main_DT_H3_Talk_N Cmd: conv.speak Main_DT_H3_Talk_N
+Id: 20013 Code: Main_DT_H4 Cmd: conv.speak Main_DT_H4
+Id: 20014 Code: Main_DT_H4_Talk_N Cmd: conv.speak Main_DT_H4_Talk_N
+Id: 20015 Code: Main_DT_H5 Cmd: conv.speak Main_DT_H5
+Id: 20016 Code: Main_DT_H5_Talk_N Cmd: conv.speak Main_DT_H5_Talk_N
+Id: 20017 Code: Main_CN_H1 Cmd: conv.speak Main_CN_H1
+Id: 20018 Code: Main_CN_H1_Talk_N Cmd: conv.speak Main_CN_H1_Talk_N
+Id: 20019 Code: Main_CN_H2 Cmd: conv.speak Main_CN_H2
+Id: 20020 Code: Main_CN_H2_Talk_N Cmd: conv.speak Main_CN_H2_Talk_N
+Id: 20021 Code: Main_CN_H3 Cmd: conv.speak Main_CN_H3
+Id: 20022 Code: Main_CN_H3_Talk_N Cmd: conv.speak Main_CN_H3_Talk_N
+Id: 20023 Code: Main_CN_H4 Cmd: conv.speak Main_CN_H4
+Id: 20024 Code: Main_CN_H4_Talk_N Cmd: conv.speak Main_CN_H4_Talk_N
+Id: 20025 Code: Main_CN_H5 Cmd: conv.speak Main_CN_H5
+Id: 20026 Code: Main_CN_H5_Talk_N Cmd: conv.speak Main_CN_H5_Talk_N
+Id: 20027 Code: Main_QS_H3 Cmd: conv.speak Main_QS_H3
+Id: 20028 Code: Main_QS_H3_Talk_N Cmd: conv.speak Main_QS_H3_Talk_N
+Id: 20029 Code: Main_QS_H4 Cmd: conv.speak Main_QS_H4
+Id: 20030 Code: Main_QS_H4_Talk_N Cmd: conv.speak Main_QS_H4_Talk_N
+Id: 20031 Code: Main_QS_H1 Cmd: conv.speak Main_QS_H1
+Id: 20032 Code: Main_QS_H1_Talk_N Cmd: conv.speak Main_QS_H1_Talk_N
+Id: 20033 Code: Main_QS_H5 Cmd: conv.speak Main_QS_H5
+Id: 20034 Code: Main_QS_H5_Talk_N Cmd: conv.speak Main_QS_H5_Talk_N
+Id: 20035 Code: Main_AY_H2 Cmd: player.interact_over
+Id: 20036 Code: Main_AY_H3 Cmd: player.interact_over
+Id: 20037 Code: Main_AY_H4 Cmd: player.interact_over
+Id: 20038 Code: Main_AY_H5 Cmd: player.interact_over
+Id: 20039 Code: Main_DT_H2 Cmd: player.interact_over
+Id: 20040 Code: Main_DT_H3 Cmd: player.interact_over
+Id: 20041 Code: Main_DT_H4 Cmd: player.interact_over
+Id: 20042 Code: Main_DT_H5 Cmd: player.interact_over
+Id: 20043 Code: Main_CN_H1 Cmd: player.interact_over
+Id: 20044 Code: Main_CN_H2 Cmd: player.interact_over
+Id: 20045 Code: Main_CN_H3 Cmd: player.interact_over
+Id: 20046 Code: Main_CN_H4 Cmd: player.interact_over
+Id: 20047 Code: Main_CN_H5 Cmd: player.interact_over
+Id: 20048 Code: Main_QS_H3 Cmd: player.interact_over
+Id: 20049 Code: Main_QS_H4 Cmd: player.interact_over
+Id: 20050 Code: Main_QS_H1 Cmd: player.interact_over
+Id: 20051 Code: Main_QS_H5 Cmd: player.interact_over
+Id: 20052 Code: Main_AY_H2 Cmd: npc.add_npc_favorability_star N_AY
+Id: 20053 Code: Main_AY_H2 Cmd: task.delivery Main_AY_H2_Pre
+Id: 20054 Code: Main_AY_H2 Cmd: task.take Main_AY_H2_Task
+Id: 20055 Code: Main_AY_H2_Talk_N Cmd: conv.selectbox
+Id: 20056 Code: Main_AY_H3 Cmd: task.delivery Main_AY_H3_Pre
+Id: 20057 Code: Main_AY_H3 Cmd: task.take Main_AY_H3_Task
+Id: 20058 Code: Main_AY_H3_Talk_N Cmd: conv.selectbox
+Id: 20059 Code: Main_AY_H4 Cmd: task.delivery Main_AY_H4_Pre
+Id: 20060 Code: Main_AY_H4 Cmd: task.take Main_AY_H4_Task
+Id: 20061 Code: Main_AY_H4_Talk_N Cmd: conv.selectbox
+Id: 20062 Code: Main_AY_H5 Cmd: task.delivery Main_AY_H5_Pre
+Id: 20063 Code: Main_AY_H5_Talk_N Cmd: conv.selectbox
+Id: 20064 Code: Main_DT_H2 Cmd: task.delivery Main_DT_H2_Pre
+Id: 20065 Code: Main_DT_H2 Cmd: task.take Main_DT_H2_Task
+Id: 20066 Code: Main_DT_H2_Talk_N Cmd: conv.selectbox
+Id: 20067 Code: Main_DT_H3 Cmd: task.delivery Main_DT_H3_Pre
+Id: 20068 Code: Main_DT_H3 Cmd: task.take Main_DT_H3_Task
+Id: 20069 Code: Main_DT_H3_Talk_N Cmd: conv.selectbox
+Id: 20070 Code: Main_DT_H4 Cmd: task.delivery Main_DT_H4_Pre
+Id: 20071 Code: Main_DT_H4 Cmd: task.take Main_DT_H4_Task
+Id: 20072 Code: Main_DT_H4_Talk_N Cmd: conv.selectbox
+Id: 20073 Code: Main_DT_H5 Cmd: task.delivery Main_DT_H5_Pre
+Id: 20074 Code: Main_DT_H5_Talk_N Cmd: conv.selectbox
+Id: 20075 Code: Main_CN_H1 Cmd: task.delivery Main_CN_H1_Pre
+Id: 20076 Code: Main_CN_H1 Cmd: task.take Main_CN_H1_Task
+Id: 20077 Code: Main_CN_H1_Talk_N Cmd: conv.selectbox
+Id: 20078 Code: Main_CN_H2 Cmd: task.delivery Main_CN_H2_Pre
+Id: 20079 Code: Main_CN_H2 Cmd: task.take Main_CN_H2_Task
+Id: 20080 Code: Main_CN_H2_Talk_N Cmd: conv.selectbox
+Id: 20081 Code: Main_CN_H3 Cmd: task.delivery Main_CN_H3_Pre
+Id: 20082 Code: Main_CN_H3 Cmd: task.take Main_CN_H3_Task
+Id: 20083 Code: Main_CN_H3 Cmd: task.take Task_CN_H3_Sleep
+Id: 20084 Code: Main_CN_H3_Talk_N Cmd: conv.selectbox
+Id: 20085 Code: Main_CN_H4 Cmd: task.delivery Main_CN_H4_Pre
+Id: 20086 Code: Main_CN_H4 Cmd: task.take Main_CN_H4_Task
+Id: 20087 Code: Main_CN_H4_Talk_N Cmd: conv.selectbox
+Id: 20088 Code: Main_CN_H5 Cmd: task.delivery Main_CN_H5_Pre
+Id: 20089 Code: Main_CN_H5_Talk_N Cmd: conv.selectbox
+Id: 20090 Code: Main_QS_H3 Cmd: story.play Story_QS_Scold
+Id: 20091 Code: Main_QS_H3 Cmd: task.delivery Task_QS_DailyNext
+Id: 20092 Code: Main_QS_H3 Cmd: task.take Main_QS_H3_Task
+Id: 20093 Code: Main_QS_H3_Talk_N Cmd: conv.selectbox
+Id: 20094 Code: Main_QS_H4 Cmd: task.delivery Main_QS_H4_Pre
+Id: 20095 Code: Main_QS_H4 Cmd: task.take Main_QS_H4_Task
+Id: 20096 Code: Main_QS_H4_Talk_N Cmd: conv.selectbox
+Id: 20097 Code: Main_QS_H1 Cmd: story.play Story_QS_FakeDick
+Id: 20098 Code: Main_QS_H1 Cmd: task.delivery Main_QS_H1_Task
+Id: 20099 Code: Main_QS_H1 Cmd: task.take Main_QS_H1_Task
+Id: 20100 Code: Main_QS_H1 Cmd: npc.add_npc_favorability_star N_QS
+Id: 20101 Code: Main_QS_H1_Talk_N Cmd: conv.selectbox
+Id: 20102 Code: Main_QS_H5_Talk_N Cmd: conv.selectbox
+Id: 20103 Code: Main_QS_H5 Cmd: task.delivery Main_QS_H5S_Task
+Id: 20104 Code: Main_AY_H5 Cmd: task.delivery Main_AY_H5S_Task
+Id: 20105 Code: Main_DT_H5 Cmd: task.delivery Main_DT_H5S_Task
+Id: 20106 Code: Main_CN_H5 Cmd: task.delivery Main_CN_H5S_Task
+Id: 20107 Code: Main_QS_H5 Cmd: story.play Story_QS_Finish
+Id: 20108 Code: Main_AY_H5 Cmd: story.play Story_AY_Finish
+Id: 20109 Code: Main_DT_H5 Cmd: story.play Story_DT_Finish
+Id: 20110 Code: Main_CN_H5 Cmd: story.play Story_CN_Finish
+Id: 20111 Code: Main_QS_H5 Cmd: npc.touch N_QS Room 0
+Id: 20112 Code: Main_AY_H5 Cmd: npc.touch N_AY Room 0
+Id: 20113 Code: Main_DT_H5 Cmd: npc.touch N_DT Room 0
+Id: 20114 Code: Main_CN_H5 Cmd: npc.touch N_CN Room 0
+Id: 20115 Code: Main_QS_H5 Cmd: npc.add_npc_favorability_star N_QS
+Id: 20116 Code: Main_AY_H5 Cmd: npc.add_npc_favorability_star N_AY
+Id: 20117 Code: Main_DT_H5 Cmd: npc.add_npc_favorability_star N_DT
+Id: 20118 Code: Main_CN_H5 Cmd: npc.add_npc_favorability_star N_CN
+Id: 20119 Code: Main_QS_H5 Cmd: player.translation Anchor_QS_Back
+Id: 20120 Code: Main_AY_H5 Cmd: player.translation Anchor_AY_Bed
+Id: 20121 Code: Main_DT_H5 Cmd: player.translation Anchor_DT_Bed
+Id: 20122 Code: Main_CN_H5 Cmd: player.translation Anchor_CN_Bed
+Id: 20123 Code: Touch_CN Cmd: player.interact_over
+Id: 20124 Code: Touch_AY Cmd: player.interact_over
+Id: 20125 Code: Touch_DT Cmd: player.interact_over
+Id: 20126 Code: Touch_QS Cmd: player.interact_over
+Id: 20127 Code: Touch_WN Cmd: player.interact_over
+Id: 20128 Code: Touch_XW Cmd: player.interact_over
+Id: 20129 Code: Touch_NW Cmd: player.interact_over
+Id: 20130 Code: Touch_CN Cmd: npc.touch N_CN Room 0
+Id: 20131 Code: Touch_AY Cmd: npc.touch N_AY Room 0
+Id: 20132 Code: Touch_DT Cmd: npc.touch N_DT Room 0
+Id: 20133 Code: Touch_QS Cmd: npc.touch N_QS Room 0
+Id: 20134 Code: Touch_WN Cmd: npc.touch N_WN Room 0
+Id: 20135 Code: Touch_XW Cmd: npc.touch N_XW Room 0
+Id: 20136 Code: Touch_NW Cmd: npc.touch N_NW Room 0
+Id: 20137 Code:  Cmd: player.translation Anchor_CN_Bed
+Id: 20138 Code:  Cmd: player.translation Anchor_AY_Bed
+Id: 20139 Code:  Cmd: player.translation Anchor_DT_Bed
+Id: 20140 Code:  Cmd: player.translation Anchor_QS_Back
+Id: 20141 Code: Bed_CN Cmd: player.interact_over
+Id: 20142 Code: Bed_AY Cmd: player.interact_over
+Id: 20143 Code: Bed_DT Cmd: player.interact_over
+Id: 20144 Code: Bed_QS Cmd: player.interact_over
+Id: 20145 Code: Bed_WN Cmd: player.interact_over
+Id: 20146 Code: Bed_XW Cmd: player.interact_over
+Id: 20147 Code: Bed_NW Cmd: player.interact_over
+Id: 20148 Code: Bed_CN Cmd: npc.touch N_CN Hero 0
+Id: 20149 Code: Bed_AY Cmd: npc.touch N_AY Hero 0
+Id: 20150 Code: Bed_DT Cmd: npc.touch N_DT Hero 0
+Id: 20151 Code: Bed_QS Cmd: npc.touch N_QS Hero 0
+Id: 20152 Code: Bed_WN Cmd: npc.touch N_WN Hero 0
+Id: 20153 Code: Bed_XW Cmd: npc.touch N_XW Hero 0
+Id: 20154 Code: Bed_NW Cmd: npc.touch N_NW Hero 0
+Id: 20155 Code:  Cmd:
+Id: 20156 Code: N_NW_Talk Cmd: conv.speak N_NW_Talk
+Id: 20157 Code: N_NW_Talk Cmd: player.interact_over
+Id: 20158 Code: N_NW_Talk_0 Cmd: conv.speak N_NW_Talk_0
+Id: 20159 Code: N_NW_Talk_1 Cmd: conv.speak N_NW_Talk_1
+Id: 20160 Code: N_NW_Talk_2 Cmd: conv.speak N_NW_Talk_2
+Id: 20161 Code: N_NW_Talk_3 Cmd: conv.speak N_NW_Talk_3
+Id: 20162 Code: N_NW_Talk_4 Cmd: conv.speak N_NW_Talk_4
+Id: 20163 Code: N_NW_Talk_5 Cmd: conv.speak N_NW_Talk_5
+Id: 20164 Code: N_NW_Talk_6 Cmd: conv.speak N_NW_Talk_6
+Id: 20165 Code:  Cmd:
+Id: 20166 Code: N_XW_Talk_0 Cmd: conv.speak N_XW_Talk_0
+Id: 20167 Code: N_XW_Talk_1 Cmd: conv.speak N_XW_Talk_1
+Id: 20168 Code: N_XW_Talk_2 Cmd: conv.speak N_XW_Talk_2
+Id: 20169 Code: N_XW_Talk_3 Cmd: conv.speak N_XW_Talk_3
+Id: 20170 Code: N_XW_Talk_4 Cmd: conv.speak N_XW_Talk_4
+Id: 20171 Code: N_XW_Talk_5 Cmd: conv.speak N_XW_Talk_5
+Id: 20172 Code: N_XW_Talk_6 Cmd: conv.speak N_XW_Talk_6
+Id: 20173 Code:  Cmd:
+Id: 20174 Code: N_WN_Talk_1 Cmd: conv.speak N_WN_Talk_1
+Id: 20175 Code: N_WN_Talk_2 Cmd: conv.speak N_WN_Talk_2
+Id: 20176 Code: N_WN_Talk_3 Cmd: conv.speak N_WN_Talk_3
+Id: 20177 Code: N_WN_Talk_4 Cmd: conv.speak N_WN_Talk_4
+Id: 20178 Code: N_WN_Talk_5 Cmd: conv.speak N_WN_Talk_5
+Id: 20179 Code: N_WN_Talk_6 Cmd: conv.speak N_WN_Talk_6
+Id: 20180 Code:  Cmd:
+Id: 20181 Code: N_AY_Talk_F Cmd: conv.speak N_AY_Task_Intro_Pre
+Id: 20182 Code: N_AY_Talk_1 Cmd: conv.speak N_AY_Talk_1
+Id: 20183 Code: N_AY_Talk_2 Cmd: conv.speak N_AY_Talk_2
+Id: 20184 Code: N_AY_Talk_3 Cmd: conv.speak N_AY_Talk_3
+Id: 20185 Code: N_AY_Talk_4 Cmd: conv.speak N_AY_Talk_4
+Id: 20186 Code: N_AY_Talk_5 Cmd: conv.speak N_AY_Talk_5
+Id: 20187 Code:  Cmd:
+Id: 20188 Code: N_DT_Talk_F Cmd: conv.speak N_DT_Task_Intro_Pre
+Id: 20189 Code: N_DT_Talk_1 Cmd: conv.speak N_DT_Talk_1
+Id: 20190 Code: N_DT_Talk_2 Cmd: conv.speak N_DT_Talk_2
+Id: 20191 Code: N_DT_Talk_3 Cmd: conv.speak N_DT_Talk_3
+Id: 20192 Code: N_DT_Talk_4 Cmd: conv.speak N_DT_Talk_4
+Id: 20193 Code: N_DT_Talk_5 Cmd: conv.speak N_DT_Talk_5
+Id: 20194 Code:  Cmd:
+Id: 20195 Code: N_CN_Talk_F Cmd: conv.speak N_CN_Talk_F
+Id: 20196 Code: N_CN_Talk_0 Cmd: conv.speak N_CN_Talk_0
+Id: 20197 Code: N_CN_Talk_1 Cmd: conv.speak N_CN_Talk_1
+Id: 20198 Code: N_CN_Talk_2 Cmd: conv.speak N_CN_Talk_2
+Id: 20199 Code: N_CN_Talk_3 Cmd: conv.speak N_CN_Talk_3
+Id: 20200 Code: N_CN_Talk_4 Cmd: conv.speak N_CN_Talk_4
+Id: 20201 Code: N_CN_Talk_5 Cmd: conv.speak N_CN_Talk_5
+Id: 20202 Code:  Cmd:
+Id: 20203 Code: N_QS_Talk_F Cmd: conv.speak N_QS_Task_Intro_Pre
+Id: 20204 Code: N_QS_Talk_0 Cmd: conv.speak N_QS_Talk_0
+Id: 20205 Code: N_QS_Talk_1 Cmd: conv.speak N_QS_Talk_1
+Id: 20206 Code: N_QS_Talk_2 Cmd: conv.speak N_QS_Talk_2
+Id: 20207 Code: N_QS_Talk_3 Cmd: conv.speak N_QS_Talk_3
+Id: 20208 Code: N_QS_Talk_4 Cmd: conv.speak N_QS_Talk_4
+Id: 20209 Code: N_QS_Talk_5 Cmd: conv.speak N_QS_Talk_5
+Id: 20210 Code:  Cmd:
+Id: 20211 Code: N_SF_Talk_F Cmd: conv.speak N_SF_Task_Intro_Pre
+Id: 20212 Code: N_SF_Talk_F Cmd: player.interact_over
+Id: 20213 Code:  Cmd:
+Id: 20214 Code: N_SF_MtlClue_A Cmd: conv.speak N_SF_MtlClue_1
+Id: 20215 Code: N_SF_MtlClue_A Cmd: conv.speak N_SF_MtlClue_2
+Id: 20216 Code: N_SF_MtlClue_A Cmd: conv.speak N_SF_MtlClue_3
+Id: 20217 Code: N_SF_MtlClue_A Cmd: conv.speak N_SF_MtlClue_4
+Id: 20218 Code:  Cmd:
+Id: 20219 Code: N_NW_Talk_0 Cmd: conv.selectbox
+Id: 20220 Code: N_NW_Talk_1 Cmd: conv.selectbox
+Id: 20221 Code: N_NW_Talk_2 Cmd: conv.selectbox
+Id: 20222 Code: N_NW_Talk_3 Cmd: conv.selectbox
+Id: 20223 Code: N_NW_Talk_4 Cmd: conv.selectbox
+Id: 20224 Code: N_NW_Talk_5 Cmd: conv.selectbox
+Id: 20225 Code: N_NW_Talk_6 Cmd: conv.selectbox
+Id: 20226 Code:  Cmd:
+Id: 20227 Code: N_XW_Talk_0 Cmd: conv.selectbox
+Id: 20228 Code: N_XW_Talk_1 Cmd: conv.selectbox
+Id: 20229 Code: N_XW_Talk_2 Cmd: conv.selectbox
+Id: 20230 Code: N_XW_Talk_3 Cmd: conv.selectbox
+Id: 20231 Code: N_XW_Talk_4 Cmd: conv.selectbox
+Id: 20232 Code: N_XW_Talk_5 Cmd: conv.selectbox
+Id: 20233 Code: N_XW_Talk_6 Cmd: conv.selectbox
+Id: 20234 Code:  Cmd:
+Id: 20235 Code: N_WN_Talk_1 Cmd: conv.selectbox
+Id: 20236 Code: N_WN_Talk_2 Cmd: conv.selectbox
+Id: 20237 Code: N_WN_Talk_3 Cmd: conv.selectbox
+Id: 20238 Code: N_WN_Talk_4 Cmd: conv.selectbox
+Id: 20239 Code: N_WN_Talk_5 Cmd: conv.selectbox
+Id: 20240 Code: N_WN_Talk_6 Cmd: conv.selectbox
+Id: 20241 Code:  Cmd:
+Id: 20242 Code: N_AY_Talk_F Cmd: player.interact_over
+Id: 20243 Code: N_AY_Talk_1 Cmd: conv.selectbox
+Id: 20244 Code: N_AY_Talk_2 Cmd: conv.selectbox
+Id: 20245 Code: N_AY_Talk_3 Cmd: conv.selectbox
+Id: 20246 Code: N_AY_Talk_4 Cmd: conv.selectbox
+Id: 20247 Code: N_AY_Talk_5 Cmd: conv.selectbox
+Id: 20248 Code:  Cmd:
+Id: 20249 Code: N_DT_Talk_F Cmd: player.interact_over
+Id: 20250 Code: N_DT_Talk_1 Cmd: conv.selectbox
+Id: 20251 Code: N_DT_Talk_2 Cmd: conv.selectbox
+Id: 20252 Code: N_DT_Talk_3 Cmd: conv.selectbox
+Id: 20253 Code: N_DT_Talk_4 Cmd: conv.selectbox
+Id: 20254 Code: N_DT_Talk_5 Cmd: conv.selectbox
+Id: 20255 Code:  Cmd:
+Id: 20256 Code: N_CN_Talk_F Cmd: player.interact_over
+Id: 20257 Code: N_CN_Talk_0 Cmd: conv.selectbox
+Id: 20258 Code: N_CN_Talk_1 Cmd: conv.selectbox
+Id: 20259 Code: N_CN_Talk_2 Cmd: conv.selectbox
+Id: 20260 Code: N_CN_Talk_3 Cmd: conv.selectbox
+Id: 20261 Code: N_CN_Talk_4 Cmd: conv.selectbox
+Id: 20262 Code: N_CN_Talk_5 Cmd: conv.selectbox
+Id: 20263 Code:  Cmd:
+Id: 20264 Code: N_QS_Talk_F Cmd: player.interact_over
+Id: 20265 Code: N_QS_Talk_0 Cmd: conv.selectbox
+Id: 20266 Code: N_QS_Talk_1 Cmd: conv.selectbox
+Id: 20267 Code: N_QS_Talk_2 Cmd: conv.selectbox
+Id: 20268 Code: N_QS_Talk_3 Cmd: conv.selectbox
+Id: 20269 Code: N_QS_Talk_4 Cmd: conv.selectbox
+Id: 20270 Code: N_QS_Talk_5 Cmd: conv.selectbox
+Id: 20271 Code:  Cmd:
+Id: 20272 Code: N_WN_Talk_F Cmd: conv.speak N_WN_Talk_F
+Id: 20273 Code: N_NW_HW_Talk Cmd: conv.speak N_NW_HW_Talk
+Id: 20274 Code: N_XW_Talk_F Cmd: conv.speak N_XW_Talk_F
+Id: 20275 Code: N_HS_Talk_F Cmd: conv.speak N_HS_Talk_F
+Id: 20276 Code:  Cmd:
+Id: 20277 Code: N_XW_Talk_F Cmd: task.mark Ill_XW_Comming
+Id: 20278 Code:  Cmd:
+Id: 20279 Code: N_WN_Talk_F Cmd: conv.selectbox
+Id: 20280 Code: N_NW_HW_Talk Cmd: player.interact_over
+Id: 20281 Code: N_XW_Talk_F Cmd: player.interact_over
+Id: 20282 Code: N_HS_Talk_F Cmd: player.interact_over
+Id: 20283 Code:  Cmd:
+Id: 20284 Code: N_SF_Talk Cmd: random N_SF_Talk_A
+Id: 20285 Code: N_SF_Talk Cmd: conv.selectbox
+Id: 20286 Code:  Cmd:
+Id: 20287 Code: N_SF_Talk_A Cmd: conv.speak N_SF_Talk_A_1
+Id: 20288 Code: N_SF_Talk_A Cmd: conv.speak N_SF_Talk_A_2
+Id: 20289 Code: N_SF_Talk_A Cmd: conv.speak N_SF_Talk_A_3
+Id: 20290 Code:  Cmd:
+Id: 30001 Code: StoryTest Cmd: story.play Story_AY_Bathe
+Id: 30002 Code: StoryTest Cmd: story.play Story_AY_Bingo
+Id: 30003 Code: StoryTest Cmd: story.play Story_AY_GetUp
+Id: 30004 Code: StoryTest Cmd: story.play Story_AY_Peek
+Id: 30005 Code: StoryTest Cmd: story.play Story_AY_PengFeng
+Id: 30006 Code: StoryTest Cmd: story.play Story_AY_SnakeAfter
+Id: 30007 Code: StoryTest Cmd: story.play Story_AY_SnakeBit
+Id: 30008 Code: StoryTest Cmd: story.play Story_AY_Lost
+Id: 30009 Code: StoryTest Cmd: story.play Story_AY_RePeek
+Id: 30010 Code: StoryTest Cmd: story.play Story_CN_BXZ_Chat_A
+Id: 30011 Code: StoryTest Cmd: story.play Story_CN_BXZ_Chat_B
+Id: 30012 Code: StoryTest Cmd: story.play Story_CN_BXZ_DO
+Id: 30013 Code: StoryTest Cmd: story.play Story_CN_Comming
+Id: 30014 Code: StoryTest Cmd: story.play Story_CN_Massage
+Id: 30015 Code: StoryTest Cmd: story.play Story_CN_QuickShoot
+Id: 30016 Code: StoryTest Cmd: story.play Story_CN_Spring
+Id: 30017 Code: StoryTest Cmd: story.play Story_DT_HuLu_DO
+Id: 30018 Code: StoryTest Cmd: story.play Story_DT_HuLu_Look
+Id: 30019 Code: StoryTest Cmd: story.play Story_DT_Kick
+Id: 30020 Code: StoryTest Cmd: story.play Story_DT_SOS
+Id: 30021 Code: StoryTest Cmd: story.play Story_DT_Stone
+Id: 30022 Code: StoryTest Cmd: story.play Story_DT_TrainPre
+Id: 30023 Code: StoryTest Cmd: story.play Story_DT_Tree
+Id: 30024 Code: StoryTest Cmd: story.play Story_OP_Scene
+Id: 30025 Code: StoryTest Cmd: story.play Story_QS_Beach
+Id: 30026 Code: StoryTest Cmd: story.play Story_QS_Cry
+Id: 30027 Code: StoryTest Cmd: story.play Story_QS_CryAfter
+Id: 30028 Code: StoryTest Cmd: story.play Story_QS_Cut
+Id: 30029 Code: StoryTest Cmd: story.play Story_QS_Daily
+Id: 30030 Code: StoryTest Cmd: story.play Story_QS_Memory_A
+Id: 30031 Code: StoryTest Cmd: story.play Story_QS_Memory_B
+Id: 30032 Code: StoryTest Cmd: story.play Story_QS_Memory_C
+Id: 30033 Code: StoryTest Cmd: story.play Story_QS_Memory_D
+Id: 30034 Code: StoryTest Cmd: story.play Story_QS_Memory_E
+Id: 30035 Code: StoryTest Cmd: story.play Story_QS_ReMeet
+Id: 30036 Code: StoryTest Cmd: story.play Story_QS_Scold
+Id: 30037 Code: StoryTest Cmd: story.play Story_QS_TransFix
+Id: 30038 Code: StoryTest Cmd: story.play Story_QS_Translate
+Id: 30039 Code: StoryTest Cmd: story.play Story_QS_TransPre
+Id: 30040 Code: StoryTest Cmd: story.play Story_QS_Water
+Id: 30041 Code: StoryTest Cmd: story.play Story_QS_WaterUnder
+Id: 30042 Code: StoryTest Cmd: story.play Story_WC_Comming
+Id: 30043 Code: StoryTest Cmd: story.play Story_WC_CommingDoul
+Id: 30044 Code: StoryTest Cmd: story.play Story_WC_DT
+Id: 30045 Code: StoryTest Cmd: story.play Story_CN_Finish
+Id: 30046 Code: StoryTest Cmd: story.play Story_DT_Finish
+Id: 30047 Code: StoryTest Cmd: story.play Story_QS_Finish
+Id: 30048 Code: StoryTest Cmd: story.play Story_AY_Finish
+Id: 30049 Code: StoryTest Cmd: story.play Story_QS_Talk_Door
+Id: 30050 Code: StoryTest Cmd: story.play Train/Train_1
+Id: 30051 Code: StoryTest Cmd: story.play Train/Train_2
+Id: 30052 Code: StoryTest Cmd: story.play Train/Train_3
+Id: 30053 Code: StoryTest Cmd: story.play Train/Train_4
+Id: 30054 Code: StoryTest Cmd: story.play Train/Train_5
+Id: 30055 Code: StoryTest Cmd: story.play Translate/Translate_4
+Id: 30056 Code: StoryTest Cmd: story.play Translate/Translate_2
+Id: 30057 Code: StoryTest Cmd: story.play Translate/Translate_3
+Id: 30058 Code: StoryTest Cmd: story.play Translate/Translate_Default
+Id: 30059 Code: StoryTest Cmd: story.play Work/Work_1
+Id: 30060 Code: StoryTest Cmd: story.play Work/Work_2
+Id: 30061 Code: StoryTest Cmd: story.play Work/Work_3
+Id: 30062 Code: StoryTest Cmd: story.play Encounter/EC_Violence
+Id: 30063 Code: StoryTest Cmd: story.play Encounter/EC_Mother
+Id: 30064 Code: StoryTest Cmd: story.play Encounter/EC_Dancer
+Id: 30065 Code: StoryTest Cmd: story.play Encounter/EC_Semen
+Id: 30066 Code: StoryTest Cmd: story.play Encounter/EC_LesPeek
+Id: 30067 Code: StoryTest Cmd: story.play Encounter/EC_Affair
+Id: 30068 Code: StoryTest Cmd: story.play Encounter/EC_Encounter
+Id: 30069 Code: StoryTest Cmd: story.play Encounter/EC_Farm
+Id: 30070 Code: StoryTest Cmd: story.play Encounter/EC_PeekDT
+Id: 30071 Code: StoryTest Cmd: story.play Encounter/EC_Bathe
+Id: 30072 Code: StoryTest Cmd: story.play Bathe/Bathe_Def
+Id: 30073 Code: StoryTest Cmd: story.play Flirt/Flirt_N_AY_1
+Id: 30074 Code: StoryTest Cmd: story.play Flirt/Flirt_N_AY_2
+Id: 30075 Code: StoryTest Cmd: story.play Flirt/Flirt_N_AY_3
+Id: 30076 Code: StoryTest Cmd: story.play Flirt/Flirt_N_AY_4
+Id: 30077 Code: StoryTest Cmd: story.play Flirt/Flirt_N_AY_5
+Id: 30078 Code: StoryTest Cmd: story.play Flirt/Flirt_N_CN_1
+Id: 30079 Code: StoryTest Cmd: story.play Flirt/Flirt_N_CN_2
+Id: 30080 Code: StoryTest Cmd: story.play Flirt/Flirt_N_CN_3
+Id: 30081 Code: StoryTest Cmd: story.play Flirt/Flirt_N_CN_4
+Id: 30082 Code: StoryTest Cmd: story.play Flirt/Flirt_N_CN_5
+Id: 30083 Code: StoryTest Cmd: story.play Flirt/Flirt_N_DT_1
+Id: 30084 Code: StoryTest Cmd: story.play Flirt/Flirt_N_DT_2
+Id: 30085 Code: StoryTest Cmd: story.play Flirt/Flirt_N_DT_3
+Id: 30086 Code: StoryTest Cmd: story.play Flirt/Flirt_N_DT_4
+Id: 30087 Code: StoryTest Cmd: story.play Flirt/Flirt_N_DT_5
+Id: 30088 Code: StoryTest Cmd: story.play Flirt/Flirt_N_QS_1
+Id: 30089 Code: StoryTest Cmd: story.play Flirt/Flirt_N_QS_2
+Id: 30090 Code: StoryTest Cmd: story.play Flirt/Flirt_N_QS_3
+Id: 30091 Code: StoryTest Cmd: story.play Flirt/Flirt_N_QS_4
+Id: 30092 Code: StoryTest Cmd: story.play Flirt/Flirt_N_QS_5
+Id: 30093 Code: StoryTestQS Cmd: story.play Story_QS_Beach
+Id: 30094 Code: StoryTestQS Cmd: story.play Story_QS_Cry
+Id: 30095 Code: StoryTestQS Cmd: story.play Story_QS_CryAfter
+Id: 30096 Code: StoryTestQS Cmd: story.play Story_QS_Cut
+Id: 30097 Code: StoryTestQS Cmd: story.play Story_QS_Daily
+Id: 30098 Code: StoryTestQS Cmd: story.play Story_QS_Memory_A
+Id: 30099 Code: StoryTestQS Cmd: story.play Story_QS_Memory_B
+Id: 30100 Code: StoryTestQS Cmd: story.play Story_QS_Memory_C
+Id: 30101 Code: StoryTestQS Cmd: story.play Story_QS_Memory_D
+Id: 30102 Code: StoryTestQS Cmd: story.play Story_QS_Memory_E
+Id: 30103 Code: StoryTestQS Cmd: story.play Story_QS_ReMeet
+Id: 30104 Code: StoryTestQS Cmd: story.play Story_QS_Scold
+Id: 30105 Code: StoryTestQS Cmd: story.play Story_QS_TransFix
+Id: 30106 Code: StoryTestQS Cmd: story.play Story_QS_Translate
+Id: 30107 Code: StoryTestQS Cmd: story.play Story_QS_TransPre
+Id: 30108 Code: StoryTestQS Cmd: story.play Story_QS_Water
+Id: 30109 Code: StoryTestQS Cmd: story.play Story_QS_WaterUnder
+Id: 30110 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_AY_1
+Id: 30111 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_AY_2
+Id: 30112 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_AY_3
+Id: 30113 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_AY_4
+Id: 30114 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_AY_5
+Id: 30115 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_CN_1
+Id: 30116 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_CN_2
+Id: 30117 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_CN_3
+Id: 30118 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_CN_4
+Id: 30119 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_CN_5
+Id: 30120 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_DT_1
+Id: 30121 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_DT_2
+Id: 30122 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_DT_3
+Id: 30123 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_DT_4
+Id: 30124 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_DT_5
+Id: 30125 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_QS_1
+Id: 30126 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_QS_2
+Id: 30127 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_QS_3
+Id: 30128 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_QS_4
+Id: 30129 Code: StoryTestF Cmd: story.play Flirt/Flirt_N_QS_5
+Id: 30130 Code: StoryTestDT Cmd: story.play Story_DT_HuLu_Look
+Id: 30131 Code: StoryTestDT Cmd: story.play Story_DT_HuLu_DO
+Id: 30132 Code: TestItemGet Cmd: item.add ItemMaterial1001 90
+Id: 30133 Code: TestItemGet Cmd: item.add ItemMaterial1002 90
+Id: 30134 Code: TestItemGet Cmd: item.add ItemMaterial2001 90
+Id: 30135 Code: TestItemGet Cmd: item.add ItemMaterial3001 90
+Id: 30136 Code: TestItemGet Cmd: item.add ItemMaterial4001 90
+Id: 30137 Code: TestItemGet Cmd: item.add ItemWood1 90
+Id: 30138 Code: TestItemGet Cmd: item.add ItemWood2 90
+Id: 30139 Code: TestItemGet Cmd: item.add ItemWood3 90
+Id: 30140 Code: TestItemGet Cmd: item.add ItemWood4 90
+Id: 30141 Code: TestItemGet Cmd: item.add ItemFlirt_N_QS 90
+Id: 30142 Code: TestItemGet Cmd: item.add ItemFlirt_N_CN 90
+Id: 30143 Code: TestItemGet Cmd: item.add ItemFlirt_N_AY 90
+Id: 30144 Code: TestItemGet Cmd: item.add ItemFlirt_N_DT 90
+Id: 30145 Code: TestItemGet Cmd: item.add ItemFlirt_N_WN 90
+Id: 30146 Code: TestItemGet Cmd: item.add ItemGold 90000
+Id: 30147 Code: TestItemGet Cmd: item.add ItemPellet5003 90
+Id: 30148 Code: TestItemGet Cmd: item.add ItemGJ1_max 1
+Id: 30149 Code: TestItemGet Cmd: item.add ItemGJ2_max 1
+Id: 30150 Code: TestItemGet Cmd: item.add ItemGJ3_max 1
+Id: 30151 Code: TestItemGet Cmd: item.add ItemWhip1 90
+Id: 30152 Code: TestItemGet Cmd: item.add ItemWhip2 90
+Id: 30153 Code: TestItemGet Cmd: item.add ItemWhip3 90
+Id: 30154 Code: TestItemGet Cmd: item.add ItemWhip4 90
+Id: 30155 Code: TestItemGet Cmd: item.add ItemWhip5 90
+Id: 30156 Code: TestItemGet Cmd: item.add ItemWhip6 90
+Id: 30157 Code: TestItemGet Cmd: item.add ItemSieve 90
+Id: 30158 Code: TestItemGet Cmd: item.add ItemTrident 1
+Id: 30159 Code: TestItemGet Cmd: item.add ItemOldBook 1
+Id: 30160 Code: TestItemGet Cmd: item.add ItemMaterial2003 90
+Id: 30161 Code: TestItemGet Cmd: item.add ItemMaterial3003 90
+Id: 30162 Code: TestItemGet Cmd: item.add ItemGift501 15
+Id: 30163 Code: TestItemGet Cmd: item.add ItemGift502 15
+Id: 30164 Code: TestItemGet Cmd: item.add ItemGift503 15
+Id: 30165 Code: TestItemGet Cmd: item.add ItemGift504 15
+Id: 30166 Code: CStoryTest Cmd: story.play Story_AY_Bathe
+Id: 30167 Code: CStoryTest Cmd: story.play Story_AY_Lost
+Id: 30168 Code: CStoryTest Cmd: story.play Story_AY_Peek
+Id: 30169 Code: CStoryTest Cmd: story.play Story_AY_RePeek
+Id: 30170 Code: CStoryTest Cmd: story.play Story_AY_SnakeBit
+Id: 30171 Code: CStoryTest Cmd: story.play Story_AY_SnakeAfter
+Id: 30172 Code: CStoryTest Cmd: story.play Story_AY_GetUp
+Id: 30173 Code: CStoryTest Cmd: story.play Story_AY_PengFeng
+Id: 30174 Code: CStoryTest Cmd: story.play Story_AY_Bingo
+Id: 30175 Code: CStoryTest Cmd: story.play Story_AY_Finish
+Id: 30176 Code: CStoryTest Cmd: story.play Story_CN_Comming
+Id: 30177 Code: CStoryTest Cmd: story.play Story_CN_Spring
+Id: 30178 Code: CStoryTest Cmd: story.play Story_CN_Massage
+Id: 30179 Code: CStoryTest Cmd: story.play Story_CN_QuickShoot
+Id: 30180 Code: CStoryTest Cmd: story.play Story_CN_BXZ_Chat_A
+Id: 30181 Code: CStoryTest Cmd: story.play Story_CN_BXZ_Chat_B
+Id: 30182 Code: CStoryTest Cmd: story.play Story_CN_BXZ_DO
+Id: 30183 Code: CStoryTest Cmd: story.play Story_CN_Finish
+Id: 30184 Code: CStoryTest Cmd: story.play Story_DT_Kick
+Id: 30185 Code: CStoryTest Cmd: story.play Story_DT_TrainPre
+Id: 30186 Code: CStoryTest Cmd: story.play Story_DT_Tree
+Id: 30187 Code: CStoryTest Cmd: story.play Story_DT_Stone
+Id: 30188 Code: CStoryTest Cmd: story.play Story_DT_SOS
+Id: 30189 Code: CStoryTest Cmd: story.play Story_DT_HuLu_Look
+Id: 30190 Code: CStoryTest Cmd: story.play Story_DT_HuLu_DO
+Id: 30191 Code: CStoryTest Cmd: story.play Story_DT_Finish
+Id: 30192 Code: CStoryTest Cmd: story.play Story_QS_Daily
+Id: 30193 Code: CStoryTest Cmd: story.play Story_QS_Scold
+Id: 30194 Code: CStoryTest Cmd: story.play Story_QS_Water
+Id: 30195 Code: CStoryTest Cmd: story.play Story_QS_WaterUnder
+Id: 30196 Code: CStoryTest Cmd: story.play Story_QS_Beach
+Id: 30197 Code: CStoryTest Cmd: story.play Story_QS_Cry
+Id: 30198 Code: CStoryTest Cmd: story.play Story_QS_CryAfter
+Id: 30199 Code: CStoryTest Cmd: story.play Story_QS_Cut
+Id: 30200 Code: CStoryTest Cmd: story.play Story_QS_ReMeet
+Id: 30201 Code: CStoryTest Cmd: story.play Story_QS_Memory_A
+Id: 30202 Code: CStoryTest Cmd: story.play Story_QS_Memory_B
+Id: 30203 Code: CStoryTest Cmd: story.play Story_QS_Memory_C
+Id: 30204 Code: CStoryTest Cmd: story.play Story_QS_Memory_D
+Id: 30205 Code: CStoryTest Cmd: story.play Story_QS_Memory_E
+Id: 30206 Code: CStoryTest Cmd: story.play Story_QS_TransPre
+Id: 30207 Code: CStoryTest Cmd: story.play Story_QS_Translate
+Id: 30208 Code: CStoryTest Cmd: story.play Story_QS_TransFix
+Id: 30209 Code: StoryTestXW Cmd: story.play Story_YR_Comming
+Id: 30210 Code: StoryTestXW Cmd: story.play Story_YR_BuyFirst
+Id: 30211 Code: StoryTestXW Cmd: story.play Story_YR_MouthEat
+Id: 30212 Code: StoryTestXW Cmd: story.play Story_XW_Comming
+Id: 30213 Code: StoryTestXW Cmd: story.play Story_XW_Train
+Id: 30214 Code: StoryTestXW Cmd: story.play Story_XW_LostYR
+Id: 30215 Code: StoryTestXW Cmd: story.play Story_XW_SaveYR
+Id: 30216 Code: StoryTestXW Cmd: story.play Story_XW_RecvMsg
+Id: 30217 Code: StoryTestXW Cmd: story.play Story_XW_EnterCave
+Id: 30218 Code: StoryTestXW Cmd: story.play Story_XW_CaveML
+Id: 30219 Code: StoryTestXW Cmd: story.play Story_XW_CaveSF
+Id: 30220 Code: StoryTestXW Cmd: story.play Story_XW_SleepPre
+Id: 30221 Code: StoryTestXW Cmd: story.play Story_XW_SleepPost
+Id: 30222 Code: StoryTestXW Cmd: story.play Story_XW_FinalHit
+Id: 30223 Code: StoryTestXW Cmd: story.play Story_XW_AskSF
+Id: 30224 Code: StoryTestXW Cmd: story.play Story_XW_ShipPre
+Id: 30225 Code: StoryTestXW Cmd: story.play Story_XW_ShipPost
+Id: 30226 Code: StoryTestNW Cmd: story.play Story_NW_SF_Exp
+Id: 30227 Code: StoryTestNW Cmd: story.play Story_NW_SF_Method
+Id: 30228 Code: StoryTestNW Cmd: story.play Story_NW_MSG_A_Over
+Id: 30229 Code: StoryTestNW Cmd: story.play Story_NW_Explain
+Id: 30230 Code: StoryTestNW Cmd: story.play Story_NW_MSG_B_Over
+Id: 30231 Code: StoryTestNW Cmd: story.play Story_NW_Check_Elixir
+Id: 30232 Code: StoryTestNW Cmd: story.play Story_NW_MSG_C_Over
+Id: 30233 Code: StoryTestNW Cmd: story.play Story_NW_Room_Stay
+Id: 30234 Code: StoryTestNW Cmd: story.play Story_NW_MSG_D_Over
+Id: 30235 Code: StoryTestNW Cmd: story.play Story_NW_MSG_E_Over
+Id: 30236 Code: StoryTestNW Cmd: story.play Story_NW_Ceremony_Pre
+Id: 30237 Code: StoryTestNW Cmd: story.play Story_NW_Ceremony_After
+Id: 30238 Code: StoryTestNW Cmd: story.play Story_NW_Ceremony_Fuck
+Id: 30239 Code: StoryTestNW Cmd: story.play Story_NW_Ceremony_Final
+Id: 30240 Code: StoryTestED Cmd: story.play Story_ED_WC_Take_Pre
+Id: 30241 Code: StoryTestED Cmd: story.play Story_ED_WC_Take_Post
+Id: 30242 Code: StoryTestED Cmd: story.play Story_ED_Girls_Take_Pre
+Id: 30243 Code: StoryTestED Cmd: story.play Story_ED_Girls_Take_Post_A
+Id: 30244 Code: StoryTestED Cmd: story.play Story_ED_Girls_Take_Post_B
+Id: 30245 Code: StoryTestED Cmd: story.play Story_ED_Girls_Take_Post_C
+Id: 30246 Code: StoryTestED Cmd: story.play Story_WC_Comming
+Id: 30247 Code: StoryTestED Cmd: story.play Story_WC_CommingDoul
+Id: 30248 Code: StoryTestED Cmd: story.play Story_QS_TransPre
+Id: 30249 Code: StoryTestED Cmd: story.play Story_QS_Translate
+Id: 30250 Code: StoryTestED Cmd: story.play Story_QS_TransFix
+Id: 30251 Code: StoryTestED Cmd: story.play Story_WN_SexBodyClue
+Id: 30252 Code: StoryTestED Cmd: story.play Story_QS_Memory_E
+Id: 40002 Code: SetCN_1 Cmd: var.set_int_if N_AY 0 1
+Id: 40003 Code: SetCN_1 Cmd: var.set_int_if N_DT 0 1
+Id: 40004 Code: SetCN_1 Cmd: var.set_int_if N_QS 0 1
+Id: 40005 Code: SetCN_1 Cmd: var.set_int_if N_WN 0 1
+Id: 40006 Code: SetCN_1 Cmd: var.set_int_if N_XW 0 1
+Id: 40007 Code: SetCN_1 Cmd: var.set_int_if N_NW 0 1
+Id: 40009 Code: SetCN_2 Cmd: var.set_int_if N_AY 0 2
+Id: 40010 Code: SetCN_2 Cmd: var.set_int_if N_DT 0 2
+Id: 40011 Code: SetCN_2 Cmd: var.set_int_if N_QS 0 2
+Id: 40012 Code: SetCN_2 Cmd: var.set_int_if N_WN 0 2
+Id: 40013 Code: SetCN_2 Cmd: var.set_int_if N_XW 0 2
+Id: 40014 Code: SetCN_2 Cmd: var.set_int_if N_NW 0 2
+Id: 40016 Code: SetCN_3 Cmd: var.set_int_if N_AY 0 3
+Id: 40017 Code: SetCN_3 Cmd: var.set_int_if N_DT 0 3
+Id: 40018 Code: SetCN_3 Cmd: var.set_int_if N_QS 0 3
+Id: 40019 Code: SetCN_3 Cmd: var.set_int_if N_WN 0 3
+Id: 40020 Code: SetCN_3 Cmd: var.set_int_if N_XW 0 3
+Id: 40021 Code: SetCN_3 Cmd: var.set_int_if N_NW 0 3
+Id: 40023 Code: SetCN_4 Cmd: var.set_int_if N_AY 0 4
+Id: 40024 Code: SetCN_4 Cmd: var.set_int_if N_DT 0 4
+Id: 40025 Code: SetCN_4 Cmd: var.set_int_if N_QS 0 4
+Id: 40026 Code: SetCN_4 Cmd: var.set_int_if N_WN 0 4
+Id: 40027 Code: SetCN_4 Cmd: var.set_int_if N_XW 0 4
+Id: 40028 Code: SetCN_4 Cmd: var.set_int_if N_NW 0 4
+Id: 40030 Code: SetCN_5 Cmd: var.set_int_if N_AY 0 5
+Id: 40031 Code: SetCN_5 Cmd: var.set_int_if N_DT 0 5
+Id: 40032 Code: SetCN_5 Cmd: var.set_int_if N_QS 0 5
+Id: 40033 Code: SetCN_5 Cmd: var.set_int_if N_WN 0 5
+Id: 40034 Code: SetCN_5 Cmd: var.set_int_if N_XW 0 5
+Id: 40035 Code: SetCN_5 Cmd: var.set_int_if N_NW 0 5
+Id: 40037 Code: SetCN_6 Cmd: var.set_int_if N_AY 0 6
+Id: 40038 Code: SetCN_6 Cmd: var.set_int_if N_DT 0 6
+Id: 40039 Code: SetCN_6 Cmd: var.set_int_if N_QS 0 6
+Id: 40040 Code: SetCN_6 Cmd: var.set_int_if N_WN 0 6
+Id: 40041 Code: SetCN_6 Cmd: var.set_int_if N_XW 0 6
+Id: 40042 Code: SetCN_6 Cmd: var.set_int_if N_NW 0 6
+Id: 40044 Code: SetCN_7 Cmd: var.set_int_if N_AY 0 7
+Id: 40045 Code: SetCN_7 Cmd: var.set_int_if N_DT 0 7
+Id: 40046 Code: SetCN_7 Cmd: var.set_int_if N_QS 0 7
+Id: 40047 Code: SetCN_7 Cmd: var.set_int_if N_WN 0 7
+Id: 40048 Code: SetCN_7 Cmd: var.set_int_if N_XW 0 7
+Id: 40049 Code: SetCN_7 Cmd: var.set_int_if N_NW 0 7
+Id: 40050 Code: SetAY_1 Cmd: var.set_int_if N_CN 0 1
+Id: 40052 Code: SetAY_1 Cmd: var.set_int_if N_DT 0 1
+Id: 40053 Code: SetAY_1 Cmd: var.set_int_if N_QS 0 1
+Id: 40054 Code: SetAY_1 Cmd: var.set_int_if N_WN 0 1
+Id: 40055 Code: SetAY_1 Cmd: var.set_int_if N_XW 0 1
+Id: 40056 Code: SetAY_1 Cmd: var.set_int_if N_NW 0 1
+Id: 40057 Code: SetAY_2 Cmd: var.set_int_if N_CN 0 2
+Id: 40059 Code: SetAY_2 Cmd: var.set_int_if N_DT 0 2
+Id: 40060 Code: SetAY_2 Cmd: var.set_int_if N_QS 0 2
+Id: 40061 Code: SetAY_2 Cmd: var.set_int_if N_WN 0 2
+Id: 40062 Code: SetAY_2 Cmd: var.set_int_if N_XW 0 2
+Id: 40063 Code: SetAY_2 Cmd: var.set_int_if N_NW 0 2
+Id: 40064 Code: SetAY_3 Cmd: var.set_int_if N_CN 0 3
+Id: 40066 Code: SetAY_3 Cmd: var.set_int_if N_DT 0 3
+Id: 40067 Code: SetAY_3 Cmd: var.set_int_if N_QS 0 3
+Id: 40068 Code: SetAY_3 Cmd: var.set_int_if N_WN 0 3
+Id: 40069 Code: SetAY_3 Cmd: var.set_int_if N_XW 0 3
+Id: 40070 Code: SetAY_3 Cmd: var.set_int_if N_NW 0 3
+Id: 40071 Code: SetAY_4 Cmd: var.set_int_if N_CN 0 4
+Id: 40073 Code: SetAY_4 Cmd: var.set_int_if N_DT 0 4
+Id: 40074 Code: SetAY_4 Cmd: var.set_int_if N_QS 0 4
+Id: 40075 Code: SetAY_4 Cmd: var.set_int_if N_WN 0 4
+Id: 40076 Code: SetAY_4 Cmd: var.set_int_if N_XW 0 4
+Id: 40077 Code: SetAY_4 Cmd: var.set_int_if N_NW 0 4
+Id: 40078 Code: SetAY_5 Cmd: var.set_int_if N_CN 0 5
+Id: 40080 Code: SetAY_5 Cmd: var.set_int_if N_DT 0 5
+Id: 40081 Code: SetAY_5 Cmd: var.set_int_if N_QS 0 5
+Id: 40082 Code: SetAY_5 Cmd: var.set_int_if N_WN 0 5
+Id: 40083 Code: SetAY_5 Cmd: var.set_int_if N_XW 0 5
+Id: 40084 Code: SetAY_5 Cmd: var.set_int_if N_NW 0 5
+Id: 40085 Code: SetAY_6 Cmd: var.set_int_if N_CN 0 6
+Id: 40087 Code: SetAY_6 Cmd: var.set_int_if N_DT 0 6
+Id: 40088 Code: SetAY_6 Cmd: var.set_int_if N_QS 0 6
+Id: 40089 Code: SetAY_6 Cmd: var.set_int_if N_WN 0 6
+Id: 40090 Code: SetAY_6 Cmd: var.set_int_if N_XW 0 6
+Id: 40091 Code: SetAY_6 Cmd: var.set_int_if N_NW 0 6
+Id: 40092 Code: SetAY_7 Cmd: var.set_int_if N_CN 0 7
+Id: 40094 Code: SetAY_7 Cmd: var.set_int_if N_DT 0 7
+Id: 40095 Code: SetAY_7 Cmd: var.set_int_if N_QS 0 7
+Id: 40096 Code: SetAY_7 Cmd: var.set_int_if N_WN 0 7
+Id: 40097 Code: SetAY_7 Cmd: var.set_int_if N_XW 0 7
+Id: 40098 Code: SetAY_7 Cmd: var.set_int_if N_NW 0 7
+Id: 40099 Code: SetDT_1 Cmd: var.set_int_if N_CN 0 1
+Id: 40100 Code: SetDT_1 Cmd: var.set_int_if N_AY 0 1
+Id: 40102 Code: SetDT_1 Cmd: var.set_int_if N_QS 0 1
+Id: 40103 Code: SetDT_1 Cmd: var.set_int_if N_WN 0 1
+Id: 40104 Code: SetDT_1 Cmd: var.set_int_if N_XW 0 1
+Id: 40105 Code: SetDT_1 Cmd: var.set_int_if N_NW 0 1
+Id: 40106 Code: SetDT_2 Cmd: var.set_int_if N_CN 0 2
+Id: 40107 Code: SetDT_2 Cmd: var.set_int_if N_AY 0 2
+Id: 40109 Code: SetDT_2 Cmd: var.set_int_if N_QS 0 2
+Id: 40110 Code: SetDT_2 Cmd: var.set_int_if N_WN 0 2
+Id: 40111 Code: SetDT_2 Cmd: var.set_int_if N_XW 0 2
+Id: 40112 Code: SetDT_2 Cmd: var.set_int_if N_NW 0 2
+Id: 40113 Code: SetDT_3 Cmd: var.set_int_if N_CN 0 3
+Id: 40114 Code: SetDT_3 Cmd: var.set_int_if N_AY 0 3
+Id: 40116 Code: SetDT_3 Cmd: var.set_int_if N_QS 0 3
+Id: 40117 Code: SetDT_3 Cmd: var.set_int_if N_WN 0 3
+Id: 40118 Code: SetDT_3 Cmd: var.set_int_if N_XW 0 3
+Id: 40119 Code: SetDT_3 Cmd: var.set_int_if N_NW 0 3
+Id: 40120 Code: SetDT_4 Cmd: var.set_int_if N_CN 0 4
+Id: 40121 Code: SetDT_4 Cmd: var.set_int_if N_AY 0 4
+Id: 40123 Code: SetDT_4 Cmd: var.set_int_if N_QS 0 4
+Id: 40124 Code: SetDT_4 Cmd: var.set_int_if N_WN 0 4
+Id: 40125 Code: SetDT_4 Cmd: var.set_int_if N_XW 0 4
+Id: 40126 Code: SetDT_4 Cmd: var.set_int_if N_NW 0 4
+Id: 40127 Code: SetDT_5 Cmd: var.set_int_if N_CN 0 5
+Id: 40128 Code: SetDT_5 Cmd: var.set_int_if N_AY 0 5
+Id: 40130 Code: SetDT_5 Cmd: var.set_int_if N_QS 0 5
+Id: 40131 Code: SetDT_5 Cmd: var.set_int_if N_WN 0 5
+Id: 40132 Code: SetDT_5 Cmd: var.set_int_if N_XW 0 5
+Id: 40133 Code: SetDT_5 Cmd: var.set_int_if N_NW 0 5
+Id: 40134 Code: SetDT_6 Cmd: var.set_int_if N_CN 0 6
+Id: 40135 Code: SetDT_6 Cmd: var.set_int_if N_AY 0 6
+Id: 40137 Code: SetDT_6 Cmd: var.set_int_if N_QS 0 6
+Id: 40138 Code: SetDT_6 Cmd: var.set_int_if N_WN 0 6
+Id: 40139 Code: SetDT_6 Cmd: var.set_int_if N_XW 0 6
+Id: 40140 Code: SetDT_6 Cmd: var.set_int_if N_NW 0 6
+Id: 40141 Code: SetDT_7 Cmd: var.set_int_if N_CN 0 7
+Id: 40142 Code: SetDT_7 Cmd: var.set_int_if N_AY 0 7
+Id: 40144 Code: SetDT_7 Cmd: var.set_int_if N_QS 0 7
+Id: 40145 Code: SetDT_7 Cmd: var.set_int_if N_WN 0 7
+Id: 40146 Code: SetDT_7 Cmd: var.set_int_if N_XW 0 7
+Id: 40147 Code: SetDT_7 Cmd: var.set_int_if N_NW 0 7
+Id: 40148 Code: SetQS_1 Cmd: var.set_int_if N_CN 0 1
+Id: 40149 Code: SetQS_1 Cmd: var.set_int_if N_AY 0 1
+Id: 40150 Code: SetQS_1 Cmd: var.set_int_if N_DT 0 1
+Id: 40152 Code: SetQS_1 Cmd: var.set_int_if N_WN 0 1
+Id: 40153 Code: SetQS_1 Cmd: var.set_int_if N_XW 0 1
+Id: 40154 Code: SetQS_1 Cmd: var.set_int_if N_NW 0 1
+Id: 40155 Code: SetQS_2 Cmd: var.set_int_if N_CN 0 2
+Id: 40156 Code: SetQS_2 Cmd: var.set_int_if N_AY 0 2
+Id: 40157 Code: SetQS_2 Cmd: var.set_int_if N_DT 0 2
+Id: 40159 Code: SetQS_2 Cmd: var.set_int_if N_WN 0 2
+Id: 40160 Code: SetQS_2 Cmd: var.set_int_if N_XW 0 2
+Id: 40161 Code: SetQS_2 Cmd: var.set_int_if N_NW 0 2
+Id: 40162 Code: SetQS_3 Cmd: var.set_int_if N_CN 0 3
+Id: 40163 Code: SetQS_3 Cmd: var.set_int_if N_AY 0 3
+Id: 40164 Code: SetQS_3 Cmd: var.set_int_if N_DT 0 3
+Id: 40166 Code: SetQS_3 Cmd: var.set_int_if N_WN 0 3
+Id: 40167 Code: SetQS_3 Cmd: var.set_int_if N_XW 0 3
+Id: 40168 Code: SetQS_3 Cmd: var.set_int_if N_NW 0 3
+Id: 40169 Code: SetQS_4 Cmd: var.set_int_if N_CN 0 4
+Id: 40170 Code: SetQS_4 Cmd: var.set_int_if N_AY 0 4
+Id: 40171 Code: SetQS_4 Cmd: var.set_int_if N_DT 0 4
+Id: 40173 Code: SetQS_4 Cmd: var.set_int_if N_WN 0 4
+Id: 40174 Code: SetQS_4 Cmd: var.set_int_if N_XW 0 4
+Id: 40175 Code: SetQS_4 Cmd: var.set_int_if N_NW 0 4
+Id: 40176 Code: SetQS_5 Cmd: var.set_int_if N_CN 0 5
+Id: 40177 Code: SetQS_5 Cmd: var.set_int_if N_AY 0 5
+Id: 40178 Code: SetQS_5 Cmd: var.set_int_if N_DT 0 5
+Id: 40180 Code: SetQS_5 Cmd: var.set_int_if N_WN 0 5
+Id: 40181 Code: SetQS_5 Cmd: var.set_int_if N_XW 0 5
+Id: 40182 Code: SetQS_5 Cmd: var.set_int_if N_NW 0 5
+Id: 40183 Code: SetQS_6 Cmd: var.set_int_if N_CN 0 6
+Id: 40184 Code: SetQS_6 Cmd: var.set_int_if N_AY 0 6
+Id: 40185 Code: SetQS_6 Cmd: var.set_int_if N_DT 0 6
+Id: 40187 Code: SetQS_6 Cmd: var.set_int_if N_WN 0 6
+Id: 40188 Code: SetQS_6 Cmd: var.set_int_if N_XW 0 6
+Id: 40189 Code: SetQS_6 Cmd: var.set_int_if N_NW 0 6
+Id: 40190 Code: SetQS_7 Cmd: var.set_int_if N_CN 0 7
+Id: 40191 Code: SetQS_7 Cmd: var.set_int_if N_AY 0 7
+Id: 40192 Code: SetQS_7 Cmd: var.set_int_if N_DT 0 7
+Id: 40194 Code: SetQS_7 Cmd: var.set_int_if N_WN 0 7
+Id: 40195 Code: SetQS_7 Cmd: var.set_int_if N_XW 0 7
+Id: 40196 Code: SetQS_7 Cmd: var.set_int_if N_NW 0 7
+Id: 40197 Code: SetWN_1 Cmd: var.set_int_if N_CN 0 1
+Id: 40198 Code: SetWN_1 Cmd: var.set_int_if N_AY 0 1
+Id: 40199 Code: SetWN_1 Cmd: var.set_int_if N_DT 0 1
+Id: 40200 Code: SetWN_1 Cmd: var.set_int_if N_QS 0 1
+Id: 40202 Code: SetWN_1 Cmd: var.set_int_if N_XW 0 1
+Id: 40203 Code: SetWN_1 Cmd: var.set_int_if N_NW 0 1
+Id: 40204 Code: SetWN_2 Cmd: var.set_int_if N_CN 0 2
+Id: 40205 Code: SetWN_2 Cmd: var.set_int_if N_AY 0 2
+Id: 40206 Code: SetWN_2 Cmd: var.set_int_if N_DT 0 2
+Id: 40207 Code: SetWN_2 Cmd: var.set_int_if N_QS 0 2
+Id: 40209 Code: SetWN_2 Cmd: var.set_int_if N_XW 0 2
+Id: 40210 Code: SetWN_2 Cmd: var.set_int_if N_NW 0 2
+Id: 40211 Code: SetWN_3 Cmd: var.set_int_if N_CN 0 3
+Id: 40212 Code: SetWN_3 Cmd: var.set_int_if N_AY 0 3
+Id: 40213 Code: SetWN_3 Cmd: var.set_int_if N_DT 0 3
+Id: 40214 Code: SetWN_3 Cmd: var.set_int_if N_QS 0 3
+Id: 40216 Code: SetWN_3 Cmd: var.set_int_if N_XW 0 3
+Id: 40217 Code: SetWN_3 Cmd: var.set_int_if N_NW 0 3
+Id: 40218 Code: SetWN_4 Cmd: var.set_int_if N_CN 0 4
+Id: 40219 Code: SetWN_4 Cmd: var.set_int_if N_AY 0 4
+Id: 40220 Code: SetWN_4 Cmd: var.set_int_if N_DT 0 4
+Id: 40221 Code: SetWN_4 Cmd: var.set_int_if N_QS 0 4
+Id: 40223 Code: SetWN_4 Cmd: var.set_int_if N_XW 0 4
+Id: 40224 Code: SetWN_4 Cmd: var.set_int_if N_NW 0 4
+Id: 40225 Code: SetWN_5 Cmd: var.set_int_if N_CN 0 5
+Id: 40226 Code: SetWN_5 Cmd: var.set_int_if N_AY 0 5
+Id: 40227 Code: SetWN_5 Cmd: var.set_int_if N_DT 0 5
+Id: 40228 Code: SetWN_5 Cmd: var.set_int_if N_QS 0 5
+Id: 40230 Code: SetWN_5 Cmd: var.set_int_if N_XW 0 5
+Id: 40231 Code: SetWN_5 Cmd: var.set_int_if N_NW 0 5
+Id: 40232 Code: SetWN_6 Cmd: var.set_int_if N_CN 0 6
+Id: 40233 Code: SetWN_6 Cmd: var.set_int_if N_AY 0 6
+Id: 40234 Code: SetWN_6 Cmd: var.set_int_if N_DT 0 6
+Id: 40235 Code: SetWN_6 Cmd: var.set_int_if N_QS 0 6
+Id: 40237 Code: SetWN_6 Cmd: var.set_int_if N_XW 0 6
+Id: 40238 Code: SetWN_6 Cmd: var.set_int_if N_NW 0 6
+Id: 40239 Code: SetWN_7 Cmd: var.set_int_if N_CN 0 7
+Id: 40240 Code: SetWN_7 Cmd: var.set_int_if N_AY 0 7
+Id: 40241 Code: SetWN_7 Cmd: var.set_int_if N_DT 0 7
+Id: 40242 Code: SetWN_7 Cmd: var.set_int_if N_QS 0 7
+Id: 40244 Code: SetWN_7 Cmd: var.set_int_if N_XW 0 7
+Id: 40245 Code: SetWN_7 Cmd: var.set_int_if N_NW 0 7
+Id: 40246 Code: SetXW_1 Cmd: var.set_int_if N_CN 0 1
+Id: 40247 Code: SetXW_1 Cmd: var.set_int_if N_AY 0 1
+Id: 40248 Code: SetXW_1 Cmd: var.set_int_if N_DT 0 1
+Id: 40249 Code: SetXW_1 Cmd: var.set_int_if N_QS 0 1
+Id: 40250 Code: SetXW_1 Cmd: var.set_int_if N_WN 0 1
+Id: 40252 Code: SetXW_1 Cmd: var.set_int_if N_NW 0 1
+Id: 40253 Code: SetXW_2 Cmd: var.set_int_if N_CN 0 2
+Id: 40254 Code: SetXW_2 Cmd: var.set_int_if N_AY 0 2
+Id: 40255 Code: SetXW_2 Cmd: var.set_int_if N_DT 0 2
+Id: 40256 Code: SetXW_2 Cmd: var.set_int_if N_QS 0 2
+Id: 40257 Code: SetXW_2 Cmd: var.set_int_if N_WN 0 2
+Id: 40259 Code: SetXW_2 Cmd: var.set_int_if N_NW 0 2
+Id: 40260 Code: SetXW_3 Cmd: var.set_int_if N_CN 0 3
+Id: 40261 Code: SetXW_3 Cmd: var.set_int_if N_AY 0 3
+Id: 40262 Code: SetXW_3 Cmd: var.set_int_if N_DT 0 3
+Id: 40263 Code: SetXW_3 Cmd: var.set_int_if N_QS 0 3
+Id: 40264 Code: SetXW_3 Cmd: var.set_int_if N_WN 0 3
+Id: 40266 Code: SetXW_3 Cmd: var.set_int_if N_NW 0 3
+Id: 40267 Code: SetXW_4 Cmd: var.set_int_if N_CN 0 4
+Id: 40268 Code: SetXW_4 Cmd: var.set_int_if N_AY 0 4
+Id: 40269 Code: SetXW_4 Cmd: var.set_int_if N_DT 0 4
+Id: 40270 Code: SetXW_4 Cmd: var.set_int_if N_QS 0 4
+Id: 40271 Code: SetXW_4 Cmd: var.set_int_if N_WN 0 4
+Id: 40273 Code: SetXW_4 Cmd: var.set_int_if N_NW 0 4
+Id: 40274 Code: SetXW_5 Cmd: var.set_int_if N_CN 0 5
+Id: 40275 Code: SetXW_5 Cmd: var.set_int_if N_AY 0 5
+Id: 40276 Code: SetXW_5 Cmd: var.set_int_if N_DT 0 5
+Id: 40277 Code: SetXW_5 Cmd: var.set_int_if N_QS 0 5
+Id: 40278 Code: SetXW_5 Cmd: var.set_int_if N_WN 0 5
+Id: 40280 Code: SetXW_5 Cmd: var.set_int_if N_NW 0 5
+Id: 40281 Code: SetXW_6 Cmd: var.set_int_if N_CN 0 6
+Id: 40282 Code: SetXW_6 Cmd: var.set_int_if N_AY 0 6
+Id: 40283 Code: SetXW_6 Cmd: var.set_int_if N_DT 0 6
+Id: 40284 Code: SetXW_6 Cmd: var.set_int_if N_QS 0 6
+Id: 40285 Code: SetXW_6 Cmd: var.set_int_if N_WN 0 6
+Id: 40287 Code: SetXW_6 Cmd: var.set_int_if N_NW 0 6
+Id: 40288 Code: SetXW_7 Cmd: var.set_int_if N_CN 0 7
+Id: 40289 Code: SetXW_7 Cmd: var.set_int_if N_AY 0 7
+Id: 40290 Code: SetXW_7 Cmd: var.set_int_if N_DT 0 7
+Id: 40291 Code: SetXW_7 Cmd: var.set_int_if N_QS 0 7
+Id: 40292 Code: SetXW_7 Cmd: var.set_int_if N_WN 0 7
+Id: 40294 Code: SetXW_7 Cmd: var.set_int_if N_NW 0 7
+Id: 40295 Code: SetNW_1 Cmd: var.set_int_if N_CN 0 1
+Id: 40296 Code: SetNW_1 Cmd: var.set_int_if N_AY 0 1
+Id: 40297 Code: SetNW_1 Cmd: var.set_int_if N_DT 0 1
+Id: 40298 Code: SetNW_1 Cmd: var.set_int_if N_QS 0 1
+Id: 40299 Code: SetNW_1 Cmd: var.set_int_if N_WN 0 1
+Id: 40300 Code: SetNW_1 Cmd: var.set_int_if N_XW 0 1
+Id: 40302 Code: SetNW_2 Cmd: var.set_int_if N_CN 0 2
+Id: 40303 Code: SetNW_2 Cmd: var.set_int_if N_AY 0 2
+Id: 40304 Code: SetNW_2 Cmd: var.set_int_if N_DT 0 2
+Id: 40305 Code: SetNW_2 Cmd: var.set_int_if N_QS 0 2
+Id: 40306 Code: SetNW_2 Cmd: var.set_int_if N_WN 0 2
+Id: 40307 Code: SetNW_2 Cmd: var.set_int_if N_XW 0 2
+Id: 40309 Code: SetNW_3 Cmd: var.set_int_if N_CN 0 3
+Id: 40310 Code: SetNW_3 Cmd: var.set_int_if N_AY 0 3
+Id: 40311 Code: SetNW_3 Cmd: var.set_int_if N_DT 0 3
+Id: 40312 Code: SetNW_3 Cmd: var.set_int_if N_QS 0 3
+Id: 40313 Code: SetNW_3 Cmd: var.set_int_if N_WN 0 3
+Id: 40314 Code: SetNW_3 Cmd: var.set_int_if N_XW 0 3
+Id: 40316 Code: SetNW_4 Cmd: var.set_int_if N_CN 0 4
+Id: 40317 Code: SetNW_4 Cmd: var.set_int_if N_AY 0 4
+Id: 40318 Code: SetNW_4 Cmd: var.set_int_if N_DT 0 4
+Id: 40319 Code: SetNW_4 Cmd: var.set_int_if N_QS 0 4
+Id: 40320 Code: SetNW_4 Cmd: var.set_int_if N_WN 0 4
+Id: 40321 Code: SetNW_4 Cmd: var.set_int_if N_XW 0 4
+Id: 40323 Code: SetNW_5 Cmd: var.set_int_if N_CN 0 5
+Id: 40324 Code: SetNW_5 Cmd: var.set_int_if N_AY 0 5
+Id: 40325 Code: SetNW_5 Cmd: var.set_int_if N_DT 0 5
+Id: 40326 Code: SetNW_5 Cmd: var.set_int_if N_QS 0 5
+Id: 40327 Code: SetNW_5 Cmd: var.set_int_if N_WN 0 5
+Id: 40328 Code: SetNW_5 Cmd: var.set_int_if N_XW 0 5
+Id: 40330 Code: SetNW_6 Cmd: var.set_int_if N_CN 0 6
+Id: 40331 Code: SetNW_6 Cmd: var.set_int_if N_AY 0 6
+Id: 40332 Code: SetNW_6 Cmd: var.set_int_if N_DT 0 6
+Id: 40333 Code: SetNW_6 Cmd: var.set_int_if N_QS 0 6
+Id: 40334 Code: SetNW_6 Cmd: var.set_int_if N_WN 0 6
+Id: 40335 Code: SetNW_6 Cmd: var.set_int_if N_XW 0 6
+Id: 40337 Code: SetNW_7 Cmd: var.set_int_if N_CN 0 7
+Id: 40338 Code: SetNW_7 Cmd: var.set_int_if N_AY 0 7
+Id: 40339 Code: SetNW_7 Cmd: var.set_int_if N_DT 0 7
+Id: 40340 Code: SetNW_7 Cmd: var.set_int_if N_QS 0 7
+Id: 40341 Code: SetNW_7 Cmd: var.set_int_if N_WN 0 7
+Id: 40342 Code: SetNW_7 Cmd: var.set_int_if N_XW 0 7
+Id: 90014 Code: Task_Main_101_g Cmd: player.interact_over
+Id: 90019 Code: Task_Main_101_c Cmd: player.interact_over
+Id: 90022 Code: Main_101S_g Cmd: player.interact_over
+Id: 90024 Code: Main_101S_c Cmd: player.interact_over
+Id: 90026 Code: Task_Main_102_g Cmd: player.interact_over
+Id: 90029 Code: Task_Main_102_c Cmd: player.interact_over
+Id: 90032 Code: Task_Main_103_g Cmd: player.interact_over
+Id: 90035 Code: Task_Main_103_c Cmd: player.interact_over
+Id: 90038 Code: Task_Needle_G0_c Cmd: player.interact_over
+Id: 90041 Code: Task_Needle_G1_c Cmd: player.interact_over
+Id: 90044 Code: Task_Main_104_g Cmd: player.interact_over
+Id: 90049 Code: Task_Main_105_c Cmd: player.interact_over
+Id: 90054 Code: Main_AY_H2_Pre Cmd: player.interact_over
+Id: 90069 Code: Main_AY_H3_Pre Cmd: player.interact_over
+Id: 90084 Code: Main_AY_H4S_Task_c Cmd: player.interact_over
+Id: 90095 Code: CN_Task_1_g Cmd: player.interact_over
+Id: 90100 Code: CN_Task_1_c Cmd: player.interact_over
+Id: 90103 Code: Main_CN_H1_c Cmd: player.interact_over
+Id: 90106 Code: Main_CN_H1S_c Cmd: player.interact_over
+Id: 90109 Code: CN_Task_2_c Cmd: player.interact_over
+Id: 90118 Code: Main_CN_H1X_c Cmd: player.interact_over
+Id: 90142 Code: CN_Task_6S_c Cmd: player.interact_over
+Id: 90155 Code: BT_Portal_2_Talk Cmd: player.interact_over
+Id: 90161 Code: DT_Task_1_g Cmd: player.interact_over
+Id: 90175 Code: Main_DT_H3_c Cmd: player.interact_over
+Id: 90196 Code: Main_QS_H2S_c Cmd: player.interact_over
+Id: 90200 Code: Main_QS_H2X_c Cmd: player.interact_over
+Id: 90203 Code: Main_QS_H2Y_c Cmd: player.interact_over
+Id: 90210 Code: Main_QS_H2A_c Cmd: player.interact_over
+Id: 90212 Code: Main_QS_TalkAY Cmd: player.interact_over
+Id: 90214 Code: Main_QS_TalkDT Cmd: player.interact_over
+Id: 90216 Code: Main_QS_TalkAY_End Cmd: player.interact_over
+Id: 90220 Code: Main_QS_TalkDT_End Cmd: player.interact_over
+Id: 90232 Code: QS_Sleep_Talk Cmd: player.interact_over
+Id: 90233 Code: QS_Door_Talk Cmd: player.interact_over
+Id: 90254 Code: QS_Task_H4S Cmd: player.interact_over
+Id: 90263 Code: QS_Task_SF_Sad Cmd: player.interact_over
+Id: 90266 Code: QS_H4X_Task_c Cmd: player.interact_over
+Id: 90269 Code: QS_H4Y_Task_c Cmd: player.interact_over
+Id: 90274 Code: QS_Task_CheckRoom Cmd: player.interact_over
+Id: 90277 Code: QS_Task_ExpelBag Cmd: player.interact_over
+Id: 90284 Code: QS_Task_HouseClue_A Cmd: player.interact_over
+Id: 90286 Code: HouseClue_A Cmd: player.interact_over
+Id: 90287 Code: QS_Task_HouseClue_B Cmd: player.interact_over
+Id: 90288 Code: QS_Task_HouseClue_C Cmd: player.interact_over
+Id: 90289 Code: QS_Task_HouseClue_D Cmd: player.interact_over
+Id: 90290 Code: QS_Task_ReqWC_UnReady Cmd: player.interact_over
+Id: 90291 Code: QS_Task_ReqWC_Pre Cmd: player.interact_over
+Id: 90327 Code: Main_WN_H1_Pre Cmd: player.interact_over
+Id: 90334 Code: Main_WN_H1 Cmd: player.interact_over
+Id: 90343 Code: Main_WN_H2_Pre Cmd: player.interact_over
+Id: 90348 Code: Main_WN_H2 Cmd: player.interact_over
+Id: 90363 Code: Main_WN_H3 Cmd: player.interact_over
+Id: 90366 Code: Main_WN_H3_Recover Cmd: player.interact_over
+Id: 90369 Code: Main_WN_H3_Find Cmd: player.interact_over
+Id: 90386 Code: Main_WN_H3_Give Cmd: player.interact_over
+Id: 90389 Code: Give_Pre Cmd: player.interact_over
+Id: 90390 Code: Give_Post Cmd: player.interact_over
+Id: 90403 Code: Main_WN_H4 Cmd: player.interact_over
+Id: 90414 Code: Main_WN_H4_Prepare Cmd: player.interact_over
+Id: 90417 Code: Exchange_Pre Cmd: player.interact_over
+Id: 90418 Code: Main_WN_H4_Exchange Cmd: player.interact_over
+Id: 90430 Code: Main_WN_H5 Cmd: player.interact_over
+Id: 90447 Code: QS_Task_Miss_c Cmd: player.interact_over
+Id: 90448 Code: QS_Perform_Miss Cmd: player.interact_over
+Id: 90461 Code: BT_AY_PF_g Cmd: player.interact_over
+Id: 90496 Code: Main_XW_H1_SF Cmd: player.interact_over
+Id: 90498 Code: Main_XW_H1_Pre Cmd: player.interact_over
+Id: 90503 Code: Main_XW_H1 Cmd: player.interact_over
+Id: 90520 Code: Main_XW_H2 Cmd: player.interact_over
+Id: 90561 Code: Main_XW_H4 Cmd: player.interact_over
+Id: 90573 Code: Main_XW_H5 Cmd: player.interact_over
+Id: 90576 Code: Main_XW_H5_AskSF Cmd: player.interact_over
+Id: 90579 Code: Main_XW_H5_GiftSF Cmd: player.interact_over
+Id: 90598 Code: Main_NW_H0_Begin Cmd: player.interact_over
+Id: 90602 Code: Main_NW_H0_Wood Cmd: player.interact_over
+Id: 90614 Code: Main_NW_H1_Gift Cmd: player.interact_over
+Id: 90616 Code: Main_NW_H1_Find Cmd: player.interact_over
+Id: 90638 Code: Main_NW_H2_Change Cmd: player.interact_over
+Id: 90667 Code: Main_NW_H5_Plan Cmd: player.interact_over
+Id: 90682 Code: Main_ED_Find Cmd: player.interact_over
