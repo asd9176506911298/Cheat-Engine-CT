@@ -16,3 +16,6 @@
 # Romantic Escapades / 極品採花郎
 - https://youtu.be/HANHRzL03Zs
 - https://fearlessrevolution.com/viewtopic.php?p=431802
+- If you interesting how to find cheat code and Debug Tool
+- 如果想知道怎麼找到作弊碼和Debug工具
+- https://youtu.be/-kljV9ulW-w
