@@ -12,4 +12,7 @@
 - https://fearlessrevolution.com/viewtopic.php?f=4&t=33044
 # Atelier Yumia / 優米雅的鍊金工房
 - https://youtu.be/LV-A8YqkZpc
-- https://fearlessrevolution.com/viewtopic.php?f=4&t=34412
+- https://fearlessrevolution.com/viewtopic.php?f=4&t=
+# Romantic Escapades / 極品採花郎
+- https://youtu.be/HANHRzL03Zs
+- https://fearlessrevolution.com/viewtopic.php?p=431802
