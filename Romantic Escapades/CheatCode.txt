@@ -14,6 +14,16 @@ Id: 1012 Code: Touch_WC Cmd: npc.touch N_WC Circle 5
 奈德利 豹女 碼頭籠子裡
 Id: 10493 Code: BuySexF Cmd: npc.touch N_YR Cage_3 5
 
+大結局 動畫 八卦陣 黑白無常
+Id: 10726 Code: Ending Cmd: story.play Story_ED_Girls_Take_Post_A
+Id: 10727 Code: Ending Cmd: story.play Story_ED_Girls_Take_Post_B
+Id: 10728 Code: Ending Cmd: story.play Story_ED_Girls_Take_Post_C
+Id: 10729 Code: Ending Cmd: day.advance_to_hour 7
+Id: 10730 Code: Ending Cmd: player.translation Anchor_Wakeup
+Id: 10731 Code: Ending Cmd: record.mark_pass_s2
+Id: 10732 Code: Ending Cmd: record.save
+Id: 10733 Code: Ending Cmd: procedure.return_to_login
+
 小遊戲 
 鬥法
 Id: 671 Code: GameWN Cmd: npc.competition N_WN 2
