@@ -8,13 +8,28 @@
 奈德利豹女碼頭籠子裡: YR
 黑白無常: WC
 
+建議備份或開新遊戲
+
 黑白無常3P
 Id: 1012 Code: Touch_WC Cmd: npc.touch N_WC Circle 5
 
 奈德利 豹女 碼頭籠子裡
 Id: 10493 Code: BuySexF Cmd: npc.touch N_YR Cage_3 5
 
-大結局 動畫 八卦陣 黑白無常
+沒有玩不知道怎麼進去黑沼澤
+人都在八卦陣 開始可以拚
+Id: 10716 Code: Main_ED_BaGua Cmd: story.play Story_ED_Girls_Take_Pre
+Id: 10717 Code: Main_ED_BaGua Cmd: task.delivery Main_ED_Pick
+Id: 10718 Code: Main_ED_BaGua Cmd: task.take Main_ED_Bagua
+Id: 10719 Code: Main_ED_BaGua Cmd: var.set_int N_CN 0
+Id: 10720 Code: Main_ED_BaGua Cmd: var.set_int N_AY 0
+Id: 10721 Code: Main_ED_BaGua Cmd: var.set_int N_WN 0
+Id: 10722 Code: Main_ED_BaGua Cmd: var.set_int N_DT 0
+Id: 10723 Code: Main_ED_BaGua Cmd: var.set_int N_QS 0
+Id: 10724 Code: Main_ED_BaGua Cmd: var.set_int N_XW 0
+Id: 10725 Code: Main_ED_BaGua Cmd: var.set_int N_CN 0
+
+大結局 拚完八卦陣 動畫  黑白無常
 Id: 10726 Code: Ending Cmd: story.play Story_ED_Girls_Take_Post_A
 Id: 10727 Code: Ending Cmd: story.play Story_ED_Girls_Take_Post_B
 Id: 10728 Code: Ending Cmd: story.play Story_ED_Girls_Take_Post_C
