@@ -3,7 +3,7 @@
   <CheatEntries>
     <CheatEntry>
       <ID>8</ID>
-      <Description>"極品採花郎 / Romantic Escapades 2025-11-12 Yuki.kaco"</Description>
+      <Description>"極品採花郎 / Romantic Escapades 2025-11-13 Yuki.kaco"</Description>
       <GroupHeader>1</GroupHeader>
     </CheatEntry>
     <CheatEntry>
@@ -96,8 +96,38 @@ unregistersymbol(*)
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
+        <CheatEntry>
+          <ID>9</ID>
+          <Description>"回憶解鎖 / Memory Unlock"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+aobScanRegion(memoryUnlock, Game.MemorySubPage.CreateItem, Game.MemorySubPage.CreateItem+200, 75 ? 48 8b 4b ? 48 85 c9 0f 84 ? ? ? ? 45 33 c0 33 d2 e8 ? ? ? ? 48 8b 4b ? 48 85 c9 0f 84 ? ? ? ? 45 33 c0 33 d2 e8 ? ? ? ? 48 8b 4b)
+alloc(memoryUnlockbkp,8)
+registersymbol(memoryUnlockbkp)
+
+memoryUnlockbkp:
+readmem(memoryUnlock,2)
+memoryUnlock:
+db EB
+// jne to jmp
+
+[DISABLE]
+memoryUnlock:
+readmem(memoryUnlockbkp,2)
+
+dealloc(*)
+unregistersymbol(*)
+</AssemblerScript>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
+  <DisassemblerComments>
+    <DisassemblerComment>
+      <Address>"GameAssembly.dll"+6C8038</Address>
+      <Comment>jne 7FFA9AB98084
+</Comment>
+    </DisassemblerComment>
+  </DisassemblerComments>
 </CheatTable>
