@@ -19,3 +19,6 @@
 - If you interesting how to find cheat code and Debug Tool
 - 如果想知道怎麼找到作弊碼和Debug工具
 - https://youtu.be/-kljV9ulW-w
+
+# SUMMER -14 Days Vacation / SUMMER -夏日的14天
+- https://fearlessrevolution.com/viewtopic.php?t=37286
