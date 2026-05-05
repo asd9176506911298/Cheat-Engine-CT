@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="46">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Gamble With Your Friends Toggle Dev Mode 2026-5-5 Yuki.kaco"</Description>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Init"</Description>
+      <Options moHideChildren="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+{$lua}
+if syntaxcheck then return end
+if (LaunchMonoDataCollector() == 0) then end
+
+local cId = mono_findClass('', 'InputEvents')
+local InputEventsStaticAddress = mono_class_getStaticFieldAddress(mono_enumDomains()[1], cId)
+registerSymbol('InputEvents',InputEventsStaticAddress)
+registerSymbol('isDev',InputEventsStaticAddress+0x4)
+
+[DISABLE]
+
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>2</ID>
+          <Description>"Toggle Dev ~ Show Console F1 F2 Add/Sub $100"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+isDev:
+db 1
+[DISABLE]
+isDev:
+db 0
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols>
+    <SymbolEntry>
+      <Name>InputEvents</Name>
+      <Address>23DA70DDEA0</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>isDev</Name>
+      <Address>23DA70DDEA4</Address>
+    </SymbolEntry>
+  </UserdefinedSymbols>
+</CheatTable>
