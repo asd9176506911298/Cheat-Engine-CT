@@ -27,7 +27,7 @@ registerSymbol('isDev', InputEventsStaticAddress+0x4, true)
       <CheatEntries>
         <CheatEntry>
           <ID>2</ID>
-          <Description>"Toggle Dev ~ Show Console F1 F2 Add/Sub $100"</Description>
+          <Description>"Toggle Dev ~ Show Console F1 F2 Add/Sub $100 F3 ProgressGame"</Description>
           <VariableType>Auto Assembler Script</VariableType>
           <AssemblerScript>[ENABLE]
 isDev:
