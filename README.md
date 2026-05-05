@@ -22,3 +22,6 @@
 
 # SUMMER -14 Days Vacation / SUMMER -夏日的14天
 - https://fearlessrevolution.com/viewtopic.php?t=37286
+
+# Gamble With Your Friends / 跟你麻吉一起賭博
+https://store.steampowered.com/app/3892270/Gamble_With_Your_Friends
