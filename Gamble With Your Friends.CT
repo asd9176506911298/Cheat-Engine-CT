@@ -18,8 +18,8 @@ if (LaunchMonoDataCollector() == 0) then end
 
 local cId = mono_findClass('', 'InputEvents')
 local InputEventsStaticAddress = mono_class_getStaticFieldAddress(mono_enumDomains()[1], cId)
-registerSymbol('InputEvents',InputEventsStaticAddress)
-registerSymbol('isDev',InputEventsStaticAddress+0x4)
+registerSymbol('InputEvents', InputEventsStaticAddress, true)
+registerSymbol('isDev', InputEventsStaticAddress+0x4, true)
 
 [DISABLE]
 
@@ -40,14 +40,5 @@ db 0
       </CheatEntries>
     </CheatEntry>
   </CheatEntries>
-  <UserdefinedSymbols>
-    <SymbolEntry>
-      <Name>InputEvents</Name>
-      <Address>23DA70DDEA0</Address>
-    </SymbolEntry>
-    <SymbolEntry>
-      <Name>isDev</Name>
-      <Address>23DA70DDEA4</Address>
-    </SymbolEntry>
-  </UserdefinedSymbols>
+  <UserdefinedSymbols/>
 </CheatTable>
