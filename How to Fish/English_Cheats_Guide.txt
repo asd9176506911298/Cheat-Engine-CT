@@ -2,10 +2,14 @@
            How To Fish - Ultimate Developer Cheat Guide
 ============================================================
 
+[REQUIREMENTS]
+1. Set "ClientSettings.CheatsEnabled" to "True" in game files.
+2. You must be the Host of the session to use console commands.
+
 [AUTOMATIC EFFECTS WHEN CHEATS ENABLED]
 1. Auto-Unlock: All islands, Boat, and Boat Radar are instantly unlocked.
-2. Initial Progress: If no save exists, starts at Island 5 with $99,999.
-3. NPC Feeding: NPCs will accept "Cheat Quest Items" regardless of quest status.
+2. Initial Progress: Starts at Island 5 with $99,999 (if no save exists).
+3. NPC Feeding: NPCs accept "Cheat Quest Items" regardless of quest status.
 
 ------------------------------------------------------------
 1. HOTKEYS (Direct Key Press)
@@ -22,31 +26,29 @@
 ------------------------------------------------------------
 2. CONSOLE COMMANDS (Press Enter to open chat)
 ------------------------------------------------------------
-[Cheats & Power]
+[Power & Survival]
 /godmode               - Invincibility + Flight.
 /oneshot               - One-hit kill mode.
 /killboss              - Instantly kill the current Boss.
 /finishgame            - End the game immediately.
 
-[Spawning]
+[Journal & Progress Modification]
+/killallcreatures       - Mark all standard fish as "Caught" in journal.
+/killalldripcreatures   - Mark all Drip (glowing) fish as "Caught".
+/resetallcreatures      - Wipe all standard fish catch records.
+/resetalldripcreatures  - Wipe all Drip fish catch records.
+/nextisland / /previsland - Skip or return to islands.
+/unlockachievements     - Unlock every Steam Achievement.
+/lockachievements       - Reset every Steam Achievement.
+
+[Spawning & Unlocks]
 /spawn <name>          - Spawn item or creature.
 /spawndead <name>      - Spawn a dead creature.
 /spawndrip <name>      - Spawn a Drip (glowing) variant.
 /spawndripdead <name>  - Spawn a dead Drip variant.
-
-[Unlocks & Save Modification]
 /addmoney / /removemoney - Modify money balance.
 /boat / /grill          - Instantly unlock Boat or Grill.
 /allskins / /noskins    - Unlock or lock all skins.
-/unlockachievements     - Unlock every Steam Achievement.
-/lockachievements       - Reset every Steam Achievement.
-/killallcreatures       - Mark all fish as "Caught" in journal.
-/resetallcreatures      - Wipe standard catch records.
-
-[World & Special]
-/nextisland / /previsland - Skip or return to islands.
-/slots <name> <id>      - Rig the Slot Machine results.
-/showkillscores        - Debug: Show kill bonus UI.
 
 ------------------------------------------------------------
 3. COMPLETE SPAWNABLE LIST
