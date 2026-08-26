@@ -1,0 +1,57 @@
+============================================================
+           Game Developer Cheat Mode Guide
+============================================================
+
+[REQUIREMENTS]
+1. ClientSettings.CheatsEnabled must be set to True.
+2. You must be the Host of the session.
+
+------------------------------------------------------------
+1. HOTKEYS (Instant Actions)
+------------------------------------------------------------
+[T] Key       - Time Scale: Cycles through [Normal / 0.1x / 0.01x]. Not Work
+[O] Key       - Teleport & Skip: Skips to the next island in build.
+[G] Key       - Damage Test: Reduces Health and Fullness instantly.
+[H] Key       - Heal Test: Restores Health and Fullness to maximum.
+[,] Key       - Toggle UI: Hides or Shows the tutorial UI group.
+[Space] Key   - Infinite Jump: Requires /godmode active.
+
+------------------------------------------------------------
+2. CONSOLE COMMANDS (Type in Chat)
+------------------------------------------------------------
+/godmode         - Invincibility & Enables Mid-air Jumping.
+/oneshot         - One-hit kill mode.
+/addmoney        - Instantly adds money.
+/nextisland      - Skips to the next island.
+/killboss        - Instantly kills the current Boss.
+/spawn <name>    - Spawns item/creature (See complete list below).
+/spawndead <name>- Spawns a dead version of the creature.
+
+------------------------------------------------------------
+3. COMPLETE SPAWNABLE LIST (For /spawn command)
+------------------------------------------------------------
+[Fish & Creatures]
+angelfish, anglerfish, bass, bingbong, blobfish, bluegill, albatross, 
+blueshark, bowheadwhale, giantpiranha, goblinshark, mutatedbowheadwhale, 
+pufferfish, spidercrab, sunfish, theoldpike, tuna, bowlfish, browncrab, 
+catfish, clam, clownfish, cod, dripper, eel, flyingfish, footsnail, gar, 
+goby, goldfish, halibut, leech, lobster, mackerel, needlefish, oarfish, 
+parrotfish, perch, pike, piranha, redsnapper, rockcrab, salmon, seaurchin, 
+seagull, seahorse, sengarat, shrimp, stonefish, superdwarffish, tigerfish, 
+triggerfish, voxelfish, yellowboxfish
+
+[Meat, Parts & Special]
+albatrossmeat, crabmeat, piranhameat, pufferfishmeat, whalemeat, deadplayer, 
+albatrosshead, giantpiranhaskeleton, pufferfishfin, spidercrabshell, whalefin
+
+[Weapons, Tools & Items]
+assaultrifle, badball, beer, brassknuckles, brassknucklespackedbackup, 
+crabfishingrod, disc, dynamite, fishingrod, knife, knifepackedbackup, 
+map, pistol, radio, shotgun, smg, sniperrifle, snowball1, snowball2, snowball3
+
+------------------------------------------------------------
+4. TROUBLESHOOTING
+------------------------------------------------------------
+* If T, G, H keys fail, verify CheatsEnabled is True in memory.
+* Full Table: https://github.com/asd9176506911298/Cheat-Engine-CT/
+============================================================
