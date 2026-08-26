@@ -29,6 +29,7 @@
 
 ------------------------------------------------------------
 3. COMPLETE SPAWNABLE LIST (For /spawn command)
+https://github.com/asd9176506911298/Cheat-Engine-CT/blob/main/How%20to%20Fish/SpawnableTable.txt
 ------------------------------------------------------------
 [Fish & Creatures]
 angelfish, anglerfish, bass, bingbong, blobfish, bluegill, albatross, 
