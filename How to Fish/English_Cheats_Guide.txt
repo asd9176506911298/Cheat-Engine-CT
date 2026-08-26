@@ -50,6 +50,8 @@
 /boat / /grill          - Instantly unlock Boat or Grill.
 /allskins / /noskins    - Unlock or lock all skins.
 
+/showkillscores         - Display kill score statistics
+
 ------------------------------------------------------------
 3. COMPLETE SPAWNABLE LIST
 ------------------------------------------------------------
