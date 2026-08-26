@@ -37,6 +37,98 @@ db 0
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Toggle DevLayout"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{$lua}
+[ENABLE]
+setDevLayoutActive(1)
+
+[DISABLE]
+setDevLayoutActive(0)
+</AssemblerScript>
+    </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
+  <LuaScript>local function getGameObjectName(goPtr)
+    if goPtr == nil or goPtr == 0 then return "" end
+    local namePtr = readPointer(goPtr + 0x50)
+    if namePtr == nil or namePtr == 0 then return "" end
+    return readString(namePtr, 128) or ""
+end
+
+local function readGameObjectList(listHeadPtr)
+    local result = {}
+    if listHeadPtr == nil or listHeadPtr == 0 then return result end
+    local firstNode = readPointer(listHeadPtr)
+    if firstNode == nil or firstNode == 0 then return result end
+    local currNode = firstNode
+    local maxGuard = 2000
+    while currNode ~= nil and currNode ~= 0 and currNode ~= listHeadPtr and maxGuard &gt; 0 do
+        table.insert(result, currNode)
+        currNode = readPointer(currNode + 0x08)
+        maxGuard = maxGuard - 1
+    end
+    return result
+end
+
+local function findGameObject(targetName)
+    local base = getAddress("UnityPlayer.dll")
+    if base == nil or base == 0 then return 0 end
+    local gomPtr = readPointer(base + 0x2274680)
+    if gomPtr == nil or gomPtr == 0 then return 0 end
+    local searchOffsets = {0x18, 0x20}
+    for _, offset in ipairs(searchOffsets) do
+        local baseObjects = readGameObjectList(gomPtr + offset)
+        for _, baseObj in ipairs(baseObjects) do
+            local gameObjectPtr = readPointer(baseObj + 0x10)
+            if gameObjectPtr == nil or gameObjectPtr == 0 then
+                gameObjectPtr = baseObj
+            end
+            if getGameObjectName(gameObjectPtr) == targetName then
+                return gameObjectPtr
+            end
+        end
+    end
+    return 0
+end
+
+local function getTransform(gameObjectPtr)
+    if gameObjectPtr == nil or gameObjectPtr == 0 then return 0 end
+    local p1 = readPointer(gameObjectPtr + 0x20)
+    if p1 == nil or p1 == 0 then return 0 end
+    return readPointer(p1 + 0x8)
+end
+
+local function getChildByName(transformPtr, targetName)
+    if transformPtr == nil or transformPtr == 0 then return 0 end
+    local childsPtr = readPointer(transformPtr + 0x48)
+    local childCount = readInteger(transformPtr + 0x58)
+    if childsPtr == nil or childsPtr == 0 or childCount == nil or childCount &lt;= 0 or childCount &gt; 1000 then
+        return 0
+    end
+    for i = 0, childCount - 1 do
+        local childTransform = readPointer(childsPtr + (i * 0x8))
+        if childTransform ~= nil and childTransform ~= 0 then
+            local childGameObject = readPointer(childTransform + 0x20)
+            if childGameObject ~= nil and childGameObject ~= 0 then
+                if getGameObjectName(childGameObject) == targetName then
+                    return childGameObject
+                end
+            end
+        end
+    end
+    return 0
+end
+
+function setDevLayoutActive(state)
+    local foundObj = findGameObject("MainMenuButtons (To toggle)")
+    local transform = getTransform(foundObj)
+    local layout = getChildByName(transform, "DevLayout")
+    if layout ~= 0 then
+        writeBytes(layout + 0x46, state)
+    end
+end
+</LuaScript>
 </CheatTable>
