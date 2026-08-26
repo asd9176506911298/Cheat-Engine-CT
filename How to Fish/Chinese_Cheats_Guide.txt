@@ -38,6 +38,7 @@
 
 ------------------------------------------------------------
 三、 完整生成名稱清單 (可用於 /spawn)
+https://raw.githubusercontent.com/asd9176506911298/Cheat-Engine-CT/refs/heads/main/How%20to%20Fish/SpawnableTable.txt
 ------------------------------------------------------------
 【魚類與生物 (Fish & Creatures)】
 angelfish, anglerfish, bass, bingbong, blobfish, bluegill, albatross, 
