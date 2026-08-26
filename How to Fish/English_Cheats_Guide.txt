@@ -1,37 +1,57 @@
 ============================================================
-           Game Developer Cheat Mode Guide
+           How To Fish - Ultimate Developer Cheat Guide
 ============================================================
 
-[REQUIREMENTS]
-1. ClientSettings.CheatsEnabled must be set to True.
-2. You must be the Host of the session.
+[AUTOMATIC EFFECTS WHEN CHEATS ENABLED]
+1. Auto-Unlock: All islands, Boat, and Boat Radar are instantly unlocked.
+2. Initial Progress: If no save exists, starts at Island 5 with $99,999.
+3. NPC Feeding: NPCs will accept "Cheat Quest Items" regardless of quest status.
 
 ------------------------------------------------------------
-1. HOTKEYS (Instant Actions)
+1. HOTKEYS (Direct Key Press)
 ------------------------------------------------------------
-[T] Key       - Time Scale: Cycles through [Normal / 0.1x / 0.01x]. Not Work
-[O] Key       - Teleport & Skip: Skips to the next island in build.
-[G] Key       - Damage Test: Reduces Health and Fullness instantly.
-[H] Key       - Heal Test: Restores Health and Fullness to maximum.
-[,] Key       - Toggle UI: Hides or Shows the tutorial UI group.
-[Space] Key   - Infinite Jump: Requires /godmode active.
+[M] Key     - Get Rich: Instantly add $99,999.
+[N] Key     - Go Broke: Instantly remove $99,999.
+[T] Key     - Time Scale: Toggle [Normal / 0.1x / 0.01x].
+[O] Key     - Teleport: Warp everyone to the next island.
+[G] Key     - Damage Test: Deducts HP and Fullness.
+[H] Key     - Heal Test: Refills HP and Fullness to max.
+[,] Key     - Toggle UI: Hide or Show tutorial text.
+[Space]     - Flight: Use /godmode first, then press Space repeatedly.
 
 ------------------------------------------------------------
-2. CONSOLE COMMANDS (Type in Chat)
+2. CONSOLE COMMANDS (Press Enter to open chat)
 ------------------------------------------------------------
-/godmode         - Invincibility & Enables Mid-air Jumping.
-/oneshot         - One-hit kill mode.
-/addmoney        - Instantly adds money.
-/nextisland      - Skips to the next island.
-/killboss        - Instantly kills the current Boss.
-/spawn <name>    - Spawns item/creature (See complete list below).
-/spawndead <name>- Spawns a dead version of the creature.
+[Cheats & Power]
+/godmode               - Invincibility + Flight.
+/oneshot               - One-hit kill mode.
+/killboss              - Instantly kill the current Boss.
+/finishgame            - End the game immediately.
+
+[Spawning]
+/spawn <name>          - Spawn item or creature.
+/spawndead <name>      - Spawn a dead creature.
+/spawndrip <name>      - Spawn a Drip (glowing) variant.
+/spawndripdead <name>  - Spawn a dead Drip variant.
+
+[Unlocks & Save Modification]
+/addmoney / /removemoney - Modify money balance.
+/boat / /grill          - Instantly unlock Boat or Grill.
+/allskins / /noskins    - Unlock or lock all skins.
+/unlockachievements     - Unlock every Steam Achievement.
+/lockachievements       - Reset every Steam Achievement.
+/killallcreatures       - Mark all fish as "Caught" in journal.
+/resetallcreatures      - Wipe standard catch records.
+
+[World & Special]
+/nextisland / /previsland - Skip or return to islands.
+/slots <name> <id>      - Rig the Slot Machine results.
+/showkillscores        - Debug: Show kill bonus UI.
 
 ------------------------------------------------------------
-3. COMPLETE SPAWNABLE LIST (For /spawn command)
-https://raw.githubusercontent.com/asd9176506911298/Cheat-Engine-CT/refs/heads/main/How%20to%20Fish/SpawnableTable.txt
+3. COMPLETE SPAWNABLE LIST
 ------------------------------------------------------------
-[Fish & Creatures]
+Fish/Creatures:
 angelfish, anglerfish, bass, bingbong, blobfish, bluegill, albatross, 
 blueshark, bowheadwhale, giantpiranha, goblinshark, mutatedbowheadwhale, 
 pufferfish, spidercrab, sunfish, theoldpike, tuna, bowlfish, browncrab, 
@@ -41,18 +61,9 @@ parrotfish, perch, pike, piranha, redsnapper, rockcrab, salmon, seaurchin,
 seagull, seahorse, sengarat, shrimp, stonefish, superdwarffish, tigerfish, 
 triggerfish, voxelfish, yellowboxfish
 
-[Meat, Parts & Special]
+Items/Tools/Weapons:
 albatrossmeat, crabmeat, piranhameat, pufferfishmeat, whalemeat, deadplayer, 
-albatrosshead, giantpiranhaskeleton, pufferfishfin, spidercrabshell, whalefin
-
-[Weapons, Tools & Items]
-assaultrifle, badball, beer, brassknuckles, brassknucklespackedbackup, 
-crabfishingrod, disc, dynamite, fishingrod, knife, knifepackedbackup, 
-map, pistol, radio, shotgun, smg, sniperrifle, snowball1, snowball2, snowball3
-
-------------------------------------------------------------
-4. TROUBLESHOOTING
-------------------------------------------------------------
-* If T, G, H keys fail, verify CheatsEnabled is True in memory.
-* Full Table: https://github.com/asd9176506911298/Cheat-Engine-CT/
+albatrosshead, giantpiranhaskeleton, pufferfishfin, spidercrabshell, whalefin, 
+assaultrifle, badball, beer, brassknuckles, crabfishingrod, disc, dynamite, 
+fishingrod, knife, map, pistol, radio, shotgun, smg, sniperrifle, snowball1
 ============================================================
