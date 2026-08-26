@@ -1,67 +1,98 @@
 ============================================================
-           遊戲開發者作弊模式 (Cheat Mode) 指南
+           How To Fish 遊戲作弊與開發者指令大全 (終極完整版)
 ============================================================
 
 【啟用條件】
-1. 程式變數 ClientSettings.CheatsEnabled 必須為 True。
-2. 必須身為主機 (Host) 才能執行指令。
+1. 必須將遊戲程式中的 ClientSettings.CheatsEnabled 設定為 True。
+2. 你必須是該房間的主機 (Host/房主) 才能在聊天框使用指令。
+
+【作弊模式開啟後的「自動」效果】
+※ 只要開啟作弊並進入遊戲，以下功能會自動生效：
+1. 自動解鎖：進入伺服器後，所有島嶼、船隻、船隻雷達會自動解鎖。
+2. 初始資源：若無存檔，開局自動獲得 $99,999 元並從第 5 島開始。
+3. NPC 餵食：NPC 會無視任務需求，強制收下玩家給予的「作弊任務物品」。
+4. 崩潰動畫：執行崩潰動畫時會改為直接閃退 (Instant Crash)。
 
 ------------------------------------------------------------
-一、 快捷鍵功能 (即按即用)
+一、 鍵盤快捷鍵 (直接按鍵生效，不需開啟聊天框)
 ------------------------------------------------------------
-[T]鍵         - 時間流速切換：正常 -> 0.1倍慢動作 -> 0.01倍極慢動作。 沒效果
-[O]鍵         - 跳島與傳送：傳送所有玩家並跳轉至下一個開發中的島嶼。
-[G]鍵         - 自殘測試：立刻扣除血量與飽食度。
-[H]鍵         - 治療測試：立刻補滿血量與飽食度。
-[,]鍵 (逗號)  - 教學開關：隱藏或顯示畫面上的教學指引視窗。
-[Space]空白鍵 - 無限跳躍：必須先啟用 /godmode，之後可於空中連續跳躍。
+[M] 鍵 - 變出錢：立刻增加 $99,999 元。
+[N] 鍵 - 變窮：立刻扣除 $99,999 元。
+[T] 鍵 - 時間魔法：循環切換 [正常速度 / 0.1x 慢動作 / 0.01x 極慢動作]。
+[O] 鍵 - 跳島傳送：將所有玩家傳送到下一個開發中的島嶼。
+[G] 鍵 - 自殘測試：立刻扣除血量與飽食度。
+[H] 鍵 - 治癒測試：瞬間補滿血量與飽食度。
+[,] 鍵 - 教學開關：隱藏或顯示畫面上的教學指引視窗。
+[Space] 空白鍵 - 飛行模式：必須先輸入 /godmode 後，即可在空中無限連跳。
 
 ------------------------------------------------------------
-二、 聊天室指令 (輸入 / 觸發)
+二、 聊天框指令 (按下 Enter 開啟聊天視窗，輸入 / 開頭指令)
 ------------------------------------------------------------
-【玩家與資源】
-/godmode         - 上帝模式 (無敵模式 + 解鎖空中無限跳躍)。
-/oneshot         - 一擊必殺模式。
-/addmoney        - 增加金錢。
-/removemoney     - 減少金錢。
+【強力作弊功能】
+/godmode               - 上帝模式 (無敵模式 + 空中連跳飛行能力)。
+/oneshot               - 一擊必殺模式 (攻擊任何生物皆為秒殺)。
+/killboss              - 殺死 Boss (直接對當前 Boss 造成 999,999 點傷害)。
+/finishgame            - 快速通關 (直接結束遊戲並觸發結局動畫)。
 
-【進度與世界】
-/nextisland      - 跳轉到下一個島嶼。
-/previsland      - 回到上一個島嶼。
-/killboss        - 秒殺當前的 Boss。
-/finishgame      - 直接通關並結束遊戲。
-/killallcreatures- 殺死地圖上所有生物。
+【召喚功能 (Spawning)】
+/spawn <名稱>          - 在面前召喚指定物品或生物。
+/spawndead <名稱>      - 召喚已死亡的指定生物。
+/spawndrip <名稱>      - 召喚發光變體 (Drip) 生物。
+/spawndripdead <名稱>  - 召喚已死亡的發光變體生物。
 
-【生成功能】
-/spawn <名稱>      - 在前方生成指定物品。 (完整清單見下方)
-/spawndead <名稱>  - 生成已死亡的指定生物。
+【功能解鎖與成就】
+/addmoney              - 增加金錢。
+/removemoney           - 減少金錢。
+/boat                  - 立即解鎖船隻。
+/grill                 - 立即解鎖烤肉爐。
+/allskins              - 解鎖所有皮膚外觀。
+/noskins               - 鎖定所有皮膚外觀。
+/unlockachievements    - 強制解鎖所有 Steam 成就。
+/lockachievements      - 重置/歸零所有 Steam 成就紀錄。
+
+【進度控制與存檔修改】
+/nextisland            - 前往下一座島嶼。
+/previsland            - 回到上一座島嶼。
+/killallcreatures       - 將所有魚類標記為「已捕獲」(更新至圖鑑)。
+/killalldripcreatures   - 將所有發光變體魚類標記為「已捕獲」。
+/resetallcreatures      - 清空所有普通魚類的捕獲紀錄。
+/resetalldripcreatures  - 清空所有發光變體魚類的捕獲紀錄。
+
+【拉霸機操控與除錯】
+/slots <名稱> <編號>    - 控制拉霸機。設定下次拉霸必中的物品與皮膚。
+/showkillscores        - 顯示所有擊殺加分的測試 UI (Debug 測試用)。
 
 ------------------------------------------------------------
-三、 完整生成名稱清單 (可用於 /spawn)
-https://raw.githubusercontent.com/asd9176506911298/Cheat-Engine-CT/refs/heads/main/How%20to%20Fish/SpawnableTable.txt
+三、 完整召喚清單 (用於 /spawn 或 /slots)
 ------------------------------------------------------------
+※ 召喚時請輸入「英文名稱」，括號內為中文說明：
+
 【魚類與生物 (Fish & Creatures)】
-angelfish, anglerfish, bass, bingbong, blobfish, bluegill, albatross, 
-blueshark, bowheadwhale, giantpiranha, goblinshark, mutatedbowheadwhale, 
-pufferfish, spidercrab, sunfish, theoldpike, tuna, bowlfish, browncrab, 
-catfish, clam, clownfish, cod, dripper, eel, flyingfish, footsnail, gar, 
-goby, goldfish, halibut, leech, lobster, mackerel, needlefish, oarfish, 
-parrotfish, perch, pike, piranha, redsnapper, rockcrab, salmon, seaurchin, 
-seagull, seahorse, sengarat, shrimp, stonefish, superdwarffish, tigerfish, 
-triggerfish, voxelfish, yellowboxfish
+angelfish (天使魚), anglerfish (鮟鱇魚), bass (鱸魚), bingbong (繽紛魚), 
+blobfish (水滴魚), bluegill (藍鰓太陽魚), albatross (信天翁), blueshark (藍鯊), 
+bowheadwhale (弓頭鯨), giantpiranha (巨型食人魚), goblinshark (哥布林鯊), 
+mutatedbowheadwhale (變異弓頭鯨), pufferfish (河豚), spidercrab (蜘蛛蟹), 
+sunfish (翻車魚), theoldpike (老狗魚), tuna (鮪魚), bowlfish (碗魚), 
+browncrab (褐蟹), catfish (鯰魚), clam (蛤蜊), clownfish (小丑魚), cod (鱈魚), 
+dripper (滴水魚), eel (鰻魚), flyingfish (飛魚), footsnail (腳蝸牛), gar (雀鱔), 
+goby (鰕虎魚), goldfish (金魚), halibut (大比目魚), leech (水蛭), lobster (龍蝦), 
+mackerel (鯖魚), needlefish (鶴鱵), oarfish (皇帶魚), parrotfish (鸚哥魚), 
+perch (河鱸), pike (狗魚), piranha (食人魚), redsnapper (赤鯛), rockcrab (石蟹), 
+salmon (鮭魚), seaurchin (海膽), seagull (海鷗), seahorse (海馬), 
+sengarat (森林大鼠), shrimp (蝦), stonefish (石頭魚), superdwarffish (超級侏儒魚), 
+tigerfish (虎魚), triggerfish (鱗魨), voxelfish (方塊魚), yellowboxfish (黃箱魨)
 
-【肉類、部位與特殊 (Meat & Parts)】
-albatrossmeat, crabmeat, piranhameat, pufferfishmeat, whalemeat, deadplayer, 
-albatrosshead, giantpiranhaskeleton, pufferfishfin, spidercrabshell, whalefin
+【肉類、部位與特殊項目】
+albatrossmeat (信天翁肉), crabmeat (蟹肉), piranhameat (食人魚肉), 
+pufferfishmeat (河豚肉), whalemeat (鯨魚肉), deadplayer (玩家屍體), 
+albatrosshead (信天翁頭), giantpiranhaskeleton (巨型食人魚骨骸), 
+pufferfishfin (河豚鰭), spidercrabshell (蜘蛛蟹殼), whalefin (鯨魚鰭)
 
-【武器、工具與道具 (Weapons & Tools)】
-assaultrifle, badball, beer, brassknuckles, brassknucklespackedbackup, 
-crabfishingrod, disc, dynamite, fishingrod, knife, knifepackedbackup, 
-map, pistol, radio, shotgun, smg, sniperrifle, snowball1, snowball2, snowball3
+【武器、工具與裝備】
+assaultrifle (突擊步槍), badball (壞球), beer (啤酒), brassknuckles (指虎), 
+brassknucklespackedbackup (指虎包裝備份), crabfishingrod (捕蟹竿), disc (飛盤), 
+dynamite (炸藥), fishingrod (釣竿), knife (小刀), knifepackedbackup (小刀包裝備份), 
+map (地圖), pistol (手槍), radio (收音機), shotgun (散彈槍), smg (衝鋒槍), 
+sniperrifle (狙擊步槍), snowball1 (雪球1), snowball2 (雪球2), snowball3 (雪球3)
 
-------------------------------------------------------------
-四、 注意事項
-------------------------------------------------------------
-* 若按鍵 (T, G, H) 沒反應，可能是因為輸入系統 API 衝突或作弊模式未成功開啟。
-* 指令與清單完整來源：https://github.com/asd9176506911298/Cheat-Engine-CT/
 ============================================================
