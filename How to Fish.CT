@@ -38,10 +38,5 @@ db 0
       </CheatEntries>
     </CheatEntry>
   </CheatEntries>
-  <UserdefinedSymbols>
-    <SymbolEntry>
-      <Name>CheatsEnabled</Name>
-      <Address>10F549E2A28</Address>
-    </SymbolEntry>
-  </UserdefinedSymbols>
+  <UserdefinedSymbols/>
 </CheatTable>
