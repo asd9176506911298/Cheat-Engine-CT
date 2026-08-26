@@ -1,0 +1,66 @@
+============================================================
+           遊戲開發者作弊模式 (Cheat Mode) 指南
+============================================================
+
+【啟用條件】
+1. 程式變數 ClientSettings.CheatsEnabled 必須為 True。
+2. 必須身為主機 (Host) 才能執行指令。
+
+------------------------------------------------------------
+一、 快捷鍵功能 (即按即用)
+------------------------------------------------------------
+[T]鍵         - 時間流速切換：正常 -> 0.1倍慢動作 -> 0.01倍極慢動作。 沒效果
+[O]鍵         - 跳島與傳送：傳送所有玩家並跳轉至下一個開發中的島嶼。
+[G]鍵         - 自殘測試：立刻扣除血量與飽食度。
+[H]鍵         - 治療測試：立刻補滿血量與飽食度。
+[,]鍵 (逗號)  - 教學開關：隱藏或顯示畫面上的教學指引視窗。
+[Space]空白鍵 - 無限跳躍：必須先啟用 /godmode，之後可於空中連續跳躍。
+
+------------------------------------------------------------
+二、 聊天室指令 (輸入 / 觸發)
+------------------------------------------------------------
+【玩家與資源】
+/godmode         - 上帝模式 (無敵模式 + 解鎖空中無限跳躍)。
+/oneshot         - 一擊必殺模式。
+/addmoney        - 增加金錢。
+/removemoney     - 減少金錢。
+
+【進度與世界】
+/nextisland      - 跳轉到下一個島嶼。
+/previsland      - 回到上一個島嶼。
+/killboss        - 秒殺當前的 Boss。
+/finishgame      - 直接通關並結束遊戲。
+/killallcreatures- 殺死地圖上所有生物。
+
+【生成功能】
+/spawn <名稱>      - 在前方生成指定物品。 (完整清單見下方)
+/spawndead <名稱>  - 生成已死亡的指定生物。
+
+------------------------------------------------------------
+三、 完整生成名稱清單 (可用於 /spawn)
+------------------------------------------------------------
+【魚類與生物 (Fish & Creatures)】
+angelfish, anglerfish, bass, bingbong, blobfish, bluegill, albatross, 
+blueshark, bowheadwhale, giantpiranha, goblinshark, mutatedbowheadwhale, 
+pufferfish, spidercrab, sunfish, theoldpike, tuna, bowlfish, browncrab, 
+catfish, clam, clownfish, cod, dripper, eel, flyingfish, footsnail, gar, 
+goby, goldfish, halibut, leech, lobster, mackerel, needlefish, oarfish, 
+parrotfish, perch, pike, piranha, redsnapper, rockcrab, salmon, seaurchin, 
+seagull, seahorse, sengarat, shrimp, stonefish, superdwarffish, tigerfish, 
+triggerfish, voxelfish, yellowboxfish
+
+【肉類、部位與特殊 (Meat & Parts)】
+albatrossmeat, crabmeat, piranhameat, pufferfishmeat, whalemeat, deadplayer, 
+albatrosshead, giantpiranhaskeleton, pufferfishfin, spidercrabshell, whalefin
+
+【武器、工具與道具 (Weapons & Tools)】
+assaultrifle, badball, beer, brassknuckles, brassknucklespackedbackup, 
+crabfishingrod, disc, dynamite, fishingrod, knife, knifepackedbackup, 
+map, pistol, radio, shotgun, smg, sniperrifle, snowball1, snowball2, snowball3
+
+------------------------------------------------------------
+四、 注意事項
+------------------------------------------------------------
+* 若按鍵 (T, G, H) 沒反應，可能是因為輸入系統 API 衝突或作弊模式未成功開啟。
+* 指令與清單完整來源：https://github.com/asd9176506911298/Cheat-Engine-CT/
+============================================================
