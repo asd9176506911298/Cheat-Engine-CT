@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="34">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Monster Lily Player Editor (attach to the game, start a run, then tick this)"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{$lua}
+if syntaxcheck then return end
+
+-- ============================================================
+--  Monster Lily Player Editor
+--  How it works: runs a small piece of Python inside the game's own
+--        Python interpreter, finds the Player object with gc, and reads/writes its attributes.
+-- ============================================================
+PE = PE or {}
+PE.frozen = PE.frozen or {}
+PE.shown = PE.shown or {}
+
+PE.dir   = (os.getenv("PUBLIC") or "C:\\Users\\Public"):gsub("\\", "/")
+PE.fCmd  = PE.dir .. "/ce_pe_cmd.py"
+PE.fIn   = PE.dir .. "/ce_pe_in.txt"
+PE.fData = PE.dir .. "/ce_pe_data.txt"
+PE.fLog  = PE.dir .. "/ce_pe_log.txt"
+
+-- ---------- Python code that runs inside the game ----------
+PE.BOOT = [==[
+import io,contextlib,traceback
+b=io.StringIO()
+with contextlib.redirect_stdout(b):
+    try:
+        exec(compile(open("@CMD@",encoding="utf8").read(),"ce_pe","exec"),{"CE_IN":"@IN@","CE_DATA":"@DATA@"})
+    except BaseException:
+        traceback.print_exc(file=b)
+open("@LOG@","w",encoding="utf8").write(b.getvalue())
+]==]
+
+PE.DUMP = [==[
+import gc
+ps=[x for x in gc.get_objects() if type(x).__name__=="Player" and hasattr(x,"hp")]
+if not ps:
+    print("NO_PLAYER")
+else:
+    p=ps[0]
+    rows=[]
+    for k,v in sorted(vars(p).items()):
+        t=type(v)
+        if t in (int,float,bool):
+            rows.append("%s\t%s\t%s"%(k,t.__name__,repr(v)))
+        elif t is str and len(v)&lt;48 and v.isprintable():
+            rows.append("%s\t%s\t%s"%(k,"str",v))
+    open(CE_DATA,"w",encoding="utf8").write("\n".join(rows))
+    print("OK",len(rows))
+]==]
+
+PE.APPLY = [==[
+import gc
+conv={"int":int,"float":float,"bool":lambda s:s.strip().lower() in ("1","true","yes","on"),"str":str}
+rows=[l.split("\t",2) for l in open(CE_IN,encoding="utf8").read().split("\n") if l]
+ps=[x for x in gc.get_objects() if type(x).__name__=="Player" and hasattr(x,"hp")]
+if not ps:
+    print("NO_PLAYER")
+else:
+    n=0
+    for p in ps:
+        for name,typ,val in rows:
+            setattr(p,name,conv[typ](val))
+            n+=1
+    print("APPLIED",n)
+]==]
+
+PE.GOD_ON = [==[
+import gc
+ps=[x for x in gc.get_objects() if type(x).__name__=="Player" and hasattr(x,"hp")]
+if not ps:
+    print("NO_PLAYER")
+else:
+    C=type(ps[0])
+    if not hasattr(C,"_ce_otd"):
+        C._ce_otd=C.take_damage
+    orig=C._ce_otd
+    C.take_damage=lambda self,damage=0,*a,**k: orig(self,0,*a,**k)
+    print("GOD_ON")
+]==]
+
+PE.GOD_OFF = [==[
+import gc
+ps=[x for x in gc.get_objects() if type(x).__name__=="Player"]
+if ps:
+    C=type(ps[0])
+    if hasattr(C,"_ce_otd"):
+        C.take_damage=C._ce_otd
+        del C._ce_otd
+    print("GOD_OFF")
+]==]
+
+-- ---------- Talking to the game ----------
+function PE.ensureStub()
+  local pid = getOpenedProcessID()
+  if pid == 0 then
+    showMessage("Please attach Cheat Engine to monsterlily.exe first.")
+    return false
+  end
+  if PE.stubReady and PE.pid == pid then return true end
+  if not getAddressSafe("python312.PyRun_SimpleString") then
+    showMessage("Could not find the python312.dll functions.\nMake sure the game is running and Cheat Engine is attached to monsterlily.exe.")
+    return false
+  end
+  pcall(unregisterSymbol, "peBuf")
+  pcall(unregisterSymbol, "peStub")
+  pcall(unregisterSymbol, "peState")
+  local ok, err = pcall(autoAssemble, [[
+alloc(peBuf,4096)
+alloc(peStub,128)
+alloc(peState,16)
+registersymbol(peBuf)
+registersymbol(peStub)
+registersymbol(peState)
+
+peStub:
+sub rsp,28
+call python312.PyGILState_Ensure
+mov [peState],eax
+lea rcx,[peBuf]
+call python312.PyRun_SimpleString
+mov ecx,[peState]
+call python312.PyGILState_Release
+add rsp,28
+xor eax,eax
+ret
+]])
+  if not ok then
+    showMessage("Failed to create the call stub: " .. tostring(err))
+    return false
+  end
+  PE.stubReady = true
+  PE.pid = pid
+  return true
+end
+
+-- Run a piece of Python; returns (success, captured output text)
+function PE.run(code, timeout)
+  if not PE.ensureStub() then return false, "" end
+  os.remove(PE.fLog)
+  local f = io.open(PE.fCmd, "wb")
+  if not f then return false, "Cannot write " .. PE.fCmd end
+  f:write(code)
+  f:close()
+  local map = { CMD = PE.fCmd, IN = PE.fIn, DATA = PE.fData, LOG = PE.fLog }
+  local boot = (PE.BOOT:gsub("@(%u+)@", function(k) return map[k] end))
+  local addr = getAddress("peBuf")
+  writeString(addr, boot)
+  writeBytes(addr + #boot, 0)
+  executeCode(getAddress("peStub"), 0, timeout or 8000)
+  local lf = io.open(PE.fLog, "rb")
+  local log = ""
+  if lf then log = lf:read("*a") or ""; lf:close() end
+  return true, log
+end
+
+function PE.setStatus(text)
+  if PE.status then PE.status.Caption = text end
+end
+
+local function oneLine(s, n)
+  s = (s or ""):gsub("%s+", " ")
+  return s:sub(1, n or 120)
+end
+
+-- ---------- Data handling ----------
+function PE.norm(typ, v)
+  v = (tostring(v):gsub("^%s+", ""):gsub("%s+$", ""))
+  if typ == "int" then
+    local n = tonumber(v)
+    if not n or n ~= math.floor(n) then return nil, "This field needs a whole number" end
+    return string.format("%d", n)
+  elseif typ == "float" then
+    local n = tonumber(v)
+    if not n then return nil, "This field needs a number" end
+    return string.format("%.12g", n)
+  elseif typ == "bool" then
+    local l = v:lower()
+    if l == "1" or l == "true" or l == "yes" or l == "on" then return "1" end
+    if l == "0" or l == "false" or l == "no" or l == "off" then return "0" end
+    return nil, "This field needs 0/1 or true/false"
+  end
+  return v
+end
+
+function PE.apply(list)
+  local t = {}
+  for _, r in ipairs(list) do t[#t + 1] = r[1] .. "\t" .. r[2] .. "\t" .. r[3] end
+  local f = io.open(PE.fIn, "wb")
+  if not f then return false, "Cannot write " .. PE.fIn end
+  f:write(table.concat(t, "\n"))
+  f:close()
+  return PE.run(PE.APPLY, 6000)
+end
+
+function PE.populate()
+  local lv = PE.lv
+  if not lv then return end
+  local filter = (PE.filter and PE.filter.Text or ""):lower()
+  local selName = nil
+  local sel = PE.shown[(lv.ItemIndex or -1) + 1]
+  if sel then selName = sel[1] end
+  PE.shown = {}
+  local reselect = -1
+  lv.Items.beginUpdate()
+  lv.Items.clear()
+  for line in (PE.lastData or ""):gmatch("[^\r\n]+") do
+    local name, typ, val = line:match("^([^\t]*)\t([^\t]*)\t(.*)$")
+    if name and (filter == "" or name:lower():find(filter, 1, true)) then
+      local it = lv.Items.add()
+      it.Caption = name
+      it.SubItems.add(typ)
+      it.SubItems.add(val)
+      it.SubItems.add(PE.frozen[name] and "Locked" or "")
+      PE.shown[#PE.shown + 1] = { name, typ, val }
+      if name == selName then reselect = #PE.shown - 1 end
+    end
+  end
+  lv.Items.endUpdate()
+  if reselect &gt;= 0 then lv.ItemIndex = reselect end
+end
+
+function PE.refresh()
+  if PE.busy then return end
+  PE.busy = true
+  os.remove(PE.fData)
+  local ok, log = PE.run(PE.DUMP, 6000)
+  PE.busy = false
+  if not ok then return end
+  local f = io.open(PE.fData, "rb")
+  if not f then
+    if (log or ""):find("NO_PLAYER", 1, true) then
+      PE.setStatus("Player object not found: start a run in the game first, then press Refresh")
+    else
+      PE.setStatus("Read failed: " .. oneLine(log))
+    end
+    return
+  end
+  PE.lastData = f:read("*a")
+  f:close()
+  PE.populate()
+  PE.setStatus("Loaded " .. #PE.shown .. " attributes (double-click a row to edit)")
+end
+
+function PE.selected()
+  if not PE.lv then return nil end
+  return PE.shown[(PE.lv.ItemIndex or -1) + 1]
+end
+
+function PE.edit()
+  local row = PE.selected()
+  if not row then showMessage("Select an attribute in the list first") return end
+  local name, typ, cur = row[1], row[2], row[3]
+  local v = inputQuery("Edit " .. name, "New value (type: " .. typ .. ")", cur)
+  if v == nil then return end
+  local nv, err = PE.norm(typ, v)
+  if not nv then showMessage(err) return end
+  local ok, log = PE.apply({ { name, typ, nv } })
+  if PE.frozen[name] then PE.frozen[name] = { typ, nv } end
+  PE.refresh()
+  if ok and (log or ""):find("APPLIED", 1, true) then
+    PE.setStatus("Changed " .. name .. " = " .. nv)
+  else
+    PE.setStatus("Edit failed: " .. oneLine(log))
+  end
+end
+
+function PE.toggleLock()
+  local row = PE.selected()
+  if not row then showMessage("Select an attribute in the list first") return end
+  local name, typ, cur = row[1], row[2], row[3]
+  if PE.frozen[name] then
+    PE.frozen[name] = nil
+    PE.setStatus("Unlocked " .. name)
+  else
+    local nv, err = PE.norm(typ, cur)
+    if not nv then showMessage(err) return end
+    PE.frozen[name] = { typ, nv }
+    PE.setStatus("Locked " .. name .. " = " .. nv)
+  end
+  PE.populate()
+end
+
+function PE.setGod(on)
+  local ok, log = PE.run(on and PE.GOD_ON or PE.GOD_OFF, 6000)
+  if ok and (log or ""):find(on and "GOD_ON" or "GOD_OFF", 1, true) then
+    PE.godOn = on
+    PE.setStatus(on and "No damage: ON" or "No damage: OFF")
+  else
+    PE.godOn = false
+    if PE.god then PE.god.Checked = false end
+    if (log or ""):find("NO_PLAYER", 1, true) then
+      PE.setStatus("Player object not found: start a run in the game first, then enable this")
+    else
+      PE.setStatus("No damage failed: " .. oneLine(log))
+    end
+  end
+end
+
+-- ---------- Window ----------
+function PE.open()
+  if PE.form then pcall(function() PE.form.show() end) return end
+
+  local f = createForm(true)
+  PE.form = f
+  f.Caption = "Monster Lily - Player Editor"
+  f.Width = 660
+  f.Height = 720
+  f.centerScreen()
+
+  local pn = createPanel(f)
+  pn.Align = alTop
+  pn.Height = 104
+  pn.BevelOuter = bvNone
+
+  local b1 = createButton(pn)
+  b1.Caption = "Refresh"
+  b1.Left = 8 b1.Top = 8 b1.Width = 110 b1.Height = 28
+  b1.OnClick = function() PE.refresh() end
+
+  local b2 = createButton(pn)
+  b2.Caption = "Edit selected"
+  b2.Left = 126 b2.Top = 8 b2.Width = 120 b2.Height = 28
+  b2.OnClick = function() PE.edit() end
+
+  local b3 = createButton(pn)
+  b3.Caption = "Lock / Unlock"
+  b3.Left = 254 b3.Top = 8 b3.Width = 130 b3.Height = 28
+  b3.OnClick = function() PE.toggleLock() end
+
+  local c1 = createCheckBox(pn)
+  c1.Caption = "No damage (damage set to 0)"
+  c1.Left = 8 c1.Top = 44
+  c1.OnChange = function(s) PE.setGod(s.Checked) end
+  PE.god = c1
+
+  local c2 = createCheckBox(pn)
+  c2.Caption = "Auto refresh"
+  c2.Left = 200 c2.Top = 44
+  PE.auto = c2
+
+  local l1 = createLabel(pn)
+  l1.Caption = "Filter:"
+  l1.Left = 300 l1.Top = 46
+
+  local e1 = createEdit(pn)
+  e1.Left = 350 e1.Top = 42 e1.Width = 160
+  e1.OnChange = function() PE.populate() end
+  PE.filter = e1
+
+  local st = createLabel(pn)
+  st.Caption = "Start a run in the game first, then press Refresh"
+  st.Left = 8 st.Top = 78
+  PE.status = st
+
+  local lv = createListView(f)
+  lv.Align = alClient
+  lv.ViewStyle = vsReport
+  lv.RowSelect = true
+  lv.ReadOnly = true
+  pcall(function() lv.HideSelection = false end)
+  local function col(cap, w)
+    local c = lv.Columns.add()
+    c.Caption = cap
+    c.Width = w
+  end
+  col("Attribute", 200) col("Type", 70) col("Current value", 230) col("Lock", 60)
+  lv.OnDblClick = function() PE.edit() end
+  PE.lv = lv
+
+  -- Timer: rewrites locked attributes repeatedly; refreshes the list when Auto refresh is checked
+  local t = createTimer(f)
+  t.Interval = 400
+  PE.tick = 0
+  t.OnTimer = function()
+    if PE.busy then return end
+    if next(PE.frozen) then
+      local list = {}
+      for n, v in pairs(PE.frozen) do list[#list + 1] = { n, v[1], v[2] } end
+      PE.busy = true
+      pcall(PE.apply, list)
+      PE.busy = false
+    end
+    PE.tick = PE.tick + 1
+    if PE.auto and PE.auto.Checked and PE.tick % 3 == 0 then pcall(PE.refresh) end
+  end
+  t.Enabled = true
+  PE.timer = t
+
+  f.OnClose = function()
+    PE.form = nil PE.lv = nil PE.status = nil PE.filter = nil
+    PE.god = nil PE.auto = nil PE.timer = nil
+    return caFree
+  end
+end
+
+function PE.close()
+  if PE.godOn then pcall(PE.run, PE.GOD_OFF, 6000) PE.godOn = false end
+  PE.frozen = {}
+  if PE.form then pcall(function() PE.form.close() end) end
+  if PE.stubReady then
+    pcall(autoAssemble, [[
+unregistersymbol(peBuf)
+unregistersymbol(peStub)
+unregistersymbol(peState)
+dealloc(peBuf)
+dealloc(peStub)
+dealloc(peState)
+]])
+    PE.stubReady = false
+  end
+end
+
+{$asm}
+[ENABLE]
+{$lua}
+if syntaxcheck then return end
+PE.open()
+{$asm}
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+PE.close()
+{$asm}
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
